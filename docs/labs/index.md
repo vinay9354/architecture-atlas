@@ -21,7 +21,7 @@ code lives under `labs/` in the repository and solutions under `labs/solutions/`
 
 | # | Lab | Requirements | Status |
 |---|---|---|---|
-| 01 | Measure latency and throughput for a simple HTTP service | Local, free | Planned |
+| 01 | [Measure latency and throughput for a simple HTTP service](lab-01-latency-and-throughput.md) | Local, free | Draft |
 | 02 | Add a cache and compare hit/miss behavior | Local, free | Planned |
 | 03 | Simulate a queue with multiple consumers, retries, and a dead-letter queue | Local, free | Planned |
 | 04 | Demonstrate idempotency and duplicate message handling | Local, free | Planned |

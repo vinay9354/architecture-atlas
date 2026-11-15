@@ -29,7 +29,7 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D14** | **Performance engineering and scalability** | | |
-| D14-T01 | Performance fundamentals and Little's Law | :material-circle-outline: Planned | planned: `performance-and-scalability/performance-fundamentals-and-littles-law.md` |
+| D14-T01 | Performance fundamentals and Little's Law | :material-circle-slice-5: Draft | [performance-fundamentals-and-littles-law](performance-fundamentals-and-littles-law.md) |
 | D14-T02 | Scaling and optimization techniques | :material-circle-outline: Planned | planned: `performance-and-scalability/scaling-and-optimization-techniques.md` |
 | D14-T03 | Capacity planning and load testing | :material-circle-slice-5: Draft | [capacity-estimation](capacity-estimation.md) |
 <!-- coverage:end -->

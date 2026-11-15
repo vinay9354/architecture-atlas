@@ -74,6 +74,7 @@ Beyond the thirty domains, the repository also plans twenty-five
 
 ## Reading the status honestly
 
-Four pages are written as of 2026-11-15, all in `Draft` status, covering parts of D01 and D14. The
-other 134 topic entries are `Planned` with a destination path each. This is the foundation batch; the
+Nineteen topic entries are written as of 2026-11-15, all in `Draft` status, across D01, D04, D05,
+D06, D08, D09, D13, and D14, plus the Solutions Architect role page, Lab 01, and one domain quiz. The
+other 121 topic entries are `Planned` with a destination path each. Nothing is `Reviewed` yet; the
 [roadmap](https://github.com/vinay9354/architecture-atlas/blob/main/ROADMAP.md) lists what comes next.

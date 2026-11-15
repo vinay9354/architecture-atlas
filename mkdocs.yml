@@ -114,29 +114,50 @@ nav:
       - Architecture fundamentals:
           - architecture-fundamentals/index.md
           - What does a Solutions Architect do?: architecture-fundamentals/what-does-a-solutions-architect-do.md
+          - Stakeholders, business capabilities, and success metrics: architecture-fundamentals/stakeholders-business-capabilities-and-success-metrics.md
+          - Constraints, assumptions, dependencies, risks, and scope: architecture-fundamentals/constraints-assumptions-dependencies-risks-and-scope.md
+          - As-Is and To-Be architecture, gap analysis, and build vs buy: architecture-fundamentals/as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy.md
           - Functional vs non-functional requirements: architecture-fundamentals/functional-vs-non-functional-requirements.md
           - Quality attributes and trade-offs: architecture-fundamentals/quality-attributes-and-trade-offs.md
+          - SLAs, SLOs, SLIs, error budgets, and recovery objectives: architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md
+          - Trade-offs, principles, ADRs, and governance: architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md
           - The C4 model: architecture-fundamentals/c4-model.md
       - CS and software foundations: foundations/index.md
       - Software architecture and patterns: software-architecture/index.md
-      - Distributed systems: distributed-systems/index.md
-      - Application, API, and integration: application-and-api-architecture/index.md
+      - Distributed systems:
+          - distributed-systems/index.md
+          - Distributed systems fundamentals, time, and coordination: distributed-systems/distributed-systems-fundamentals-time-and-coordination.md
+      - Application, API, and integration:
+          - application-and-api-architecture/index.md
+          - API design (REST, GraphQL, gRPC, async): application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md
+          - Integration architecture: application-and-api-architecture/integration-architecture.md
       - Enterprise architecture and modernization: enterprise-architecture/index.md
   - Data:
-      - Databases, storage, and caching: databases-and-storage/index.md
+      - Databases, storage, and caching:
+          - databases-and-storage/index.md
+          - Relational databases and SQL internals: databases-and-storage/relational-databases-and-sql-internals.md
+          - Caching architecture: databases-and-storage/caching-architecture.md
       - Data engineering and analytics: data-engineering-and-analytics/index.md
-      - Messaging and streaming: messaging-and-streaming/index.md
+      - Messaging and streaming:
+          - messaging-and-streaming/index.md
+          - Message queues and brokers: messaging-and-streaming/message-queues-and-brokers.md
   - Cloud and Platform:
-      - Networking and hybrid connectivity: networking/index.md
+      - Networking and hybrid connectivity:
+          - networking/index.md
+          - Networking fundamentals (IP, CIDR, routing, DNS): networking/networking-fundamentals-ip-cidr-routing-and-dns.md
+          - Transport and application protocols: networking/transport-and-application-protocols.md
       - Cloud and infrastructure architecture: cloud-architecture/index.md
       - Containers and Kubernetes: containers-and-kubernetes/index.md
       - DevOps and platform engineering: devops-and-platform-engineering/index.md
       - FinOps and sustainability: finops-and-sustainability/index.md
   - Security and Operations:
       - Security architecture: security-architecture/index.md
-      - Reliability and disaster recovery: reliability-and-disaster-recovery/index.md
+      - Reliability and disaster recovery:
+          - reliability-and-disaster-recovery/index.md
+          - High availability design: reliability-and-disaster-recovery/high-availability-design.md
       - Performance and scalability:
           - performance-and-scalability/index.md
+          - Performance fundamentals and Little's Law: performance-and-scalability/performance-fundamentals-and-littles-law.md
           - Estimating load, throughput, storage, and capacity: performance-and-scalability/capacity-estimation.md
       - Observability and SRE: observability-and-sre/index.md
   - AI:
@@ -151,8 +172,12 @@ nav:
       - Emerging architectures: emerging-architectures/index.md
       - System design exercises: system-design-exercises/index.md
       - End-to-end case studies: end-to-end-case-studies/index.md
-      - Labs: labs/index.md
-      - Quizzes: quizzes/index.md
+      - Labs:
+          - labs/index.md
+          - "Lab 01: Latency and throughput": labs/lab-01-latency-and-throughput.md
+      - Quizzes:
+          - quizzes/index.md
+          - "Quiz: Architecture fundamentals (D01)": quizzes/d01-architecture-fundamentals.md
       - Reference architectures and frameworks: reference-architectures/index.md
   - Appendices:
       - appendices/index.md

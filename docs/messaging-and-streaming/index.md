@@ -31,7 +31,7 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D08** | **Messaging, event-driven systems, and streaming** | | |
-| D08-T01 | Message queues and brokers | :material-circle-outline: Planned | planned: `messaging-and-streaming/message-queues-and-brokers.md` |
+| D08-T01 | Message queues and brokers | :material-circle-slice-5: Draft | [message-queues-and-brokers](message-queues-and-brokers.md) |
 | D08-T02 | Event-driven architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-driven-architecture.md` |
 | D08-T03 | Event streaming and log-based architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-streaming-and-log-based-architecture.md` |
 | D08-T04 | Messaging technologies compared | :material-circle-outline: Planned | planned: `messaging-and-streaming/messaging-technologies-compared.md` |

@@ -20,9 +20,9 @@ The **ID** is stable: use it in issues and pull requests.
 | Status | Count | Meaning |
 |---|---:|---|
 | :material-check-circle: Reviewed | 0 | Technical accuracy, diagrams, references, and exercises checked |
-| :material-circle-slice-5: Draft | 4 | Content exists; needs technical and teaching review |
+| :material-circle-slice-5: Draft | 19 | Content exists; needs technical and teaching review |
 | :material-circle-slice-2: Outline | 0 | Objectives and structure exist; explanation incomplete |
-| :material-circle-outline: Planned | 136 | Identified; destination page not yet written |
+| :material-circle-outline: Planned | 121 | Identified; destination page not yet written |
 | :material-alert-circle-outline: Needs update | 0 | May be stale or a reference changed |
 
 !!! note "How to read the Page column"
@@ -31,17 +31,17 @@ The **ID** is stable: use it in issues and pull requests.
 
 ## D01 — Architecture thinking, requirements, and design fundamentals
 
-Section: [architecture-fundamentals](../architecture-fundamentals/index.md) · 3/9 topic entries have a page
+Section: [architecture-fundamentals](../architecture-fundamentals/index.md) · 8/9 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D01-T01 | Business, functional, and non-functional requirements | :material-circle-slice-5: Draft | [functional-vs-non-functional-requirements](../architecture-fundamentals/functional-vs-non-functional-requirements.md) | Business requirements vs technical requirements; functional requirements; non-functional requirements. |
-| D01-T02 | Stakeholders, business capabilities, and success metrics | :material-circle-outline: Planned | planned: `architecture-fundamentals/stakeholders-business-capabilities-and-success-metrics.md` | Business capabilities, business processes, stakeholder identification, stakeholder management, user stories, use cases, acceptance criteria, business goals, KPIs, success metrics. |
-| D01-T03 | Constraints, assumptions, dependencies, risks, and scope | :material-circle-outline: Planned | planned: `architecture-fundamentals/constraints-assumptions-dependencies-risks-and-scope.md` | Technical constraints, business constraints, assumptions, dependencies, risks, scope definition, requirement prioritization. |
-| D01-T04 | As-Is and To-Be architecture, gap analysis, and build vs buy | :material-circle-outline: Planned | planned: `architecture-fundamentals/as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy.md` | Current-state (As-Is) architecture, future-state (To-Be) architecture, gap analysis, build vs buy vs SaaS, cost-benefit analysis, feasibility analysis, PoC vs MVP, functional decomposition, capability-based planning. |
+| D01-T02 | Stakeholders, business capabilities, and success metrics | :material-circle-slice-5: Draft | [stakeholders-business-capabilities-and-success-metrics](../architecture-fundamentals/stakeholders-business-capabilities-and-success-metrics.md) | Business capabilities, business processes, stakeholder identification, stakeholder management, user stories, use cases, acceptance criteria, business goals, KPIs, success metrics. |
+| D01-T03 | Constraints, assumptions, dependencies, risks, and scope | :material-circle-slice-5: Draft | [constraints-assumptions-dependencies-risks-and-scope](../architecture-fundamentals/constraints-assumptions-dependencies-risks-and-scope.md) | Technical constraints, business constraints, assumptions, dependencies, risks, scope definition, requirement prioritization. |
+| D01-T04 | As-Is and To-Be architecture, gap analysis, and build vs buy | :material-circle-slice-5: Draft | [as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy](../architecture-fundamentals/as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy.md) | Current-state (As-Is) architecture, future-state (To-Be) architecture, gap analysis, build vs buy vs SaaS, cost-benefit analysis, feasibility analysis, PoC vs MVP, functional decomposition, capability-based planning. |
 | D01-T05 | Architecture quality attributes | :material-circle-slice-5: Draft | [quality-attributes-and-trade-offs](../architecture-fundamentals/quality-attributes-and-trade-offs.md) | Quality attributes: scalability, elasticity, availability, reliability, resilience, fault tolerance, durability, performance, latency, throughput, consistency, security, privacy, maintainability, extensibility, modularity, reusability, portability, interoperability, testability, observability, operability, recoverability, disaster recovery, auditability, accessibility, usability, sustainability. |
-| D01-T06 | SLAs, SLOs, SLIs, error budgets, and recovery objectives | :material-circle-outline: Planned | planned: `architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md` | SLA, SLO, SLI, error budgets, availability percentages, MTTR, MTTD, MTBF, RTO, RPO, recovery strategies, capacity planning, performance benchmarks, service dependencies and criticality, risk-based design. |
-| D01-T07 | Trade-offs, principles, ADRs, and architecture governance | :material-circle-outline: Planned | planned: `architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md` | Architectural trade-offs, principles, Architecture Decision Records (ADR), architecture review boards, technical debt, fitness functions, design reviews, threat modeling, risk assessment, technology selection, vendor evaluation, technology lifecycle and end-of-life planning. |
+| D01-T06 | SLAs, SLOs, SLIs, error budgets, and recovery objectives | :material-circle-slice-5: Draft | [slas-slos-slis-error-budgets-and-recovery-objectives](../architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md) | SLA, SLO, SLI, error budgets, availability percentages, MTTR, MTTD, MTBF, RTO, RPO, recovery strategies, capacity planning, performance benchmarks, service dependencies and criticality, risk-based design. |
+| D01-T07 | Trade-offs, principles, ADRs, and architecture governance | :material-circle-slice-5: Draft | [trade-offs-principles-adrs-and-architecture-governance](../architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md) | Architectural trade-offs, principles, Architecture Decision Records (ADR), architecture review boards, technical debt, fitness functions, design reviews, threat modeling, risk assessment, technology selection, vendor evaluation, technology lifecycle and end-of-life planning. |
 | D01-T08 | Architecture diagrams, C4, UML, and design documents | :material-circle-slice-5: Draft | [c4-model](../architecture-fundamentals/c4-model.md) | Context diagrams, C4 Context/Container/Component/Code, UML, sequence, class, component, deployment, activity, state machine, ERD, DFD, network, infrastructure, application, integration, security, data, AI/ML, DR diagrams, HLD, LLD, runbooks, design specifications. |
 | D01-T09 | Diagram tools | :material-circle-outline: Planned | planned: `architecture-fundamentals/diagram-tools.md` | Diagram tools: Draw.io, Lucidchart, Mermaid, PlantUML, Structurizr, ArchiMate. |
 
@@ -70,11 +70,11 @@ Section: [software-architecture](../software-architecture/index.md) · 0/4 topic
 
 ## D04 — Distributed systems
 
-Section: [distributed-systems](../distributed-systems/index.md) · 0/5 topic entries have a page
+Section: [distributed-systems](../distributed-systems/index.md) · 1/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D04-T01 | Distributed systems fundamentals, time, and coordination | :material-circle-outline: Planned | planned: `distributed-systems/distributed-systems-fundamentals-time-and-coordination.md` | Distributed vs centralized systems, nodes, clusters, network partitions, partial failures, failure detection, fault domains, network latency, clock synchronization, clock skew, logical clocks, Lamport timestamps, vector clocks, distributed state, coordination, leader election, distributed locking, leases, fencing tokens, gossip, membership protocols, consensus, quorum, split brain. |
+| D04-T01 | Distributed systems fundamentals, time, and coordination | :material-circle-slice-5: Draft | [distributed-systems-fundamentals-time-and-coordination](../distributed-systems/distributed-systems-fundamentals-time-and-coordination.md) | Distributed vs centralized systems, nodes, clusters, network partitions, partial failures, failure detection, fault domains, network latency, clock synchronization, clock skew, logical clocks, Lamport timestamps, vector clocks, distributed state, coordination, leader election, distributed locking, leases, fencing tokens, gossip, membership protocols, consensus, quorum, split brain. |
 | D04-T02 | Consistency models, CAP, and PACELC | :material-circle-outline: Planned | planned: `distributed-systems/consistency-models-cap-and-pacelc.md` | CAP theorem, PACELC, strong/eventual/weak/causal/sequential consistency, linearizability, read-after-write, monotonic reads, consistency/availability trade-offs, quorum reads/writes, replication lag, conflict resolution, last-write-wins, CRDTs. |
 | D04-T03 | Transactions, sagas, and delivery guarantees | :material-circle-outline: Planned | planned: `distributed-systems/transactions-sagas-and-delivery-guarantees.md` | ACID, distributed transactions, two-phase commit, three-phase commit, Saga choreography/orchestration, compensation, eventual consistency in workflows, transactional outbox/inbox, idempotent consumers, deduplication, at-most-once, at-least-once, exactly-once processing limitations. |
 | D04-T04 | Resilience mechanics: timeouts, retries, and backpressure | :material-circle-outline: Planned | planned: `distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md` | Timeouts, retries, exponential backoff, jitter, retry storms, circuit breakers, bulkheads, fail-fast, graceful degradation, rate limiting, throttling, backpressure, load shedding, health checks, heartbeats, dead-letter handling, poison messages, cascading failures, retry amplification, fault isolation and containment. |
@@ -82,25 +82,25 @@ Section: [distributed-systems](../distributed-systems/index.md) · 0/5 topic ent
 
 ## D05 — Application, API, and integration architecture
 
-Section: [application-and-api-architecture](../application-and-api-architecture/index.md) · 0/3 topic entries have a page
+Section: [application-and-api-architecture](../application-and-api-architecture/index.md) · 2/3 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D05-T01 | Application architecture for web, mobile, and SaaS | :material-circle-outline: Planned | planned: `application-and-api-architecture/application-architecture-for-web-mobile-and-saas.md` | Frontend, backend, full-stack, web, mobile, SPA, SSR, CSR, SSG, PWA, state management, sessions, application configuration, background jobs, schedulers/cron, file upload/download, long-running workflows, multi-tenant applications, SaaS, real-time applications. |
-| D05-T02 | API design: REST, GraphQL, gRPC, and async APIs | :material-circle-outline: Planned | planned: `application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md` | REST, GraphQL, gRPC, SOAP, WebSockets, Server-Sent Events, webhooks, asynchronous APIs, OpenAPI, API contracts, versioning, backward compatibility, deprecation, validation, response design, pagination, filtering, sorting, idempotency keys, authentication, authorization, rate limiting, throttling, quotas, caching, monetization, lifecycle management, documentation, testing, observability. |
-| D05-T03 | Integration architecture | :material-circle-outline: Planned | planned: `application-and-api-architecture/integration-architecture.md` | Point-to-point integration, ESB, message broker, event-driven, file-based, database integration, API-led connectivity, middleware, iPaaS, legacy integration, third-party SaaS integration, identity federation, synchronization, master data integration, ERP/CRM, EDI, event schema management, integration error handling, replay and reconciliation. |
+| D05-T02 | API design: REST, GraphQL, gRPC, and async APIs | :material-circle-slice-5: Draft | [api-design-rest-graphql-grpc-and-async-apis](../application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md) | REST, GraphQL, gRPC, SOAP, WebSockets, Server-Sent Events, webhooks, asynchronous APIs, OpenAPI, API contracts, versioning, backward compatibility, deprecation, validation, response design, pagination, filtering, sorting, idempotency keys, authentication, authorization, rate limiting, throttling, quotas, caching, monetization, lifecycle management, documentation, testing, observability. |
+| D05-T03 | Integration architecture | :material-circle-slice-5: Draft | [integration-architecture](../application-and-api-architecture/integration-architecture.md) | Point-to-point integration, ESB, message broker, event-driven, file-based, database integration, API-led connectivity, middleware, iPaaS, legacy integration, third-party SaaS integration, identity federation, synchronization, master data integration, ERP/CRM, EDI, event schema management, integration error handling, replay and reconciliation. |
 
 ## D06 — Database, storage, and caching architecture
 
-Section: [databases-and-storage](../databases-and-storage/index.md) · 0/5 topic entries have a page
+Section: [databases-and-storage](../databases-and-storage/index.md) · 2/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D06-T01 | Relational databases and SQL internals | :material-circle-outline: Planned | planned: `databases-and-storage/relational-databases-and-sql-internals.md` | Relational models, tables/rows/columns, primary/foreign keys, normalization, denormalization, relationships, joins, indexes, B-tree, composite indexes, query execution/plans/optimization, connection pooling, transactions, ACID, isolation levels, dirty/non-repeatable/phantom reads, locking, deadlocks, stored procedures, constraints, partitioning, read replicas, replication, failover, migration, schema evolution. |
+| D06-T01 | Relational databases and SQL internals | :material-circle-slice-5: Draft | [relational-databases-and-sql-internals](../databases-and-storage/relational-databases-and-sql-internals.md) | Relational models, tables/rows/columns, primary/foreign keys, normalization, denormalization, relationships, joins, indexes, B-tree, composite indexes, query execution/plans/optimization, connection pooling, transactions, ACID, isolation levels, dirty/non-repeatable/phantom reads, locking, deadlocks, stored procedures, constraints, partitioning, read replicas, replication, failover, migration, schema evolution. |
 | D06-T02 | NoSQL databases | :material-circle-outline: Planned | planned: `databases-and-storage/nosql-databases.md` | NoSQL: key-value, document, wide-column, graph, time-series, search, in-memory, distributed, multi-model, consistency models, partition keys, access patterns, denormalization, hot partition management, secondary indexes. |
 | D06-T03 | Advanced database architecture | :material-circle-outline: Planned | planned: `databases-and-storage/advanced-database-architecture.md` | Advanced databases: sharding, horizontal/vertical partitioning, federation, replication strategies, multi-region/global databases, distributed SQL, CDC, transaction logs, connection management, backup/recovery, point-in-time recovery, encryption, auditing, consistency, archiving, hot/warm/cold data, retention/deletion, low-downtime migration. |
 | D06-T04 | Storage architecture | :material-circle-outline: Planned | planned: `databases-and-storage/storage-architecture.md` | Storage: block, object, file, distributed filesystems, NAS, SAN, DAS, ephemeral, persistent, replication, snapshots, tiering, lifecycle management, compression, deduplication, encryption, gateways, hybrid storage, backup/archive, object versioning/locking, content-addressable storage. |
-| D06-T05 | Caching architecture | :material-circle-outline: Planned | planned: `databases-and-storage/caching-architecture.md` | Caching: application, database, distributed, in-memory, local, CDN; cache-aside, read-through, write-through, write-behind; invalidation, TTL, eviction (LRU/LFU/FIFO), cache stampede, penetration, poisoning, hot keys, consistency, failure handling. |
+| D06-T05 | Caching architecture | :material-circle-slice-5: Draft | [caching-architecture](../databases-and-storage/caching-architecture.md) | Caching: application, database, distributed, in-memory, local, CDN; cache-aside, read-through, write-through, write-behind; invalidation, TTL, eviction (LRU/LFU/FIFO), cache stampede, penetration, poisoning, hot keys, consistency, failure handling. |
 
 ## D07 — Data engineering, analytics, and big data
 
@@ -116,23 +116,23 @@ Section: [data-engineering-and-analytics](../data-engineering-and-analytics/inde
 
 ## D08 — Messaging, event-driven systems, and streaming
 
-Section: [messaging-and-streaming](../messaging-and-streaming/index.md) · 0/4 topic entries have a page
+Section: [messaging-and-streaming](../messaging-and-streaming/index.md) · 1/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D08-T01 | Message queues and brokers | :material-circle-outline: Planned | planned: `messaging-and-streaming/message-queues-and-brokers.md` | Message queues/brokers, pub-sub, point-to-point, request-response, asynchronous messaging, routing, filtering, persistence, acknowledgments, visibility timeout, ordering, priority, expiry, deduplication, DLQs, retries, poison messages, backpressure, consumer concurrency/groups, replay. |
+| D08-T01 | Message queues and brokers | :material-circle-slice-5: Draft | [message-queues-and-brokers](../messaging-and-streaming/message-queues-and-brokers.md) | Message queues/brokers, pub-sub, point-to-point, request-response, asynchronous messaging, routing, filtering, persistence, acknowledgments, visibility timeout, ordering, priority, expiry, deduplication, DLQs, retries, poison messages, backpressure, consumer concurrency/groups, replay. |
 | D08-T02 | Event-driven architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-driven-architecture.md` | Events vs commands, producers, consumers, brokers, buses, routing/filtering, schemas/versioning/contracts, event sourcing, choreography/orchestration, replay, ordering, domain/integration events, CDC, transactional outbox. |
 | D08-T03 | Event streaming and log-based architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-streaming-and-log-based-architecture.md` | Data/event streaming, log-based architecture, partitions, retention, offsets, consumer lag, replication, joins, windows, watermarks, enrichment, aggregation, exactly-once and at-least-once semantics. |
 | D08-T04 | Messaging technologies compared | :material-circle-outline: Planned | planned: `messaging-and-streaming/messaging-technologies-compared.md` | Technologies to understand conceptually: Apache Kafka, Amazon Kinesis, SQS, SNS, EventBridge, RabbitMQ, Apache Pulsar, Google Pub/Sub, Azure Service Bus. |
 
 ## D09 — Networking and hybrid connectivity
 
-Section: [networking](../networking/index.md) · 0/4 topic entries have a page
+Section: [networking](../networking/index.md) · 2/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D09-T01 | Networking fundamentals: IP, CIDR, routing, and DNS | :material-circle-outline: Planned | planned: `networking/networking-fundamentals-ip-cidr-routing-and-dns.md` | OSI, TCP/IP, Ethernet, MAC, IP, IPv4/IPv6, public/private IPs, CIDR, subnetting, supernetting, masks, route tables, static/dynamic routing, DNS, DHCP, ARP, NAT/PAT, VLAN, MTU, interfaces. |
-| D09-T02 | Transport and application protocols | :material-circle-outline: Planned | planned: `networking/transport-and-application-protocols.md` | TCP, UDP, QUIC, HTTP/1.1, HTTP/2, HTTP/3, HTTPS, TLS, legacy SSL compatibility, SSH, FTP/SFTP, SMTP, IMAP, ICMP, SNMP, NTP, BGP, OSPF, IPsec, WebSocket, gRPC. |
+| D09-T01 | Networking fundamentals: IP, CIDR, routing, and DNS | :material-circle-slice-5: Draft | [networking-fundamentals-ip-cidr-routing-and-dns](../networking/networking-fundamentals-ip-cidr-routing-and-dns.md) | OSI, TCP/IP, Ethernet, MAC, IP, IPv4/IPv6, public/private IPs, CIDR, subnetting, supernetting, masks, route tables, static/dynamic routing, DNS, DHCP, ARP, NAT/PAT, VLAN, MTU, interfaces. |
+| D09-T02 | Transport and application protocols | :material-circle-slice-5: Draft | [transport-and-application-protocols](../networking/transport-and-application-protocols.md) | TCP, UDP, QUIC, HTTP/1.1, HTTP/2, HTTP/3, HTTPS, TLS, legacy SSL compatibility, SSH, FTP/SFTP, SMTP, IMAP, ICMP, SNMP, NTP, BGP, OSPF, IPsec, WebSocket, gRPC. |
 | D09-T03 | Network security, load balancing, and traffic flow | :material-circle-outline: Planned | planned: `networking/network-security-load-balancing-and-traffic-flow.md` | Segmentation, isolation, ingress/egress, east-west/north-south traffic, perimeter security, DMZ, firewalls, stateful/stateless filtering, NACLs, security groups, WAF, L4/L7 load balancing, reverse/forward proxies, application gateways, DNS/global load balancing, Anycast, CDN, DDoS, private networking/endpoints, peering, hub-and-spoke, transit networking, SDN, SD-WAN, Zero Trust networking. |
 | D09-T04 | Hybrid connectivity and VPNs | :material-circle-outline: Planned | planned: `networking/hybrid-connectivity-and-vpns.md` | Site-to-Site VPN, client VPN, dedicated private connectivity, Direct Connect/ExpressRoute/Cloud Interconnect concepts, transit gateways, hybrid DNS/forwarding, route propagation, BGP advertisements, failover, flow logs, packet capture, troubleshooting, multi-region and cross-account connectivity. |
 
@@ -176,22 +176,22 @@ Section: [security-architecture](../security-architecture/index.md) · 0/8 topic
 
 ## D13 — High availability, reliability, resilience, and DR
 
-Section: [reliability-and-disaster-recovery](../reliability-and-disaster-recovery/index.md) · 0/4 topic entries have a page
+Section: [reliability-and-disaster-recovery](../reliability-and-disaster-recovery/index.md) · 1/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D13-T01 | High availability design | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/high-availability-design.md` | Single points of failure, redundancy, fault domains, availability zones, Multi-AZ, multi-region, active-active/passive, load balancing, health checks, failover, database failover, DNS failover, global routing, regional isolation, cell-based architecture, availability calculations. |
+| D13-T01 | High availability design | :material-circle-slice-5: Draft | [high-availability-design](../reliability-and-disaster-recovery/high-availability-design.md) | Single points of failure, redundancy, fault domains, availability zones, Multi-AZ, multi-region, active-active/passive, load balancing, health checks, failover, database failover, DNS failover, global routing, regional isolation, cell-based architecture, availability calculations. |
 | D13-T02 | Reliability engineering | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/reliability-engineering.md` | Reliability engineering: FMEA/FMECA, fault tree analysis, reliability block diagrams, redundancy models, fault isolation/containment, graceful degradation, self-healing, recovery orchestration, retries, circuit breakers, bulkheads, chaos engineering, fault injection, game days, reliability testing, SRE, error budgets, SLO management. |
 | D13-T03 | Disaster recovery strategies | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/disaster-recovery-strategies.md` | DR: backup/restore, pilot light, warm standby, hot standby, active-active, cold recovery, full/incremental/differential backups, immutable/air-gapped/cross-region backups, PITR, storage/application/infrastructure recovery, DNS failover, orchestration, recovery tests, BCP, DRP. |
 | D13-T04 | Advanced resilience and failure containment | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md` | Advanced resilience: dependency failures, blast radius, cascading failure, partitions, consistency during failover, split-brain prevention, quorum recovery, recovery sequencing/priorities, degraded operating modes. |
 
 ## D14 — Performance engineering and scalability
 
-Section: [performance-and-scalability](../performance-and-scalability/index.md) · 1/3 topic entries have a page
+Section: [performance-and-scalability](../performance-and-scalability/index.md) · 2/3 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D14-T01 | Performance fundamentals and Little's Law | :material-circle-outline: Planned | planned: `performance-and-scalability/performance-fundamentals-and-littles-law.md` | Latency, throughput, concurrency, RPS, TPS, response time, queue depth, resource utilization, CPU/memory, IOPS, network throughput, database/application performance, tail latency, P50/P90/P95/P99, Little's Law, bottleneck analysis, capacity modeling, performance baselines. |
+| D14-T01 | Performance fundamentals and Little's Law | :material-circle-slice-5: Draft | [performance-fundamentals-and-littles-law](../performance-and-scalability/performance-fundamentals-and-littles-law.md) | Latency, throughput, concurrency, RPS, TPS, response time, queue depth, resource utilization, CPU/memory, IOPS, network throughput, database/application performance, tail latency, P50/P90/P95/P99, Little's Law, bottleneck analysis, capacity modeling, performance baselines. |
 | D14-T02 | Scaling and optimization techniques | :material-circle-outline: Planned | planned: `performance-and-scalability/scaling-and-optimization-techniques.md` | Horizontal/vertical scaling, load balancing, caching, CDN, indexing, query optimization, connection pooling, async work, batching, compression, pagination, lazy loading, connection reuse, pooling, partitioning, sharding, replicas, static content, network, garbage collection and memory optimization, CPU profiling. |
 | D14-T03 | Capacity planning and load testing | :material-circle-slice-5: Draft | [capacity-estimation](../performance-and-scalability/capacity-estimation.md) | Workload characterization, traffic forecasts, concurrency/peak estimates, storage growth, database/network capacity, compute sizing, autoscaling, load/stress/spike/soak tests, benchmarks, regression analysis. |
 

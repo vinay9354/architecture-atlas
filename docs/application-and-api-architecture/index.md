@@ -34,8 +34,8 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 |---|---|---|---|
 | **D05** | **Application, API, and integration architecture** | | |
 | D05-T01 | Application architecture for web, mobile, and SaaS | :material-circle-outline: Planned | planned: `application-and-api-architecture/application-architecture-for-web-mobile-and-saas.md` |
-| D05-T02 | API design: REST, GraphQL, gRPC, and async APIs | :material-circle-outline: Planned | planned: `application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md` |
-| D05-T03 | Integration architecture | :material-circle-outline: Planned | planned: `application-and-api-architecture/integration-architecture.md` |
+| D05-T02 | API design: REST, GraphQL, gRPC, and async APIs | :material-circle-slice-5: Draft | [api-design-rest-graphql-grpc-and-async-apis](api-design-rest-graphql-grpc-and-async-apis.md) |
+| D05-T03 | Integration architecture | :material-circle-slice-5: Draft | [integration-architecture](integration-architecture.md) |
 <!-- coverage:end -->
 
 ## How to continue

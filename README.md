@@ -28,13 +28,17 @@ marked for experienced engineers.
 
 ## Status (2026-11-15)
 
-Foundation batch complete:
+Foundation batch and the first core-learning-path batch complete:
 
 - Repository structure, MkDocs Material site, CI (build, validation, link check, Pages deploy).
 - Complete 30-domain curriculum index and a machine-readable coverage matrix with 140 topic entries,
   each mapped to a page or a planned destination (`curriculum/coverage.yaml`).
-- Five learning pages in **Draft** status: the Solutions Architect role, functional vs non-functional
-  requirements, quality attributes and trade-offs, the C4 model, and capacity estimation.
+- Twenty learning pages in **Draft** status: the Solutions Architect role; the D01 fundamentals
+  (requirements, stakeholders and success metrics, constraints and scope, As-Is/To-Be and build vs
+  buy, quality attributes, SLOs and error budgets, ADRs and governance, C4); networking fundamentals
+  and protocols; relational databases; caching; message queues; API design; integration architecture;
+  distributed systems fundamentals; high availability; performance fundamentals; capacity estimation.
+- Lab 01 (latency and throughput, standard-library Python, tested in CI) and a D01 domain quiz.
 - Six Architecture Decision Records for the repository itself.
 
 Everything else is `Planned`. See [`ROADMAP.md`](ROADMAP.md) and the

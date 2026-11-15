@@ -23,7 +23,7 @@ Status legend: ✅ done · 🔄 in progress · ⬜ not started
 - 33 section landing pages with injected topic tables; coverage matrix generator and validator; tests.
 - Open: GitHub Pages must be enabled by the maintainer (Settings → Pages → GitHub Actions).
 
-## Phase 2 — Core learning path 🔄
+## Phase 2 — Core learning path 🔄 (pages written 2026-11-15; review step open)
 
 | # | Page | Status |
 |---|---|---|
@@ -32,19 +32,19 @@ Status legend: ✅ done · 🔄 in progress · ⬜ not started
 | 3 | Architecture quality attributes and trade-offs | ✅ Draft |
 | 4 | C4 model and architecture documentation | ✅ Draft |
 | 5 | Estimate load, throughput, storage, and capacity | ✅ Draft |
-| 6 | Networking fundamentals for architects (D09-T01, T02) | ⬜ |
-| 7 | Database fundamentals and data modeling (D06-T01) | ⬜ |
-| 8 | API architecture and integration (D05-T02, T03) | ⬜ |
-| 9 | Caching and messaging (D06-T05, D08-T01) | ⬜ |
-| 10 | Distributed systems fundamentals (D04-T01) | ⬜ |
-| 11 | Scalability, availability, and reliability (D13-T01, D14-T01) | ⬜ |
-| 12 | SLAs, SLOs, SLIs, error budgets (D01-T06) | ⬜ |
-| 13 | ADRs and architecture governance (D01-T07) | ⬜ |
-| 14 | Stakeholders, capabilities, success metrics (D01-T02); constraints and scope (D01-T03); As-Is/To-Be and build vs buy (D01-T04) | ⬜ |
-| 15 | Second-person review of pages 1-5 → promote to Reviewed | ⬜ |
+| 6 | Networking fundamentals (D09-T01) and transport/application protocols (D09-T02), two pages | ✅ Draft |
+| 7 | Relational databases and SQL internals (D06-T01) | ✅ Draft |
+| 8 | API design (D05-T02) and integration architecture (D05-T03), two pages | ✅ Draft |
+| 9 | Caching architecture (D06-T05) and message queues and brokers (D08-T01), two pages | ✅ Draft |
+| 10 | Distributed systems fundamentals, time, and coordination (D04-T01) | ✅ Draft |
+| 11 | High availability design (D13-T01) and performance fundamentals (D14-T01), two pages | ✅ Draft |
+| 12 | SLAs, SLOs, SLIs, error budgets, and recovery objectives (D01-T06) | ✅ Draft |
+| 13 | Trade-offs, principles, ADRs, and architecture governance (D01-T07) | ✅ Draft |
+| 14 | Stakeholders and success metrics (D01-T02); constraints and scope (D01-T03); As-Is/To-Be and build vs buy (D01-T04), three pages | ✅ Draft |
+| 15 | Second-person review of all Draft pages → promote to Reviewed | ⬜ needs a human reviewer |
 
-Also in this phase: Lab 01 (latency and throughput) as the reference lab; glossary growth; first
-domain quiz for D01.
+Also in this phase: Lab 01 (latency and throughput) ✅ Draft, with a CI smoke test; glossary growth ✅;
+first domain quiz for D01 ✅ Draft.
 
 ## Phase 3 — Software and distributed architecture ⬜
 
@@ -91,12 +91,19 @@ agent trace viewer), quizzes per domain.
 ## Known gaps and technical debt (as of 2026-11-15)
 
 - Mermaid syntax is only type-checked by the validator; rendering was verified manually in a browser
-  for the five pages. CI does not render diagrams.
+  for every page written so far. CI does not render diagrams.
 - Page `status` is recorded in both front matter and `coverage.yaml`; no automated cross-check yet.
 - `docs/appendices/tags.md` depends on the Material tags plugin's index marker; verify after theme upgrades.
 - External link checking runs weekly, not on pull requests, to avoid flaky failures. On 2026-11-15 all
   39 reference URLs were checked: 38 resolve; the Little's Law DOI link returns 403 to automated
-  clients (publisher bot-blocking, classified as "blocked by the checker", not broken).
+  clients (publisher bot-blocking, classified as "blocked by the checker", not broken). After the
+  Phase 2 batch, 134 distinct reference URLs were checked: 130 resolve; doi.org and cacm.acm.org
+  return 403 to scripts (both open in a browser); the repository's own GitHub link to
+  `labs/solutions/lab-01/expected-results.md` returns 404 until the branch is pushed.
 - The Contributor Covenant is adopted by reference with original wording; if its full text is adopted
   later, its CC BY 4.0 attribution must be added.
 - No interactive demos yet.
+- Lab 01 runs client and server on one machine, so its absolute numbers include load-generator
+  overhead; the page says to compare ratios. An open-loop load generator is left as a stretch task.
+- Page 15 of Phase 2 (promotion to Reviewed) cannot be done by the build agent; it needs a second
+  person.

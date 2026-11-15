@@ -7,6 +7,25 @@ Format follows the spirit of [Keep a Changelog](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+### Added — 2026-11-15, core learning path batch (Phase 2)
+
+- Fifteen topic pages (Draft): stakeholders, business capabilities, and success metrics; constraints,
+  assumptions, dependencies, risks, and scope; As-Is and To-Be architecture, gap analysis, and build
+  vs buy; SLAs, SLOs, SLIs, error budgets, and recovery objectives; trade-offs, principles, ADRs, and
+  architecture governance; networking fundamentals (IP, CIDR, routing, DNS); transport and
+  application protocols; relational databases and SQL internals; caching architecture; message
+  queues and brokers; API design (REST, GraphQL, gRPC, async); integration architecture; distributed
+  systems fundamentals, time, and coordination; high availability design; performance fundamentals
+  and Little's Law.
+- Lab 01: measure latency and throughput for a simple HTTP service (`labs/local/lab-01-latency-and-throughput/`,
+  standard-library Python server and closed-loop load generator), sample results under
+  `labs/solutions/lab-01/`, smoke test `tests/examples/test_lab01.py`.
+- Quiz: architecture fundamentals (D01), 15 questions in three levels.
+- Glossary: new terms for networking, databases, caching, messaging, distributed systems,
+  availability, and governance.
+- Navigation, learning paths, quiz index, labs index, curriculum index, README, and roadmap updated;
+  `curriculum/coverage.yaml` marks 19 topic entries Draft.
+
 ### Added — 2026-11-15, foundation batch
 
 - Repository structure and documentation stack: MkDocs 1.6.1, Material 9.8.1, pinned in

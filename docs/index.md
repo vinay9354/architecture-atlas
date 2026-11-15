@@ -10,8 +10,9 @@ hide:
 **A free, open-source, visual-first guide to thinking like a Solutions Architect.**
 Concepts first, vendors second; diagrams on every substantial page; trade-offs instead of dogma.
 
-!!! info "Project status: foundation (November 2026)"
-    The structure, curriculum index, and tooling are complete. **Five core pages are written (Draft).**
+!!! info "Project status: core learning path (November 2026)"
+    The structure, curriculum index, and tooling are complete. **Twenty topic pages, one lab, and one
+    domain quiz are written (Draft).**
     The remaining topics are indexed with planned destinations in the
     [coverage matrix](appendices/coverage-matrix.md). Pages carry an honest status; nothing here is
     marked "Reviewed" until a second person has checked it.

@@ -26,21 +26,21 @@ domains:
       Business requirements vs technical requirements; functional requirements; non-functional requirements.
   - id: D01-T02
     title: Stakeholders, business capabilities, and success metrics
-    status: Planned
+    status: Draft
     destination: docs/architecture-fundamentals/stakeholders-business-capabilities-and-success-metrics.md
     inventory: >-
       Business capabilities, business processes, stakeholder identification, stakeholder management, user
       stories, use cases, acceptance criteria, business goals, KPIs, success metrics.
   - id: D01-T03
     title: Constraints, assumptions, dependencies, risks, and scope
-    status: Planned
+    status: Draft
     destination: docs/architecture-fundamentals/constraints-assumptions-dependencies-risks-and-scope.md
     inventory: >-
       Technical constraints, business constraints, assumptions, dependencies, risks, scope definition,
       requirement prioritization.
   - id: D01-T04
     title: As-Is and To-Be architecture, gap analysis, and build vs buy
-    status: Planned
+    status: Draft
     destination: docs/architecture-fundamentals/as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy.md
     inventory: >-
       Current-state (As-Is) architecture, future-state (To-Be) architecture, gap analysis, build vs buy
@@ -57,14 +57,14 @@ domains:
       recoverability, disaster recovery, auditability, accessibility, usability, sustainability.
   - id: D01-T06
     title: SLAs, SLOs, SLIs, error budgets, and recovery objectives
-    status: Planned
+    status: Draft
     destination: docs/architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md
     inventory: >-
       SLA, SLO, SLI, error budgets, availability percentages, MTTR, MTTD, MTBF, RTO, RPO, recovery strategies,
       capacity planning, performance benchmarks, service dependencies and criticality, risk-based design.
   - id: D01-T07
     title: Trade-offs, principles, ADRs, and architecture governance
-    status: Planned
+    status: Draft
     destination: docs/architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md
     inventory: >-
       Architectural trade-offs, principles, Architecture Decision Records (ADR), architecture review boards,
@@ -174,7 +174,7 @@ domains:
   topics:
   - id: D04-T01
     title: Distributed systems fundamentals, time, and coordination
-    status: Planned
+    status: Draft
     destination: docs/distributed-systems/distributed-systems-fundamentals-time-and-coordination.md
     inventory: >-
       Distributed vs centralized systems, nodes, clusters, network partitions, partial failures, failure
@@ -228,7 +228,7 @@ domains:
       workflows, multi-tenant applications, SaaS, real-time applications.
   - id: D05-T02
     title: 'API design: REST, GraphQL, gRPC, and async APIs'
-    status: Planned
+    status: Draft
     destination: docs/application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md
     inventory: >-
       REST, GraphQL, gRPC, SOAP, WebSockets, Server-Sent Events, webhooks, asynchronous APIs, OpenAPI,
@@ -237,7 +237,7 @@ domains:
       quotas, caching, monetization, lifecycle management, documentation, testing, observability.
   - id: D05-T03
     title: Integration architecture
-    status: Planned
+    status: Draft
     destination: docs/application-and-api-architecture/integration-architecture.md
     inventory: >-
       Point-to-point integration, ESB, message broker, event-driven, file-based, database integration,
@@ -250,7 +250,7 @@ domains:
   topics:
   - id: D06-T01
     title: Relational databases and SQL internals
-    status: Planned
+    status: Draft
     destination: docs/databases-and-storage/relational-databases-and-sql-internals.md
     inventory: >-
       Relational models, tables/rows/columns, primary/foreign keys, normalization, denormalization, relationships,
@@ -284,7 +284,7 @@ domains:
       storage, backup/archive, object versioning/locking, content-addressable storage.
   - id: D06-T05
     title: Caching architecture
-    status: Planned
+    status: Draft
     destination: docs/databases-and-storage/caching-architecture.md
     inventory: >-
       Caching: application, database, distributed, in-memory, local, CDN; cache-aside, read-through, write-through,
@@ -339,7 +339,7 @@ domains:
   topics:
   - id: D08-T01
     title: Message queues and brokers
-    status: Planned
+    status: Draft
     destination: docs/messaging-and-streaming/message-queues-and-brokers.md
     inventory: >-
       Message queues/brokers, pub-sub, point-to-point, request-response, asynchronous messaging, routing,
@@ -373,14 +373,14 @@ domains:
   topics:
   - id: D09-T01
     title: 'Networking fundamentals: IP, CIDR, routing, and DNS'
-    status: Planned
+    status: Draft
     destination: docs/networking/networking-fundamentals-ip-cidr-routing-and-dns.md
     inventory: >-
       OSI, TCP/IP, Ethernet, MAC, IP, IPv4/IPv6, public/private IPs, CIDR, subnetting, supernetting, masks,
       route tables, static/dynamic routing, DNS, DHCP, ARP, NAT/PAT, VLAN, MTU, interfaces.
   - id: D09-T02
     title: Transport and application protocols
-    status: Planned
+    status: Draft
     destination: docs/networking/transport-and-application-protocols.md
     inventory: >-
       TCP, UDP, QUIC, HTTP/1.1, HTTP/2, HTTP/3, HTTPS, TLS, legacy SSL compatibility, SSH, FTP/SFTP, SMTP,
@@ -556,7 +556,7 @@ domains:
   topics:
   - id: D13-T01
     title: High availability design
-    status: Planned
+    status: Draft
     destination: docs/reliability-and-disaster-recovery/high-availability-design.md
     inventory: >-
       Single points of failure, redundancy, fault domains, availability zones, Multi-AZ, multi-region,
@@ -593,7 +593,7 @@ domains:
   topics:
   - id: D14-T01
     title: Performance fundamentals and Little's Law
-    status: Planned
+    status: Draft
     destination: docs/performance-and-scalability/performance-fundamentals-and-littles-law.md
     inventory: >-
       Latency, throughput, concurrency, RPS, TPS, response time, queue depth, resource utilization, CPU/memory,

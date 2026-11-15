@@ -33,11 +33,11 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D06** | **Database, storage, and caching architecture** | | |
-| D06-T01 | Relational databases and SQL internals | :material-circle-outline: Planned | planned: `databases-and-storage/relational-databases-and-sql-internals.md` |
+| D06-T01 | Relational databases and SQL internals | :material-circle-slice-5: Draft | [relational-databases-and-sql-internals](relational-databases-and-sql-internals.md) |
 | D06-T02 | NoSQL databases | :material-circle-outline: Planned | planned: `databases-and-storage/nosql-databases.md` |
 | D06-T03 | Advanced database architecture | :material-circle-outline: Planned | planned: `databases-and-storage/advanced-database-architecture.md` |
 | D06-T04 | Storage architecture | :material-circle-outline: Planned | planned: `databases-and-storage/storage-architecture.md` |
-| D06-T05 | Caching architecture | :material-circle-outline: Planned | planned: `databases-and-storage/caching-architecture.md` |
+| D06-T05 | Caching architecture | :material-circle-slice-5: Draft | [caching-architecture](caching-architecture.md) |
 <!-- coverage:end -->
 
 ## How to continue
