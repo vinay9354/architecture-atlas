@@ -1,0 +1,28 @@
+name: Content correction
+description: Report an inaccurate, misleading, or outdated explanation.
+title: "[Correction]: "
+labels: ["content", "correction"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or path
+      placeholder: docs/distributed-systems/consistency-models.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Quote the sentence or diagram element and explain why it is incorrect or misleading.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Supporting source
+      description: Link to a primary source (specification, official documentation, paper) that supports the correction.
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix (optional)

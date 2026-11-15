@@ -1,0 +1,27 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# MkDocs build output
+site/
+
+# Node (markdownlint via npx)
+node_modules/
+package-lock.json
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local-only files
+.env
+.env.*
+*.local.yml
+.lycheecache

@@ -1,0 +1,34 @@
+{
+  // markdownlint-cli2 configuration. Run: npx markdownlint-cli2
+  "config": {
+    "default": true,
+    // Long lines are fine in prose and tables; wrapping is a style choice here.
+    "MD013": false,
+    // Material for MkDocs needs 4-space indentation for nested admonition content.
+    "MD007": { "indent": 4 },
+    // Repeated headings such as "Knowledge check" across sibling sections are intentional.
+    "MD024": { "siblings_only": true },
+    // Inline HTML is used sparingly for accessible diagram descriptions and badges.
+    "MD033": false,
+    // Pages start with YAML front matter, then a single H1. The front-matter `title:` key is
+    // theme metadata, not a heading, so it must not count toward MD025.
+    "MD041": false,
+    "MD025": { "front_matter_title": "" },
+    // Learning paths continue numbering across stages (1-5, 6-10, ...) on purpose.
+    "MD029": false,
+    // Admonitions and tabbed blocks use indented fenced code; both styles coexist.
+    "MD046": false,
+    // Allow "Note:"-style bold lead-ins inside lists.
+    "MD036": false,
+    // Nested lists inside admonitions make list marker spacing vary.
+    "MD030": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": [
+    "node_modules/**",
+    ".venv/**",
+    "site/**",
+    "MASTER_PROMPT.md",
+    "LICENSE"
+  ]
+}

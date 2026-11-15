@@ -1,0 +1,169 @@
+# Architecture Atlas - MkDocs configuration
+# Stack decision: docs/appendices/adr/adr-0001-documentation-stack.md
+site_name: Architecture Atlas
+site_description: >-
+  An open-source, visual-first learning repository for Solutions Architecture, system design,
+  cloud, data, and AI architecture.
+site_url: https://vinay9354.github.io/architecture-atlas/
+repo_url: https://github.com/vinay9354/architecture-atlas
+repo_name: vinay9354/architecture-atlas
+edit_uri: edit/main/docs/
+copyright: >-
+  Text and original diagrams © Architecture Atlas contributors, CC BY 4.0.
+  Code and configuration MIT. See LICENSE and LICENSE-DOCS.md.
+
+docs_dir: docs
+site_dir: site
+strict: false # CI runs `mkdocs build --strict`; keep local serve forgiving.
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+
+theme:
+  name: material
+  language: en
+  # No external font download: keeps the site free of third-party requests and works offline.
+  font: false
+  icon:
+    logo: material/map-outline
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - start-here/index.md
+      - How to use this repository: start-here/how-to-use-this-repository.md
+      - Learning paths: start-here/learning-path.md
+      - Curriculum index (all 30 domains): start-here/curriculum-index.md
+      - Glossary: start-here/glossary.md
+  - Architecture:
+      - Architecture fundamentals:
+          - architecture-fundamentals/index.md
+          - What does a Solutions Architect do?: architecture-fundamentals/what-does-a-solutions-architect-do.md
+          - Functional vs non-functional requirements: architecture-fundamentals/functional-vs-non-functional-requirements.md
+          - Quality attributes and trade-offs: architecture-fundamentals/quality-attributes-and-trade-offs.md
+          - The C4 model: architecture-fundamentals/c4-model.md
+      - CS and software foundations: foundations/index.md
+      - Software architecture and patterns: software-architecture/index.md
+      - Distributed systems: distributed-systems/index.md
+      - Application, API, and integration: application-and-api-architecture/index.md
+      - Enterprise architecture and modernization: enterprise-architecture/index.md
+  - Data:
+      - Databases, storage, and caching: databases-and-storage/index.md
+      - Data engineering and analytics: data-engineering-and-analytics/index.md
+      - Messaging and streaming: messaging-and-streaming/index.md
+  - Cloud and Platform:
+      - Networking and hybrid connectivity: networking/index.md
+      - Cloud and infrastructure architecture: cloud-architecture/index.md
+      - Containers and Kubernetes: containers-and-kubernetes/index.md
+      - DevOps and platform engineering: devops-and-platform-engineering/index.md
+      - FinOps and sustainability: finops-and-sustainability/index.md
+  - Security and Operations:
+      - Security architecture: security-architecture/index.md
+      - Reliability and disaster recovery: reliability-and-disaster-recovery/index.md
+      - Performance and scalability:
+          - performance-and-scalability/index.md
+          - Estimating load, throughput, storage, and capacity: performance-and-scalability/capacity-estimation.md
+      - Observability and SRE: observability-and-sre/index.md
+  - AI:
+      - AI and ML foundations: ai-ml-foundations/index.md
+      - Generative AI and LLMs: generative-ai-and-llms/index.md
+      - RAG and vector search: rag-and-vector-search/index.md
+      - Agentic AI, MCP, and A2A: agentic-ai/index.md
+      - AI infrastructure and LLMOps: ai-infrastructure-and-llmops/index.md
+      - AI evaluation, security, and governance: ai-security-and-governance/index.md
+  - Practice:
+      - Industry architectures: industry-architectures/index.md
+      - Emerging architectures: emerging-architectures/index.md
+      - System design exercises: system-design-exercises/index.md
+      - End-to-end case studies: end-to-end-case-studies/index.md
+      - Labs: labs/index.md
+      - Quizzes: quizzes/index.md
+      - Reference architectures and frameworks: reference-architectures/index.md
+  - Appendices:
+      - appendices/index.md
+      - Coverage matrix: appendices/coverage-matrix.md
+      - Architecture Decision Records:
+          - appendices/adr/index.md
+          - ADR-0001 Documentation stack and hosting: appendices/adr/adr-0001-documentation-stack.md
+          - ADR-0002 License strategy: appendices/adr/adr-0002-license-strategy.md
+          - ADR-0003 Diagram format and rendering: appendices/adr/adr-0003-diagram-format.md
+          - ADR-0004 Content metadata and taxonomy: appendices/adr/adr-0004-content-metadata-and-taxonomy.md
+          - ADR-0005 Lab execution strategy: appendices/adr/adr-0005-lab-execution-strategy.md
+          - ADR-0006 How examples are tested: appendices/adr/adr-0006-example-testing.md
+      - Tags: appendices/tags.md
+      - Changelog: appendices/changelog.md

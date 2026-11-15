@@ -1,0 +1,18 @@
+# External link checker configuration for lychee (https://github.com/lycheeverse/lychee).
+# Link failures are reported, never auto-rewritten. Classify them before changing a link:
+# broken, redirected, temporarily unavailable, authentication-gated, or blocked by the checker.
+max_concurrency = 8
+timeout = 20
+max_retries = 2
+accept = ["200..=299", "403", "429"]
+exclude_path = ["site", ".venv", "node_modules"]
+exclude = [
+  # Local development and example hostnames
+  "^https?://localhost",
+  "^https?://127\\.0\\.0\\.1",
+  "^https?://[^/]*\\.example(\\.com)?",
+  "^https?://[^/]*\\.internal",
+  # Linked in text as illustrations, not real destinations
+  "^https?://api\\.atlasmart\\.example",
+]
+exclude_all_private = true

@@ -1,0 +1,1253 @@
+# Curriculum coverage matrix (source of truth).
+# One topic per inventory bullet of MASTER_PROMPT.md Section 8. Do not delete topics; mark them.
+# status: Planned | Outline | Draft | Reviewed | Needs update
+# destination: canonical page (must exist unless status is Planned).
+version: 1
+last_updated: '2026-11-15'
+description: >-
+  Machine-readable curriculum coverage matrix. One topic entry per inventory bullet in MASTER_PROMPT.md
+  Section 8. Edit by hand; scripts/build-coverage.py renders it.
+status_values:
+- Planned
+- Outline
+- Draft
+- Reviewed
+- Needs update
+domains:
+- id: D01
+  title: Architecture thinking, requirements, and design fundamentals
+  section: architecture-fundamentals
+  topics:
+  - id: D01-T01
+    title: Business, functional, and non-functional requirements
+    status: Draft
+    destination: docs/architecture-fundamentals/functional-vs-non-functional-requirements.md
+    inventory: >-
+      Business requirements vs technical requirements; functional requirements; non-functional requirements.
+  - id: D01-T02
+    title: Stakeholders, business capabilities, and success metrics
+    status: Planned
+    destination: docs/architecture-fundamentals/stakeholders-business-capabilities-and-success-metrics.md
+    inventory: >-
+      Business capabilities, business processes, stakeholder identification, stakeholder management, user
+      stories, use cases, acceptance criteria, business goals, KPIs, success metrics.
+  - id: D01-T03
+    title: Constraints, assumptions, dependencies, risks, and scope
+    status: Planned
+    destination: docs/architecture-fundamentals/constraints-assumptions-dependencies-risks-and-scope.md
+    inventory: >-
+      Technical constraints, business constraints, assumptions, dependencies, risks, scope definition,
+      requirement prioritization.
+  - id: D01-T04
+    title: As-Is and To-Be architecture, gap analysis, and build vs buy
+    status: Planned
+    destination: docs/architecture-fundamentals/as-is-and-to-be-architecture-gap-analysis-and-build-vs-buy.md
+    inventory: >-
+      Current-state (As-Is) architecture, future-state (To-Be) architecture, gap analysis, build vs buy
+      vs SaaS, cost-benefit analysis, feasibility analysis, PoC vs MVP, functional decomposition, capability-based
+      planning.
+  - id: D01-T05
+    title: Architecture quality attributes
+    status: Draft
+    destination: docs/architecture-fundamentals/quality-attributes-and-trade-offs.md
+    inventory: >-
+      Quality attributes: scalability, elasticity, availability, reliability, resilience, fault tolerance,
+      durability, performance, latency, throughput, consistency, security, privacy, maintainability, extensibility,
+      modularity, reusability, portability, interoperability, testability, observability, operability,
+      recoverability, disaster recovery, auditability, accessibility, usability, sustainability.
+  - id: D01-T06
+    title: SLAs, SLOs, SLIs, error budgets, and recovery objectives
+    status: Planned
+    destination: docs/architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md
+    inventory: >-
+      SLA, SLO, SLI, error budgets, availability percentages, MTTR, MTTD, MTBF, RTO, RPO, recovery strategies,
+      capacity planning, performance benchmarks, service dependencies and criticality, risk-based design.
+  - id: D01-T07
+    title: Trade-offs, principles, ADRs, and architecture governance
+    status: Planned
+    destination: docs/architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md
+    inventory: >-
+      Architectural trade-offs, principles, Architecture Decision Records (ADR), architecture review boards,
+      technical debt, fitness functions, design reviews, threat modeling, risk assessment, technology
+      selection, vendor evaluation, technology lifecycle and end-of-life planning.
+  - id: D01-T08
+    title: Architecture diagrams, C4, UML, and design documents
+    status: Draft
+    destination: docs/architecture-fundamentals/c4-model.md
+    inventory: >-
+      Context diagrams, C4 Context/Container/Component/Code, UML, sequence, class, component, deployment,
+      activity, state machine, ERD, DFD, network, infrastructure, application, integration, security,
+      data, AI/ML, DR diagrams, HLD, LLD, runbooks, design specifications.
+  - id: D01-T09
+    title: Diagram tools
+    status: Planned
+    destination: docs/architecture-fundamentals/diagram-tools.md
+    inventory: 'Diagram tools: Draw.io, Lucidchart, Mermaid, PlantUML, Structurizr, ArchiMate.'
+- id: D02
+  title: Computer science and software engineering foundations
+  section: foundations
+  topics:
+  - id: D02-T01
+    title: Computers, operating systems, and Linux for architects
+    status: Planned
+    destination: docs/foundations/computers-operating-systems-and-linux-for-architects.md
+    inventory: >-
+      CPU architecture, cores, threads, RAM, virtual memory, memory management, storage and I/O, disk
+      IOPS/throughput, cache hierarchy, operating systems, kernels, system calls, processes, threads,
+      scheduling, context switching, file systems, permissions, Linux, shells, virtualization, hypervisors,
+      hardware acceleration.
+  - id: D02-T02
+    title: Programming fundamentals, data structures, and algorithms
+    status: Planned
+    destination: docs/foundations/programming-fundamentals-data-structures-and-algorithms.md
+    inventory: >-
+      Programming fundamentals: variables, types, data structures, arrays, lists, stacks, queues, hash
+      maps/tables, trees, binary trees, graphs, heaps, algorithms, sorting, searching, Big O, time/space
+      complexity, recursion.
+  - id: D02-T03
+    title: Programming paradigms and concurrency
+    status: Planned
+    destination: docs/foundations/programming-paradigms-and-concurrency.md
+    inventory: >-
+      Object-oriented programming, functional programming, exception handling, memory management, multithreading,
+      asynchronous programming, concurrency, parallelism, race conditions, deadlocks, starvation, mutexes,
+      locks, semaphores.
+  - id: D02-T04
+    title: Software design principles and clean code
+    status: Planned
+    destination: docs/foundations/software-design-principles-and-clean-code.md
+    inventory: >-
+      SOLID, DRY, KISS, YAGNI, separation of concerns, loose coupling, cohesion, encapsulation, abstraction,
+      dependency injection, inversion of control, composition over inheritance, immutability, defensive
+      programming, clean code, refactoring, design by contract.
+  - id: D02-T05
+    title: Software testing types and strategies
+    status: Planned
+    destination: docs/foundations/software-testing-types-and-strategies.md
+    inventory: >-
+      Testing: unit, integration, component, system, end-to-end, smoke, regression, acceptance, contract,
+      performance, load, stress, spike, soak, chaos, security, fuzz, test-driven development, behavior-driven
+      development, test automation.
+- id: D03
+  title: Software architecture styles and design patterns
+  section: software-architecture
+  topics:
+  - id: D03-T01
+    title: Architecture styles
+    status: Planned
+    destination: docs/software-architecture/architecture-styles.md
+    inventory: >-
+      Monolith, modular monolith, layered, three-tier, N-tier, client-server, peer-to-peer, microservices,
+      SOA, event-driven, serverless, cloud-native, distributed, component-based, hexagonal, clean, onion,
+      DDD, microkernel/plugin, pipe-and-filter, broker, space-based, cell-based, multi-tenant, multi-region,
+      edge, hybrid cloud.
+  - id: D03-T02
+    title: Microservices architecture
+    status: Planned
+    destination: docs/software-architecture/microservices-architecture.md
+    inventory: >-
+      Microservices: decomposition, domain boundaries, bounded contexts, service discovery/registration,
+      synchronous/asynchronous communication, API gateway, BFF, service mesh, distributed configuration,
+      ownership, database per service, shared database trade-offs, versioning, independent deployment,
+      observability, testing, security, service sprawl, distributed monolith anti-pattern.
+  - id: D03-T03
+    title: Application design patterns
+    status: Planned
+    destination: docs/software-architecture/application-design-patterns.md
+    inventory: >-
+      Application patterns: MVC, MVP, MVVM, Repository, Unit of Work, Factory, Abstract Factory, Builder,
+      Singleton, Adapter, Bridge, Composite, Decorator, Facade, Proxy, Strategy, Observer, Command, State,
+      Template Method, Chain of Responsibility, Dependency Injection, Specification.
+  - id: D03-T04
+    title: Distributed system patterns
+    status: Planned
+    destination: docs/software-architecture/distributed-system-patterns.md
+    inventory: >-
+      Distributed patterns: CQRS, Event Sourcing, Saga, Strangler Fig, Anti-Corruption Layer, API Composition,
+      Aggregator, Scatter-Gather, Publish-Subscribe, Competing Consumers, Claim Check, Outbox, Inbox,
+      Sidecar, Ambassador, Retry, Circuit Breaker, Bulkhead, Cache-Aside, Read-Through, Write-Through,
+      Write-Behind, Leader Election, Health Endpoint Monitoring, Priority Queue, Scheduler-Agent-Supervisor,
+      Sharded Services, Multi-Region Replication.
+- id: D04
+  title: Distributed systems
+  section: distributed-systems
+  topics:
+  - id: D04-T01
+    title: Distributed systems fundamentals, time, and coordination
+    status: Planned
+    destination: docs/distributed-systems/distributed-systems-fundamentals-time-and-coordination.md
+    inventory: >-
+      Distributed vs centralized systems, nodes, clusters, network partitions, partial failures, failure
+      detection, fault domains, network latency, clock synchronization, clock skew, logical clocks, Lamport
+      timestamps, vector clocks, distributed state, coordination, leader election, distributed locking,
+      leases, fencing tokens, gossip, membership protocols, consensus, quorum, split brain.
+  - id: D04-T02
+    title: Consistency models, CAP, and PACELC
+    status: Planned
+    destination: docs/distributed-systems/consistency-models-cap-and-pacelc.md
+    inventory: >-
+      CAP theorem, PACELC, strong/eventual/weak/causal/sequential consistency, linearizability, read-after-write,
+      monotonic reads, consistency/availability trade-offs, quorum reads/writes, replication lag, conflict
+      resolution, last-write-wins, CRDTs.
+  - id: D04-T03
+    title: Transactions, sagas, and delivery guarantees
+    status: Planned
+    destination: docs/distributed-systems/transactions-sagas-and-delivery-guarantees.md
+    inventory: >-
+      ACID, distributed transactions, two-phase commit, three-phase commit, Saga choreography/orchestration,
+      compensation, eventual consistency in workflows, transactional outbox/inbox, idempotent consumers,
+      deduplication, at-most-once, at-least-once, exactly-once processing limitations.
+  - id: D04-T04
+    title: 'Resilience mechanics: timeouts, retries, and backpressure'
+    status: Planned
+    destination: docs/distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md
+    inventory: >-
+      Timeouts, retries, exponential backoff, jitter, retry storms, circuit breakers, bulkheads, fail-fast,
+      graceful degradation, rate limiting, throttling, backpressure, load shedding, health checks, heartbeats,
+      dead-letter handling, poison messages, cascading failures, retry amplification, fault isolation
+      and containment.
+  - id: D04-T05
+    title: Scaling, partitioning, and replication
+    status: Planned
+    destination: docs/distributed-systems/scaling-partitioning-and-replication.md
+    inventory: >-
+      Horizontal/vertical scaling, sharding, partitioning, replication, leader-follower, active-active,
+      active-passive, stateless/stateful services, consistent hashing, rendezvous hashing, load distribution,
+      hot partitions, hot keys, distributed caching, data locality, multi-region distribution.
+- id: D05
+  title: Application, API, and integration architecture
+  section: application-and-api-architecture
+  topics:
+  - id: D05-T01
+    title: Application architecture for web, mobile, and SaaS
+    status: Planned
+    destination: docs/application-and-api-architecture/application-architecture-for-web-mobile-and-saas.md
+    inventory: >-
+      Frontend, backend, full-stack, web, mobile, SPA, SSR, CSR, SSG, PWA, state management, sessions,
+      application configuration, background jobs, schedulers/cron, file upload/download, long-running
+      workflows, multi-tenant applications, SaaS, real-time applications.
+  - id: D05-T02
+    title: 'API design: REST, GraphQL, gRPC, and async APIs'
+    status: Planned
+    destination: docs/application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md
+    inventory: >-
+      REST, GraphQL, gRPC, SOAP, WebSockets, Server-Sent Events, webhooks, asynchronous APIs, OpenAPI,
+      API contracts, versioning, backward compatibility, deprecation, validation, response design, pagination,
+      filtering, sorting, idempotency keys, authentication, authorization, rate limiting, throttling,
+      quotas, caching, monetization, lifecycle management, documentation, testing, observability.
+  - id: D05-T03
+    title: Integration architecture
+    status: Planned
+    destination: docs/application-and-api-architecture/integration-architecture.md
+    inventory: >-
+      Point-to-point integration, ESB, message broker, event-driven, file-based, database integration,
+      API-led connectivity, middleware, iPaaS, legacy integration, third-party SaaS integration, identity
+      federation, synchronization, master data integration, ERP/CRM, EDI, event schema management, integration
+      error handling, replay and reconciliation.
+- id: D06
+  title: Database, storage, and caching architecture
+  section: databases-and-storage
+  topics:
+  - id: D06-T01
+    title: Relational databases and SQL internals
+    status: Planned
+    destination: docs/databases-and-storage/relational-databases-and-sql-internals.md
+    inventory: >-
+      Relational models, tables/rows/columns, primary/foreign keys, normalization, denormalization, relationships,
+      joins, indexes, B-tree, composite indexes, query execution/plans/optimization, connection pooling,
+      transactions, ACID, isolation levels, dirty/non-repeatable/phantom reads, locking, deadlocks, stored
+      procedures, constraints, partitioning, read replicas, replication, failover, migration, schema evolution.
+  - id: D06-T02
+    title: NoSQL databases
+    status: Planned
+    destination: docs/databases-and-storage/nosql-databases.md
+    inventory: >-
+      NoSQL: key-value, document, wide-column, graph, time-series, search, in-memory, distributed, multi-model,
+      consistency models, partition keys, access patterns, denormalization, hot partition management,
+      secondary indexes.
+  - id: D06-T03
+    title: Advanced database architecture
+    status: Planned
+    destination: docs/databases-and-storage/advanced-database-architecture.md
+    inventory: >-
+      Advanced databases: sharding, horizontal/vertical partitioning, federation, replication strategies,
+      multi-region/global databases, distributed SQL, CDC, transaction logs, connection management, backup/recovery,
+      point-in-time recovery, encryption, auditing, consistency, archiving, hot/warm/cold data, retention/deletion,
+      low-downtime migration.
+  - id: D06-T04
+    title: Storage architecture
+    status: Planned
+    destination: docs/databases-and-storage/storage-architecture.md
+    inventory: >-
+      Storage: block, object, file, distributed filesystems, NAS, SAN, DAS, ephemeral, persistent, replication,
+      snapshots, tiering, lifecycle management, compression, deduplication, encryption, gateways, hybrid
+      storage, backup/archive, object versioning/locking, content-addressable storage.
+  - id: D06-T05
+    title: Caching architecture
+    status: Planned
+    destination: docs/databases-and-storage/caching-architecture.md
+    inventory: >-
+      Caching: application, database, distributed, in-memory, local, CDN; cache-aside, read-through, write-through,
+      write-behind; invalidation, TTL, eviction (LRU/LFU/FIFO), cache stampede, penetration, poisoning,
+      hot keys, consistency, failure handling.
+- id: D07
+  title: Data engineering, analytics, and big data
+  section: data-engineering-and-analytics
+  topics:
+  - id: D07-T01
+    title: Data modeling, metadata, and data governance
+    status: Planned
+    destination: docs/data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md
+    inventory: >-
+      Data modeling, conceptual/logical/physical models, structured/semi-structured/unstructured data,
+      metadata, catalogs, lineage, governance, quality, validation, profiling, ownership, classification,
+      lifecycle, retention, privacy.
+  - id: D07-T02
+    title: Batch, streaming, ETL/ELT, and pipelines
+    status: Planned
+    destination: docs/data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md
+    inventory: >-
+      Batch, stream, real-time, near-real-time processing; ETL, ELT, transformation, ingestion, orchestration,
+      workflow orchestration, pipelines, CDC, synchronization, validation, reconciliation, schema evolution/registry,
+      serialization, Avro, Parquet, ORC, JSON, Protocol Buffers.
+  - id: D07-T03
+    title: Warehouses, lakes, lakehouses, and data mesh
+    status: Planned
+    destination: docs/data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md
+    inventory: >-
+      Data warehouse, data lake, lakehouse, data mart, ODS, data mesh, data fabric, medallion architecture,
+      Bronze/Silver/Gold, Lambda, Kappa, virtualization, federated queries, EDW, platform modernization.
+  - id: D07-T04
+    title: Big data processing engines and table formats
+    status: Planned
+    destination: docs/data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md
+    inventory: >-
+      Hadoop, HDFS, MapReduce, Spark, Spark SQL/Streaming, Flink, Beam, Hive, Iceberg, Delta Lake, Hudi,
+      distributed processing/storage, partitioning, compaction, shuffle, data skew, windowing, watermarks,
+      event time vs processing time, exactly-once stream processing.
+  - id: D07-T05
+    title: OLTP vs OLAP, dimensional modeling, and BI
+    status: Planned
+    destination: docs/data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md
+    inventory: >-
+      OLTP vs OLAP, analytical queries, aggregation, dimensional modeling, star/snowflake schemas, fact/dimension
+      tables, slowly changing dimensions, BI, reporting, visualization, self-service analytics, real-time
+      dashboards, descriptive/diagnostic/predictive/prescriptive analytics.
+- id: D08
+  title: Messaging, event-driven systems, and streaming
+  section: messaging-and-streaming
+  topics:
+  - id: D08-T01
+    title: Message queues and brokers
+    status: Planned
+    destination: docs/messaging-and-streaming/message-queues-and-brokers.md
+    inventory: >-
+      Message queues/brokers, pub-sub, point-to-point, request-response, asynchronous messaging, routing,
+      filtering, persistence, acknowledgments, visibility timeout, ordering, priority, expiry, deduplication,
+      DLQs, retries, poison messages, backpressure, consumer concurrency/groups, replay.
+  - id: D08-T02
+    title: Event-driven architecture
+    status: Planned
+    destination: docs/messaging-and-streaming/event-driven-architecture.md
+    inventory: >-
+      Events vs commands, producers, consumers, brokers, buses, routing/filtering, schemas/versioning/contracts,
+      event sourcing, choreography/orchestration, replay, ordering, domain/integration events, CDC, transactional
+      outbox.
+  - id: D08-T03
+    title: Event streaming and log-based architecture
+    status: Planned
+    destination: docs/messaging-and-streaming/event-streaming-and-log-based-architecture.md
+    inventory: >-
+      Data/event streaming, log-based architecture, partitions, retention, offsets, consumer lag, replication,
+      joins, windows, watermarks, enrichment, aggregation, exactly-once and at-least-once semantics.
+  - id: D08-T04
+    title: Messaging technologies compared
+    status: Planned
+    destination: docs/messaging-and-streaming/messaging-technologies-compared.md
+    inventory: >-
+      Technologies to understand conceptually: Apache Kafka, Amazon Kinesis, SQS, SNS, EventBridge, RabbitMQ,
+      Apache Pulsar, Google Pub/Sub, Azure Service Bus.
+- id: D09
+  title: Networking and hybrid connectivity
+  section: networking
+  topics:
+  - id: D09-T01
+    title: 'Networking fundamentals: IP, CIDR, routing, and DNS'
+    status: Planned
+    destination: docs/networking/networking-fundamentals-ip-cidr-routing-and-dns.md
+    inventory: >-
+      OSI, TCP/IP, Ethernet, MAC, IP, IPv4/IPv6, public/private IPs, CIDR, subnetting, supernetting, masks,
+      route tables, static/dynamic routing, DNS, DHCP, ARP, NAT/PAT, VLAN, MTU, interfaces.
+  - id: D09-T02
+    title: Transport and application protocols
+    status: Planned
+    destination: docs/networking/transport-and-application-protocols.md
+    inventory: >-
+      TCP, UDP, QUIC, HTTP/1.1, HTTP/2, HTTP/3, HTTPS, TLS, legacy SSL compatibility, SSH, FTP/SFTP, SMTP,
+      IMAP, ICMP, SNMP, NTP, BGP, OSPF, IPsec, WebSocket, gRPC.
+  - id: D09-T03
+    title: Network security, load balancing, and traffic flow
+    status: Planned
+    destination: docs/networking/network-security-load-balancing-and-traffic-flow.md
+    inventory: >-
+      Segmentation, isolation, ingress/egress, east-west/north-south traffic, perimeter security, DMZ,
+      firewalls, stateful/stateless filtering, NACLs, security groups, WAF, L4/L7 load balancing, reverse/forward
+      proxies, application gateways, DNS/global load balancing, Anycast, CDN, DDoS, private networking/endpoints,
+      peering, hub-and-spoke, transit networking, SDN, SD-WAN, Zero Trust networking.
+  - id: D09-T04
+    title: Hybrid connectivity and VPNs
+    status: Planned
+    destination: docs/networking/hybrid-connectivity-and-vpns.md
+    inventory: >-
+      Site-to-Site VPN, client VPN, dedicated private connectivity, Direct Connect/ExpressRoute/Cloud
+      Interconnect concepts, transit gateways, hybrid DNS/forwarding, route propagation, BGP advertisements,
+      failover, flow logs, packet capture, troubleshooting, multi-region and cross-account connectivity.
+- id: D10
+  title: Cloud and infrastructure architecture
+  section: cloud-architecture
+  topics:
+  - id: D10-T01
+    title: Cloud service and deployment models
+    status: Planned
+    destination: docs/cloud-architecture/cloud-service-and-deployment-models.md
+    inventory: >-
+      IaaS, PaaS, SaaS, FaaS, CaaS; public/private/hybrid/multi-cloud/community/distributed/edge cloud;
+      shared responsibility, deployment models, economics, elasticity, portability, lock-in, control plane
+      vs data plane.
+  - id: D10-T02
+    title: Cloud building blocks and landing zones
+    status: Planned
+    destination: docs/cloud-architecture/cloud-building-blocks-and-landing-zones.md
+    inventory: >-
+      Compute, storage, network, database, identity, security, logging, monitoring, backup, DR, multi-account,
+      multi-region, resource/tenant isolation, quotas, service limits, dependencies, cloud-native design,
+      landing zones, governance.
+  - id: D10-T03
+    title: Compute options and sizing
+    status: Planned
+    destination: docs/cloud-architecture/compute-options-and-sizing.md
+    inventory: >-
+      Physical servers, VMs, hypervisors, bare metal, autoscaling, instance groups, spot/preemptible compute,
+      serverless, containers, batch, HPC, GPU, ARM vs x86, placement, CPU/memory sizing.
+  - id: D10-T04
+    title: Multi-account strategy and infrastructure automation
+    status: Planned
+    destination: docs/cloud-architecture/multi-account-strategy-and-infrastructure-automation.md
+    inventory: >-
+      Multi-account strategy, shared services, centralized logging/security, hub-and-spoke, landing zones,
+      immutable/ephemeral infrastructure, IaC, policy as code, self-service, golden images, automated
+      backup/recovery, resource lifecycle.
+  - id: D10-T05
+    title: 'Cloud providers: principles before catalogs'
+    status: Planned
+    destination: docs/cloud-architecture/cloud-providers-principles-before-catalogs.md
+    inventory: >-
+      AWS, Microsoft Azure, Google Cloud, Oracle Cloud Infrastructure, private-cloud platforms, VMware-based
+      infrastructure. Teach principles before vendor-specific service catalogs.
+- id: D11
+  title: Containers, Kubernetes, and cloud-native architecture
+  section: containers-and-kubernetes
+  topics:
+  - id: D11-T01
+    title: Containers and images
+    status: Planned
+    destination: docs/containers-and-kubernetes/containers-and-images.md
+    inventory: >-
+      Containers vs VMs, runtimes, Docker, images/layers/registries, networking, storage, persistent volumes,
+      isolation, namespaces, cgroups, security, multi-stage builds, distroless/minimal images, signing,
+      SBOM, vulnerability scanning.
+  - id: D11-T02
+    title: Kubernetes architecture and workloads
+    status: Planned
+    destination: docs/containers-and-kubernetes/kubernetes-architecture-and-workloads.md
+    inventory: >-
+      Kubernetes: control plane, worker nodes, API server, scheduler, controller manager, etcd, kubelet,
+      kube-proxy, runtime, Pods, Deployments, StatefulSets, DaemonSets, Jobs/CronJobs, ReplicaSets, Services,
+      Ingress, Gateway API, ConfigMaps, Secrets, PV/PVC/StorageClass, namespaces, requests/limits, probes,
+      HPA/VPA/Cluster Autoscaler, NetworkPolicies, RBAC, service accounts, admission controllers, CRDs,
+      operators, PDBs, taints/tolerations, node/pod affinity, scheduling, federation, multi-cluster, HA,
+      DR.
+  - id: D11-T03
+    title: Kubernetes networking, storage, and service mesh
+    status: Planned
+    destination: docs/containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md
+    inventory: >-
+      CNI, CSI, CRI, CoreDNS, ClusterIP/NodePort/LoadBalancer, ingress controllers, service mesh, sidecars,
+      mTLS, east-west traffic, traffic splitting, canary/blue-green, network observability, egress, multi-tenant
+      clusters.
+  - id: D11-T04
+    title: Cloud-native ecosystem tools
+    status: Planned
+    destination: docs/containers-and-kubernetes/cloud-native-ecosystem-tools.md
+    inventory: >-
+      Ecosystem: Helm, Kustomize, Argo CD, Flux, GitOps, Karpenter, ExternalDNS, cert-manager, External
+      Secrets Operator, Secrets Store CSI Driver, AWS Load Balancer Controller, OpenTelemetry, Prometheus,
+      Grafana, Istio, Linkerd, Cilium, Falco, Kyverno, OPA, Backstage, Crossplane, cluster lifecycle.
+- id: D12
+  title: Security architecture and cybersecurity
+  section: security-architecture
+  topics:
+  - id: D12-T01
+    title: Security principles and threat modeling
+    status: Planned
+    destination: docs/security-architecture/security-principles-and-threat-modeling.md
+    inventory: >-
+      CIA triad, defense in depth, least privilege, Zero Trust, security by design/default, shared responsibility,
+      attack surface, threat modeling, STRIDE, DREAD, attack trees, risk assessment, controls, security/trust
+      boundaries, posture management.
+  - id: D12-T02
+    title: Identity and access management
+    status: Planned
+    destination: docs/security-architecture/identity-and-access-management.md
+    inventory: >-
+      IAM: authentication, authorization, identity lifecycle, federation, SSO, MFA, OAuth 2.0, OIDC, SAML,
+      LDAP, Active Directory, Kerberos, RBAC, ABAC, policy-based access, JIT, JEA, PAM, workload identity,
+      service-to-service auth, machine identities, API keys, JWT, sessions, governance, access reviews.
+  - id: D12-T03
+    title: Network security architecture
+    status: Planned
+    destination: docs/security-architecture/network-security-architecture.md
+    inventory: >-
+      Network security: segmentation, microsegmentation, firewalls, WAF, DDoS, IDS/IPS, VPN, NAC, private
+      connectivity, egress filtering, DNS security, TLS termination, mTLS, certificates, endpoint protection,
+      traffic inspection, ZTNA.
+  - id: D12-T04
+    title: Application security
+    status: Planned
+    destination: docs/security-architecture/application-security.md
+    inventory: >-
+      Application security: secure SDLC, OWASP Top 10, validation, encoding, SQL injection, XSS, CSRF,
+      SSRF, auth/authz flaws, broken access control, session hijacking, API security, dependency vulnerabilities,
+      secrets leakage, secure coding, SAST, DAST, SCA, IAST, RASP, penetration testing, fuzzing.
+  - id: D12-T05
+    title: Data security and privacy
+    status: Planned
+    destination: docs/security-architecture/data-security-and-privacy.md
+    inventory: >-
+      Data security: classification/sensitivity, encryption at rest/in transit/in use, KMS, HSM, PKI,
+      rotation, secrets, tokenization, masking, anonymization, pseudonymization, database/field/column
+      encryption, DLP, exfiltration prevention, privacy by design, residency, sovereignty, retention/deletion.
+  - id: D12-T06
+    title: Infrastructure and supply-chain security
+    status: Planned
+    destination: docs/security-architecture/infrastructure-and-supply-chain-security.md
+    inventory: >-
+      Infrastructure/supply chain: infrastructure security, CSPM, CWPP, CIEM, container/Kubernetes/VM/host
+      security, vulnerability/patch management, image scanning, SBOM, SLSA, artifact signing, provenance,
+      build integrity, dependency pinning, IaC scanning, policy as code, runtime detection.
+  - id: D12-T07
+    title: Security operations
+    status: Planned
+    destination: docs/security-architecture/security-operations.md
+    inventory: >-
+      SecOps: SIEM, SOAR, monitoring, threat intelligence, incident detection/response, forensics, prioritization,
+      alerting, audit logs, continuous compliance, posture assessment, breach response, BCP, DR testing.
+  - id: D12-T08
+    title: Compliance and regulatory frameworks
+    status: Planned
+    destination: docs/security-architecture/compliance-and-regulatory-frameworks.md
+    inventory: >-
+      Compliance: ISO 27001, SOC 1/SOC 2, PCI DSS, HIPAA, GDPR, India's DPDP framework, NIST CSF, NIST
+      SP 800-53, CIS Benchmarks, FedRAMP, industry rules, evidence, residency, retention/deletion. Explain
+      legal applicability cautiously and link to current primary sources.
+- id: D13
+  title: High availability, reliability, resilience, and DR
+  section: reliability-and-disaster-recovery
+  topics:
+  - id: D13-T01
+    title: High availability design
+    status: Planned
+    destination: docs/reliability-and-disaster-recovery/high-availability-design.md
+    inventory: >-
+      Single points of failure, redundancy, fault domains, availability zones, Multi-AZ, multi-region,
+      active-active/passive, load balancing, health checks, failover, database failover, DNS failover,
+      global routing, regional isolation, cell-based architecture, availability calculations.
+  - id: D13-T02
+    title: Reliability engineering
+    status: Planned
+    destination: docs/reliability-and-disaster-recovery/reliability-engineering.md
+    inventory: >-
+      Reliability engineering: FMEA/FMECA, fault tree analysis, reliability block diagrams, redundancy
+      models, fault isolation/containment, graceful degradation, self-healing, recovery orchestration,
+      retries, circuit breakers, bulkheads, chaos engineering, fault injection, game days, reliability
+      testing, SRE, error budgets, SLO management.
+  - id: D13-T03
+    title: Disaster recovery strategies
+    status: Planned
+    destination: docs/reliability-and-disaster-recovery/disaster-recovery-strategies.md
+    inventory: >-
+      DR: backup/restore, pilot light, warm standby, hot standby, active-active, cold recovery, full/incremental/differential
+      backups, immutable/air-gapped/cross-region backups, PITR, storage/application/infrastructure recovery,
+      DNS failover, orchestration, recovery tests, BCP, DRP.
+  - id: D13-T04
+    title: Advanced resilience and failure containment
+    status: Planned
+    destination: docs/reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md
+    inventory: >-
+      Advanced resilience: dependency failures, blast radius, cascading failure, partitions, consistency
+      during failover, split-brain prevention, quorum recovery, recovery sequencing/priorities, degraded
+      operating modes.
+- id: D14
+  title: Performance engineering and scalability
+  section: performance-and-scalability
+  topics:
+  - id: D14-T01
+    title: Performance fundamentals and Little's Law
+    status: Planned
+    destination: docs/performance-and-scalability/performance-fundamentals-and-littles-law.md
+    inventory: >-
+      Latency, throughput, concurrency, RPS, TPS, response time, queue depth, resource utilization, CPU/memory,
+      IOPS, network throughput, database/application performance, tail latency, P50/P90/P95/P99, Little's
+      Law, bottleneck analysis, capacity modeling, performance baselines.
+  - id: D14-T02
+    title: Scaling and optimization techniques
+    status: Planned
+    destination: docs/performance-and-scalability/scaling-and-optimization-techniques.md
+    inventory: >-
+      Horizontal/vertical scaling, load balancing, caching, CDN, indexing, query optimization, connection
+      pooling, async work, batching, compression, pagination, lazy loading, connection reuse, pooling,
+      partitioning, sharding, replicas, static content, network, garbage collection and memory optimization,
+      CPU profiling.
+  - id: D14-T03
+    title: Capacity planning and load testing
+    status: Draft
+    destination: docs/performance-and-scalability/capacity-estimation.md
+    inventory: >-
+      Workload characterization, traffic forecasts, concurrency/peak estimates, storage growth, database/network
+      capacity, compute sizing, autoscaling, load/stress/spike/soak tests, benchmarks, regression analysis.
+- id: D15
+  title: Observability, monitoring, SRE, and production operations
+  section: observability-and-sre
+  topics:
+  - id: D15-T01
+    title: 'Observability fundamentals: logs, metrics, and traces'
+    status: Planned
+    destination: docs/observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md
+    inventory: >-
+      Monitoring vs observability, logs, metrics, traces, events, profiles, correlation/trace IDs, context
+      propagation, structured/centralized logs, retention, aggregation, sampling, OpenTelemetry, telemetry
+      pipelines, application/infrastructure/network/database observability.
+  - id: D15-T02
+    title: Monitoring, alerting, and on-call
+    status: Planned
+    destination: docs/observability-and-sre/monitoring-alerting-and-on-call.md
+    inventory: >-
+      Infrastructure monitoring, APM, RUM, synthetic monitoring, uptime, health checks, golden signals,
+      RED/USE, dashboards, static/dynamic thresholds, anomaly detection, alert correlation/noise reduction,
+      on-call and escalation.
+  - id: D15-T03
+    title: Incident management and SRE practices
+    status: Planned
+    destination: docs/observability-and-sre/incident-management-and-sre-practices.md
+    inventory: >-
+      Incident/problem/change/release/deployment management, runbooks, playbooks, postmortems, blameless
+      RCA, capacity/configuration management, operational and production readiness, service ownership,
+      SRE, service catalogs, operational maturity.
+- id: D16
+  title: DevOps, DevSecOps, CI/CD, IaC, and platform engineering
+  section: devops-and-platform-engineering
+  topics:
+  - id: D16-T01
+    title: DevOps lifecycle and source control
+    status: Planned
+    destination: docs/devops-and-platform-engineering/devops-lifecycle-and-source-control.md
+    inventory: >-
+      DevOps lifecycle, source control, Git, branching, GitFlow, trunk-based development, pull requests,
+      reviews, build/test automation, CI/CD, artifacts, releases, environments, configuration, deployment,
+      infrastructure automation, GitOps, rollback, feature flags.
+  - id: D16-T02
+    title: CI/CD pipeline design and deployment strategies
+    status: Planned
+    destination: docs/devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md
+    inventory: >-
+      CI/CD design: CI, continuous delivery/deployment, pipeline stages, security/tests, artifact repositories/promotion,
+      environment promotion, approvals, deployment strategies, rolling, blue-green, canary, progressive
+      delivery, shadow/A/B, rollback, pipeline security/scalability, multi-account pipelines.
+  - id: D16-T03
+    title: Infrastructure as Code
+    status: Planned
+    destination: docs/devops-and-platform-engineering/infrastructure-as-code.md
+    inventory: >-
+      IaC: declarative/imperative, Terraform, CloudFormation, Pulumi, CDK, state, remote state/locking,
+      modules/versioning, lifecycle, import, drift, plan/apply, secrets, environment separation, reusable
+      modules, policy as code, testing, security scans, FinOps.
+  - id: D16-T04
+    title: DevSecOps and secure delivery
+    status: Planned
+    destination: docs/devops-and-platform-engineering/devsecops-and-secure-delivery.md
+    inventory: >-
+      DevSecOps: shift left, secure CI/CD, SAST/DAST/SCA, container/IaC/secret scanning, SBOM, signing,
+      provenance, supply-chain security, policy enforcement, compliance gates, runtime security, admission
+      policies.
+  - id: D16-T05
+    title: Platform engineering
+    status: Planned
+    destination: docs/devops-and-platform-engineering/platform-engineering.md
+    inventory: >-
+      Platform engineering: IDPs, developer portals, golden paths, self-service, platform as product,
+      DevEx, platform APIs, catalogs, templates, environment provisioning, multi-tenancy, productivity
+      metrics, governance/security, Kubernetes platforms.
+- id: D17
+  title: FinOps, cost architecture, and sustainability
+  section: finops-and-sustainability
+  topics:
+  - id: D17-T01
+    title: Cloud cost models and FinOps
+    status: Planned
+    destination: docs/finops-and-sustainability/cloud-cost-models-and-finops.md
+    inventory: >-
+      Cloud cost models, pay-as-you-go, reserved capacity, savings plans, spot, compute/storage/database/network
+      optimization, transfer/egress cost, idle detection, tagging, allocation, attribution, showback,
+      chargeback, budgets, forecasts, anomaly detection, unit economics, cost per transaction/customer/API/AI
+      inference, TCO, ROI, break-even, governance.
+  - id: D17-T02
+    title: Sustainable and carbon-aware architecture
+    status: Planned
+    destination: docs/finops-and-sustainability/sustainable-and-carbon-aware-architecture.md
+    inventory: >-
+      Energy-efficient computing, carbon-aware computing, compute/storage efficiency, data lifecycle,
+      utilization, right-sizing, region selection, scheduling, green software engineering, carbon reporting,
+      sustainable cloud architecture.
+- id: D18
+  title: Enterprise architecture, governance, hybrid cloud, and modernization
+  section: enterprise-architecture
+  topics:
+  - id: D18-T01
+    title: Enterprise architecture practice
+    status: Planned
+    destination: docs/enterprise-architecture/enterprise-architecture-practice.md
+    inventory: >-
+      Enterprise Architecture; business/application/data/technology/security/integration architecture;
+      capability maps, process maps, application portfolios, dependency mapping, standards, principles,
+      governance, review boards, roadmaps, operating models, domain ownership, repositories.
+  - id: D18-T02
+    title: Enterprise architecture frameworks
+    status: Planned
+    destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
+    inventory: >-
+      Frameworks: TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, Gartner EA concepts, DDD, capability-based
+      planning, reference architectures.
+  - id: D18-T03
+    title: Legacy modernization and migration
+    status: Planned
+    destination: docs/enterprise-architecture/legacy-modernization-and-migration.md
+    inventory: >-
+      Legacy modernization: assessment, dependency discovery, portfolio assessment, mainframe, monolith
+      decomposition, database/middleware modernization, data-center migration, 7 Rs (rehost, replatform,
+      refactor/re-architect, repurchase, retain, retire, relocate where applicable), Strangler, replacement,
+      incremental modernization, wave planning, cutover, rollback, validation, parallel run, debt reduction.
+  - id: D18-T04
+    title: Hybrid and multi-cloud architecture
+    status: Planned
+    destination: docs/enterprise-architecture/hybrid-and-multi-cloud-architecture.md
+    inventory: >-
+      Hybrid/multi-cloud: on-prem integration, hybrid identity/network/storage/database/monitoring/DR,
+      cloud bursting, portability, multi-cloud network/identity/governance/security, cross-cloud data
+      movement, exit strategy, lock-in, residency, sovereign cloud.
+- id: D19
+  title: AI and machine learning foundations
+  section: ai-ml-foundations
+  topics:
+  - id: D19-T01
+    title: AI, ML, and learning paradigms
+    status: Planned
+    destination: docs/ai-ml-foundations/ai-ml-and-learning-paradigms.md
+    inventory: >-
+      AI vs ML vs deep learning vs generative AI; narrow/general AI concepts; symbolic AI, rules/expert
+      systems, knowledge representation/graphs, reasoning, search, heuristics, optimization, reinforcement
+      learning, supervised/unsupervised/semi-supervised/self-supervised/transfer/federated learning.
+  - id: D19-T02
+    title: Classical machine learning
+    status: Planned
+    destination: docs/ai-ml-foundations/classical-machine-learning.md
+    inventory: >-
+      ML: regression, classification, clustering, trees, random forests, gradient boosting, XGBoost, SVM,
+      KNN, Naive Bayes, recommendations, anomaly detection, time series, feature engineering/selection/extraction/normalization,
+      datasets, overfitting/underfitting, bias-variance, cross-validation, hyperparameter tuning, evaluation,
+      interpretability.
+  - id: D19-T03
+    title: Math for machine learning
+    status: Planned
+    destination: docs/ai-ml-foundations/math-for-machine-learning.md
+    inventory: >-
+      Math: linear algebra, vectors, matrices, tensors, probability, statistics, distributions, mean/median/variance/std
+      dev, correlation/covariance, gradient descent, optimization, loss functions, derivatives/calculus
+      basics, cosine similarity, Euclidean distance, dot product.
+- id: D20
+  title: Deep learning, ML lifecycle, and MLOps
+  section: ai-ml-foundations
+  topics:
+  - id: D20-T01
+    title: Neural networks and deep learning
+    status: Planned
+    destination: docs/ai-ml-foundations/neural-networks-and-deep-learning.md
+    inventory: >-
+      Neural networks, perceptrons, neurons, weights/biases, activations, forward/backpropagation, gradient
+      descent, optimizers, loss functions, CNNs, RNNs, LSTM, GRU, autoencoders, GANs, VAEs, transformers,
+      attention/self-attention/multi-head attention, positional encoding, encoder-decoder/decoder-only,
+      embeddings, residual connections, layer normalization, Mixture of Experts.
+  - id: D20-T02
+    title: ML lifecycle
+    status: Planned
+    destination: docs/ai-ml-foundations/ml-lifecycle.md
+    inventory: >-
+      ML lifecycle: problem framing, feasibility, data collection/ingestion/cleaning/preprocessing, feature
+      engineering/stores, training/validation/evaluation, model registration/deployment/serving/monitoring/retraining/versioning/rollback/retirement.
+  - id: D20-T03
+    title: MLOps
+    status: Planned
+    destination: docs/ai-ml-foundations/mlops.md
+    inventory: >-
+      MLOps: pipelines, feature/model/dataset registries, experiment tracking, versioning, reproducible
+      training, CI/CD for ML, continuous training/monitoring, data/model/concept drift, degradation, quality
+      metrics, explainability, governance, testing, A/B and shadow/canary, champion-challenger.
+  - id: D20-T04
+    title: ML infrastructure
+    status: Planned
+    destination: docs/ai-ml-foundations/ml-infrastructure.md
+    inventory: >-
+      ML infrastructure: CPU/GPU training, distributed training, data/model parallelism, training clusters,
+      distributed inference, batch/real-time/online/edge inference, model endpoints, autoscaling, security.
+- id: D21
+  title: Generative AI, LLMs, prompt engineering, and context engineering
+  section: generative-ai-and-llms
+  topics:
+  - id: D21-T01
+    title: LLM fundamentals
+    status: Planned
+    destination: docs/generative-ai-and-llms/llm-fundamentals.md
+    inventory: >-
+      LLMs, foundation/pretrained/open-weight/proprietary models, tokenization, tokens, vocabulary, context
+      limits/windows, embeddings, semantic similarity, transformer/attention, next-token prediction, autoregressive
+      generation, pretraining, instruction tuning, SFT, alignment, RLHF, DPO, quantization, distillation,
+      hallucinations, temperature, top-K/top-P, inference, reasoning, multimodality.
+  - id: D21-T02
+    title: LLM architecture decisions
+    status: Planned
+    destination: docs/generative-ai-and-llms/llm-architecture-decisions.md
+    inventory: >-
+      LLM architecture decisions: managed APIs vs self-hosted, open vs proprietary, large vs small models,
+      model selection/benchmarking/routing/fallback/cascading/gateway/access control, multi-model/provider,
+      deployment location/private endpoints, version lifecycle, licensing, residency, restrictions, cost/token,
+      latency/accuracy trade-offs.
+  - id: D21-T03
+    title: Prompt and context engineering
+    status: Planned
+    destination: docs/generative-ai-and-llms/prompt-and-context-engineering.md
+    inventory: >-
+      Prompt/context engineering: system/developer/user prompts, zero/one/few-shot, chain-of-thought concepts,
+      structured/role prompts, templates/versioning/optimization/chaining/compression/caching, context
+      selection/prioritization/truncation/retrieval, constrained structured output/JSON schema, function/tool
+      calling, validation, testing.
+  - id: D21-T04
+    title: Prompt engineering vs context engineering
+    status: Planned
+    destination: docs/generative-ai-and-llms/prompt-and-context-engineering.md
+    inventory: >-
+      Clearly distinguish prompt engineering (instruction design) from context engineering (selecting,
+      structuring, managing, and providing the information the model needs).
+- id: D22
+  title: Retrieval-Augmented Generation and vector search
+  section: rag-and-vector-search
+  topics:
+  - id: D22-T01
+    title: RAG fundamentals
+    status: Planned
+    destination: docs/rag-and-vector-search/rag-fundamentals.md
+    inventory: >-
+      RAG purpose, architecture, ingestion/query workflows, RAG vs fine-tuning vs long context vs traditional
+      search.
+  - id: D22-T02
+    title: Document ingestion and chunking
+    status: Planned
+    destination: docs/rag-and-vector-search/document-ingestion-and-chunking.md
+    inventory: >-
+      Document ingestion/parsing: PDF, DOCX, HTML, web, OCR, structured extraction, normalization, metadata,
+      classification, chunking (fixed, semantic, recursive, parent-child, overlap), deduplication, incremental
+      indexing, versioning, lifecycle, deletion/reindexing.
+  - id: D22-T03
+    title: Embeddings and vector indexes
+    status: Planned
+    destination: docs/rag-and-vector-search/embeddings-and-vector-indexes.md
+    inventory: >-
+      Embeddings: models, dimensions, dense/sparse, similarity, cosine/Euclidean/dot product, vector indexes,
+      ANN, HNSW, IVF, product quantization, vector DB, metadata filters, partitioning, replication, scale
+      and security.
+  - id: D22-T04
+    title: Retrieval, hybrid search, and reranking
+    status: Planned
+    destination: docs/rag-and-vector-search/retrieval-hybrid-search-and-reranking.md
+    inventory: >-
+      Retrieval: semantic, keyword/lexical, BM25, hybrid, vector, metadata filtering, query rewriting/expansion/multi-query/contextual
+      retrieval, reranking/cross-encoder, RRF, thresholds, top-K, context compression, evaluation.
+  - id: D22-T05
+    title: Advanced RAG patterns
+    status: Planned
+    destination: docs/rag-and-vector-search/advanced-rag-patterns.md
+    inventory: >-
+      Advanced RAG: naive/advanced/modular/agentic RAG, GraphRAG, knowledge graphs, multi-hop, query decomposition,
+      multi-document reasoning, SQL/structured-data RAG, multimodal image/audio/video RAG, enterprise/multi-tenant/access-controlled/real-time/distributed
+      RAG, caching, evaluation, observability, security.
+  - id: D22-T06
+    title: RAG platform components
+    status: Planned
+    destination: docs/rag-and-vector-search/rag-platform-components.md
+    inventory: >-
+      RAG platform components: document store, vector store, metadata store, embedding model, ingestion
+      orchestration, retrieval service, API, LLM, authorization, hybrid networking, CI/CD, monitoring.
+- id: D23
+  title: Agentic AI, multi-agent systems, MCP, and A2A
+  section: agentic-ai
+  topics:
+  - id: D23-T01
+    title: Agent fundamentals
+    status: Planned
+    destination: docs/agentic-ai/agent-fundamentals.md
+    inventory: >-
+      Agents vs assistants vs chatbots, agentic vs traditional GenAI, autonomous/semi-autonomous, goal/task-oriented
+      agents, reasoning, planning, execution, observation, feedback loops, state/context/memory, tools,
+      runtime, orchestration, governance, monitoring, lifecycle.
+  - id: D23-T02
+    title: Agent components and runtime
+    status: Planned
+    destination: docs/agentic-ai/agent-components-and-runtime.md
+    inventory: >-
+      Agent components: UI, API gateway, orchestrator, runtime, model gateway/provider, planning/reasoning,
+      tool registry/execution/authorization, knowledge retrieval, memory stores, session state, workflow
+      engine, scheduler, event system, approvals, audit logs, observability, safety/policy enforcement.
+  - id: D23-T03
+    title: Agent and multi-agent patterns
+    status: Planned
+    destination: docs/agentic-ai/agent-and-multi-agent-patterns.md
+    inventory: >-
+      Patterns: single/multi-agent, ReAct, Plan-and-Execute, reflection/self-correction, router, sequential/parallel,
+      coordinator-worker, supervisor-worker, hierarchical, generator-critic, review-critique, human-in/on-the-loop,
+      swarm, delegation, debate, handoff, collaboration, specialization, deterministic workflow vs autonomous
+      agent.
+  - id: D23-T04
+    title: Agent memory
+    status: Planned
+    destination: docs/agentic-ai/agent-memory.md
+    inventory: >-
+      Memory: working, short-term, long-term, episodic, semantic, procedural, conversation history, persistent,
+      summarization, retrieval, consolidation, expiration, isolation, user-specific/shared, authorization,
+      poisoning protection.
+  - id: D23-T05
+    title: Tools and actions
+    status: Planned
+    destination: docs/agentic-ai/tools-and-actions.md
+    inventory: >-
+      Tools/actions: functions, APIs, databases, filesystems, browsers, code/shell execution, cloud/enterprise
+      tools, discovery/selection/schemas/validation/auth/sandbox/isolation/timeouts/retries/output validation/auditing/approvals/idempotency/compensation.
+  - id: D23-T06
+    title: MCP and A2A protocols
+    status: Planned
+    destination: docs/agentic-ai/mcp-and-a2a-protocols.md
+    inventory: >-
+      Protocols: Model Context Protocol (MCP), hosts, clients, servers, tools, resources, prompts, transports,
+      auth, discovery, security, deployment; Agent-to-Agent (A2A), discovery, identity, capabilities,
+      delegation, messaging, interoperability, human-agent interaction. Verify protocol details against
+      current specifications.
+  - id: D23-T07
+    title: Advanced and long-running agents
+    status: Planned
+    destination: docs/agentic-ai/advanced-and-long-running-agents.md
+    inventory: >-
+      Advanced agents: distributed, persistent, long-running, stateful/stateless, durable execution, checkpoint/resume,
+      scheduling, concurrency, isolation, multi-tenancy, identity/permissions, lifecycle policies, cost
+      limits, termination, loop detection, execution limits.
+- id: D24
+  title: AI infrastructure, model serving, and LLMOps/GenAIOps
+  section: ai-infrastructure-and-llmops
+  topics:
+  - id: D24-T01
+    title: GPU infrastructure and distributed training
+    status: Planned
+    destination: docs/ai-infrastructure-and-llmops/gpu-infrastructure-and-distributed-training.md
+    inventory: >-
+      CPU/GPU architecture, GPU memory/compute/clusters, CUDA fundamentals, scheduling, partitioning,
+      multi-GPU, high-speed interconnects, distributed training, model/tensor/pipeline/data parallelism,
+      model sharding, checkpoint storage/distribution, utilization.
+  - id: D24-T02
+    title: Model serving and inference
+    status: Planned
+    destination: docs/ai-infrastructure-and-llmops/model-serving-and-inference.md
+    inventory: >-
+      Serving: model serving, real-time/batch/streaming/serverless/dedicated inference, endpoints, model
+      servers, routing, request/dynamic/continuous batching, concurrency, token streaming, KV cache, prefix
+      caching, quantized inference, optimization, GPU autoscaling, replicas, warm-up/cold starts, distributed
+      inference, load balancing, failover/fallback, rate limits/quotas.
+  - id: D24-T03
+    title: Serving technologies compared
+    status: Planned
+    destination: docs/ai-infrastructure-and-llmops/serving-technologies-compared.md
+    inventory: >-
+      Technologies to recognize and compare: NVIDIA Triton, vLLM, Hugging Face, Ray, TensorRT-LLM, KServe,
+      Seldon, BentoML, MLflow, Kubeflow, NVIDIA GPU Operator/NeMo, PyTorch, TensorFlow.
+  - id: D24-T04
+    title: AI platform and LLMOps
+    status: Planned
+    destination: docs/ai-infrastructure-and-llmops/ai-platform-and-llmops.md
+    inventory: >-
+      AI platform: model/dataset registries, model gateway, embedding service, vector platform, prompt
+      management, agent runtime/registry, model observability, experiment tracking, AI CI/CD, MLOps, LLMOps,
+      GenAIOps, workload isolation, multi-tenancy, self-hosting.
+- id: D25
+  title: AI evaluation, observability, security, safety, and governance
+  section: ai-security-and-governance
+  topics:
+  - id: D25-T01
+    title: AI evaluation
+    status: Planned
+    destination: docs/ai-security-and-governance/ai-evaluation.md
+    inventory: >-
+      Evaluation: offline/online/human/automated, golden/benchmark datasets, comparison, regression, accuracy/precision/recall/F1/ROC-AUC,
+      perplexity, BLEU/ROUGE, semantic similarity, groundedness, faithfulness, relevance, citation accuracy,
+      hallucination measurement, retrieval precision/recall, RAG evaluation, agent success, tool invocation/selection
+      accuracy, multi-step completion, approval rate.
+  - id: D25-T02
+    title: AI observability
+    status: Planned
+    destination: docs/ai-security-and-governance/ai-observability.md
+    inventory: >-
+      Observability: token usage, prompt/response tracking, model latency, time-to-first-token, tokens/second,
+      errors, context utilization, cost, retrieval traces, agent execution/tool/workflow traces, failure
+      and loop analysis, quality/user feedback dashboards.
+  - id: D25-T03
+    title: AI safety and security
+    status: Planned
+    destination: docs/ai-security-and-governance/ai-safety-and-security.md
+    inventory: >-
+      AI safety/security: responsible AI, risk/governance, model access/isolation, data/training privacy,
+      leakage, sensitive disclosure, prompt/indirect injection, jailbreak, prompt leakage, poisoning,
+      extraction/theft, adversarial attacks, membership inference, model inversion, insecure output, excessive
+      agency, tool abuse, plugin weaknesses, vector/embedding attacks, RAG poisoning, privilege escalation,
+      identity security, sandboxing, supply-chain/provenance/licensing, risk assessment, auditability,
+      human oversight, fairness, bias, explainability, transparency, accountability, incident response,
+      policy enforcement, compliance.
+  - id: D25-T04
+    title: NIST AI RMF and OWASP GenAI guidance
+    status: Planned
+    destination: docs/ai-security-and-governance/nist-ai-rmf-and-owasp-genai-guidance.md
+    inventory: >-
+      Study current NIST AI RMF and relevant OWASP LLM/GenAI guidance. Do not freeze a version-sensitive
+      list without recording the specification/version/date checked.
+- id: D26
+  title: Industry-specific solution architecture
+  section: industry-architectures
+  topics:
+  - id: D26-T01
+    title: E-commerce
+    status: Planned
+    destination: docs/industry-architectures/e-commerce.md
+    inventory: >-
+      E-commerce: catalog, search, cart, orders, inventory, payments, checkout, pricing, recommendations,
+      customers, notifications, distributed orders, flash sales, high traffic.
+  - id: D26-T02
+    title: Banking and finance
+    status: Planned
+    destination: docs/industry-architectures/banking-and-finance.md
+    inventory: >-
+      Banking/finance: core banking, payment processing, gateways, transactions, ledger, double-entry
+      accounting, fraud, risk, trading, market data, real-time processing, reconciliation, integrations,
+      audit, financial security, compliance, HA.
+  - id: D26-T03
+    title: Healthcare
+    status: Planned
+    destination: docs/industry-architectures/healthcare.md
+    inventory: >-
+      Healthcare: EHR/EMR, integration, imaging, DICOM, HL7, FHIR, patient privacy, analytics, medical
+      AI, clinical decision support, interoperability, compliance.
+  - id: D26-T04
+    title: Media and streaming
+    status: Planned
+    destination: docs/industry-architectures/media-and-streaming.md
+    inventory: >-
+      Media: video/audio streaming, transcoding, CDN, live, VOD, media storage, DRM, recommendation, real-time
+      communication, global distribution.
+  - id: D26-T05
+    title: IoT and industrial
+    status: Planned
+    destination: docs/industry-architectures/iot-and-industrial.md
+    inventory: >-
+      IoT/industrial: device provisioning/identity/auth/management, MQTT, messaging, telemetry, edge,
+      sensors, real-time analytics, digital twins, IIoT, predictive maintenance, industrial control, OT/IT,
+      security.
+  - id: D26-T06
+    title: Logistics and supply chain
+    status: Planned
+    destination: docs/industry-architectures/logistics-and-supply-chain.md
+    inventory: >-
+      Logistics: warehouse/transport systems, fleet/GPS tracking, real-time location, route optimization,
+      inventory, supply-chain event processing, demand forecasts, analytics.
+  - id: D26-T07
+    title: Enterprise applications
+    status: Planned
+    destination: docs/industry-architectures/enterprise-applications.md
+    inventory: >-
+      Enterprise: ERP, CRM, HRMS, document management, enterprise search, workflow/BPM, integration, identity,
+      synchronization, SaaS, enterprise assistants.
+  - id: D26-T08
+    title: Other industries
+    status: Planned
+    destination: docs/industry-architectures/other-industries.md
+    inventory: >-
+      Also telecom, education, gaming, social media, travel/booking, insurance, government, smart cities,
+      energy/utilities, geospatial, scientific/research computing, cybersecurity platforms.
+- id: D27
+  title: Advanced and emerging architecture
+  section: emerging-architectures
+  topics:
+  - id: D27-T01
+    title: Edge and distributed cloud
+    status: Planned
+    destination: docs/emerging-architectures/edge-and-distributed-cloud.md
+    inventory: >-
+      Edge/fog/distributed cloud, cloud-to-edge orchestration, edge networking/caching/AI/security, offline-first,
+      synchronization, intermittent connectivity, device lifecycle.
+  - id: D27-T02
+    title: Real-time systems
+    status: Planned
+    destination: docs/emerging-architectures/real-time-systems.md
+    inventory: >-
+      Real-time systems: hard/soft real-time, messaging, collaboration, events, WebSockets, streaming,
+      low latency, high-frequency processing, in-memory, decision engines.
+  - id: D27-T03
+    title: Search architecture
+    status: Planned
+    destination: docs/emerging-architectures/search-architecture.md
+    inventory: >-
+      Search: full-text, inverted indexes, indexing, relevance, query parsing, faceted/autocomplete/fuzzy
+      search, ranking, distributed search/clusters, semantic/vector/hybrid, enterprise search, knowledge
+      retrieval.
+  - id: D27-T04
+    title: Blockchain and Web3
+    status: Planned
+    destination: docs/emerging-architectures/blockchain-and-web3.md
+    inventory: >-
+      Blockchain/Web3: distributed ledgers, public/private chains, consensus, Proof of Work/Stake, smart
+      contracts, DApps, wallets, identity, security, enterprise integration.
+  - id: D27-T05
+    title: Privacy-preserving computing
+    status: Planned
+    destination: docs/emerging-architectures/privacy-preserving-computing.md
+    inventory: >-
+      Privacy-preserving computing: confidential computing, TEEs, HSMs, enclaves, homomorphic encryption,
+      secure multiparty computation, differential privacy, federated learning, data clean rooms.
+  - id: D27-T06
+    title: Cyber resilience
+    status: Planned
+    destination: docs/emerging-architectures/cyber-resilience.md
+    inventory: >-
+      Cyber resilience: deception, honeypots/honeynets, threat hunting, adversary simulation, purple teaming,
+      attack surface management, continuous control validation, identity threat detection, supply-chain
+      risk, ransomware-resilient design.
+  - id: D27-T07
+    title: Advanced AI architectures
+    status: Planned
+    destination: docs/emerging-architectures/advanced-ai-architectures.md
+    inventory: >-
+      Advanced AI: reasoning models, SLMs, MoE, long context, continual learning, test-time compute, multi-agent
+      collaboration, autonomous software engineering, AI-native apps/operations, AI-powered infrastructure,
+      self-healing systems, AI security operations, AI observability, human-agent collaboration, agent
+      identity/trust/ecosystems/governance.
+- id: D28
+  title: Architecture frameworks and reference models
+  section: reference-architectures
+  topics:
+  - id: D28-T01
+    title: Well-Architected frameworks (AWS, Azure, Google Cloud)
+    status: Planned
+    destination: docs/cloud-architecture/well-architected-frameworks.md
+    inventory: >-
+      AWS Well-Architected Framework; Azure Well-Architected Framework; Google Cloud Well-Architected
+      Framework.
+  - id: D28-T02
+    title: Cloud adoption frameworks
+    status: Planned
+    destination: docs/cloud-architecture/cloud-adoption-frameworks.md
+    inventory: AWS Cloud Adoption Framework; Azure Cloud Adoption Framework.
+  - id: D28-T03
+    title: Architecture frameworks and reference models
+    status: Planned
+    destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
+    inventory: >-
+      TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, C4, DDD, Twelve-Factor App, NIST Cybersecurity Framework,
+      NIST AI RMF, OWASP, FinOps Framework, SRE, CNCF landscape.
+  - id: D28-T04
+    title: Applying architecture frameworks in practice
+    status: Planned
+    destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
+    inventory: >-
+      Teach the purpose, scope, strengths, limitations, and practical application of each. For AWS Well-Architected,
+      cover Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization,
+      and Sustainability.
+- id: D29
+  title: Architecture problem-solving exercises
+  section: system-design-exercises
+  topics:
+  - id: D29-T01
+    title: Application design exercises
+    status: Planned
+    destination: docs/system-design-exercises/application-design-exercises.md
+    inventory: >-
+      URL shortener, file sharing, notification service, chat, email, social feed, search engine, image
+      hosting, video streaming, real-time messaging.
+  - id: D29-T02
+    title: Infrastructure component exercises
+    status: Planned
+    destination: docs/system-design-exercises/infrastructure-component-exercises.md
+    inventory: >-
+      Distributed cache, distributed lock service, rate limiter, configuration service, service discovery,
+      job scheduler, event bus, task queue, API gateway, multi-region application.
+  - id: D29-T03
+    title: Data platform exercises
+    status: Planned
+    destination: docs/system-design-exercises/data-platform-exercises.md
+    inventory: >-
+      Data lake, data warehouse, real-time analytics, log aggregation, ingestion pipeline, CDC pipeline,
+      fraud detection, recommendation engine, search platform, big-data processing.
+  - id: D29-T04
+    title: Cloud and enterprise platform exercises
+    status: Planned
+    destination: docs/system-design-exercises/cloud-and-enterprise-platform-exercises.md
+    inventory: >-
+      AWS multi-account landing zone, centralized cross-account logging, multi-region DR, hybrid cloud
+      network, secure enterprise Kubernetes, multi-tenant SaaS, enterprise identity, secrets platform,
+      cloud migration, monitoring platform, payment platform, secure CI/CD, zero-trust enterprise.
+  - id: D29-T05
+    title: AI platform exercises
+    status: Planned
+    destination: docs/system-design-exercises/ai-platform-exercises.md
+    inventory: >-
+      Enterprise RAG, ChatGPT-like app, document intelligence, knowledge assistant, multimodal RAG, multi-agent
+      research, customer support agent, coding assistant, AI DevOps engineer, autonomous cloud operations
+      agent, MCP server platform, AI gateway, LLM evaluation platform, model hosting, distributed GPU
+      inference, multi-model AI, secure enterprise agent platform, AI observability.
+- id: D30
+  title: Architecture design method
+  section: system-design-exercises
+  topics:
+  - id: D30-T01
+    title: Architecture design method
+    status: Planned
+    destination: docs/system-design-exercises/design-method.md
+    inventory: >-
+      Design method sequence: (1) Understand the business problem, users, stakeholders, and outcome. →
+      (2) Gather functional requirements, NFRs, assumptions, constraints, and risks. → (3) Estimate users,
+      requests/second, concurrency, storage, bandwidth, growth, and peak load. → (4) Define system boundaries,
+      domains, services, and responsibilities. → (5) Design APIs, events, protocols, and integration contracts.
+      → (6) Design data models, databases, storage, replication, indexes, and caching. → (7) Select the
+      architecture style and explain why. → (8) Design compute, network, cloud services, regions, and
+      deployment. → (9) Define identity, authorization, encryption, secrets, and trust boundaries. → (10)
+      Design scaling, resilience, failover, DR, and performance. → (11) Design CI/CD, IaC, observability,
+      support, and operations. → (12) Estimate costs, document trade-offs, validate assumptions, and record
+      ADRs.
+  - id: D30-T02
+    title: AI system design decisions
+    status: Planned
+    destination: docs/system-design-exercises/design-method.md
+    inventory: >-
+      For AI systems, additionally decide on model selection, managed vs self-hosted, RAG vs fine-tuning,
+      retrieval/data permissions, agent autonomy and approvals, tool permissions, evaluation, safety/guardrails,
+      inference capacity, model fallback, and AI cost controls.

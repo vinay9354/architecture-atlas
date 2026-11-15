@@ -1,0 +1,35 @@
+# External link check. Runs weekly and on demand; it is informational and does not block merges,
+# because external sites fail for reasons unrelated to this repository (rate limits, bot blocking).
+# Classify each failure (broken / redirected / temporarily unavailable / auth-gated / blocked)
+# before changing a link. Never replace a link with a search result.
+name: Link check
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --no-progress --verbose './docs/**/*.md' './*.md' './templates/*.md'
+          fail: false
+
+      - name: Open or update an issue when links fail
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Link check report"
+          content-filepath: ./lychee/out.md
+          labels: broken-link, maintenance

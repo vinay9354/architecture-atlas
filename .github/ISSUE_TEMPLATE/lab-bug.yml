@@ -1,0 +1,30 @@
+name: Lab bug
+description: A hands-on lab does not work as described.
+title: "[Lab]: "
+labels: ["lab", "bug"]
+body:
+  - type: input
+    id: lab
+    attributes:
+      label: Lab path
+      placeholder: labs/local/01-latency-throughput
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, tool versions (python --version, docker --version, etc.).
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce and what happened
+      description: Paste command output. Remove any secrets, tokens, account IDs, or personal data first.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?

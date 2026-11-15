@@ -1,0 +1,6 @@
+# Pinned documentation toolchain. Last verified: 2026-11-15 (Python 3.12-3.14).
+# Transitive dependencies are resolved by pip; refresh pins deliberately and record it in CHANGELOG.md.
+mkdocs==1.6.1
+mkdocs-material==9.8.1
+pymdown-extensions==13.1
+PyYAML==6.0.3

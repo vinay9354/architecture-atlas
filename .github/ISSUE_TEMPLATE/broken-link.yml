@@ -1,0 +1,33 @@
+name: Broken or stale link
+description: A reference link is broken, redirected, or points to outdated material.
+title: "[Link]: "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page where the link appears
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link URL
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What happens?
+      options:
+        - Broken (404 or site gone)
+        - Redirected to different content
+        - Temporarily unavailable
+        - Requires login / paywall
+        - Content changed and the page is now inaccurate
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement (original source only, not a search result)

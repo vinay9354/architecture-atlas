@@ -1,0 +1,28 @@
+name: New topic or page
+description: Propose a new topic page, lab, or case study.
+title: "[Topic]: "
+labels: ["content", "new-topic"]
+body:
+  - type: input
+    id: coverage-id
+    attributes:
+      label: Coverage ID (if it exists)
+      description: From curriculum/coverage.yaml, e.g. D08-T02. Leave blank for a topic not in the inventory.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this topic belong in the repository?
+      description: Which learner need does it serve, and where does it fit in the learning path?
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Proposed outline
+      description: Objectives, prerequisites, key diagrams, worked example, lab idea.
+  - type: checkboxes
+    id: volunteer
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to write this page myself
