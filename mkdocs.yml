@@ -122,11 +122,26 @@ nav:
           - SLAs, SLOs, SLIs, error budgets, and recovery objectives: architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md
           - Trade-offs, principles, ADRs, and governance: architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md
           - The C4 model: architecture-fundamentals/c4-model.md
-      - CS and software foundations: foundations/index.md
-      - Software architecture and patterns: software-architecture/index.md
+      - CS and software foundations:
+          - foundations/index.md
+          - Computers, operating systems, and Linux: foundations/computers-operating-systems-and-linux-for-architects.md
+          - Data structures and algorithms: foundations/programming-fundamentals-data-structures-and-algorithms.md
+          - Programming paradigms and concurrency: foundations/programming-paradigms-and-concurrency.md
+          - Software design principles and clean code: foundations/software-design-principles-and-clean-code.md
+          - Software testing types and strategies: foundations/software-testing-types-and-strategies.md
+      - Software architecture and patterns:
+          - software-architecture/index.md
+          - Architecture styles: software-architecture/architecture-styles.md
+          - Microservices architecture: software-architecture/microservices-architecture.md
+          - Application design patterns: software-architecture/application-design-patterns.md
+          - Distributed system patterns: software-architecture/distributed-system-patterns.md
       - Distributed systems:
           - distributed-systems/index.md
           - Distributed systems fundamentals, time, and coordination: distributed-systems/distributed-systems-fundamentals-time-and-coordination.md
+          - Consistency models, CAP, and PACELC: distributed-systems/consistency-models-cap-and-pacelc.md
+          - Transactions, sagas, and delivery guarantees: distributed-systems/transactions-sagas-and-delivery-guarantees.md
+          - Resilience mechanics (timeouts, retries, backpressure): distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md
+          - Scaling, partitioning, and replication: distributed-systems/scaling-partitioning-and-replication.md
       - Application, API, and integration:
           - application-and-api-architecture/index.md
           - API design (REST, GraphQL, gRPC, async): application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md
@@ -170,11 +185,24 @@ nav:
   - Practice:
       - Industry architectures: industry-architectures/index.md
       - Emerging architectures: emerging-architectures/index.md
-      - System design exercises: system-design-exercises/index.md
+      - System design exercises:
+          - system-design-exercises/index.md
+          - The architecture design method: system-design-exercises/design-method.md
+          - Application design exercises: system-design-exercises/application-design-exercises.md
+          - Infrastructure component exercises: system-design-exercises/infrastructure-component-exercises.md
+          - "Exercise: URL shortener": system-design-exercises/url-shortener.md
+          - "Exercise: Rate limiter": system-design-exercises/rate-limiter.md
+          - "Exercise: Distributed cache": system-design-exercises/distributed-cache.md
+          - "Exercise: Job scheduler": system-design-exercises/job-scheduler.md
       - End-to-end case studies: end-to-end-case-studies/index.md
       - Labs:
           - labs/index.md
           - "Lab 01: Latency and throughput": labs/lab-01-latency-and-throughput.md
+          - "Lab 03: Queue retries and dead-letter queue": labs/lab-03-queue-retries-and-dead-letter.md
+          - "Lab 04: Idempotency and duplicates": labs/lab-04-idempotency-and-duplicates.md
+          - "Lab 05: Race condition": labs/lab-05-race-condition.md
+          - "Lab 08: Sharding and consistent hashing": labs/lab-08-sharding-and-consistent-hashing.md
+          - "Lab 09: Replication lag": labs/lab-09-replication-lag.md
       - Quizzes:
           - quizzes/index.md
           - "Quiz: Architecture fundamentals (D01)": quizzes/d01-architecture-fundamentals.md

@@ -33,10 +33,10 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D03** | **Software architecture styles and design patterns** | | |
-| D03-T01 | Architecture styles | :material-circle-outline: Planned | planned: `software-architecture/architecture-styles.md` |
-| D03-T02 | Microservices architecture | :material-circle-outline: Planned | planned: `software-architecture/microservices-architecture.md` |
-| D03-T03 | Application design patterns | :material-circle-outline: Planned | planned: `software-architecture/application-design-patterns.md` |
-| D03-T04 | Distributed system patterns | :material-circle-outline: Planned | planned: `software-architecture/distributed-system-patterns.md` |
+| D03-T01 | Architecture styles | :material-circle-slice-5: Draft | [architecture-styles](architecture-styles.md) |
+| D03-T02 | Microservices architecture | :material-circle-slice-5: Draft | [microservices-architecture](microservices-architecture.md) |
+| D03-T03 | Application design patterns | :material-circle-slice-5: Draft | [application-design-patterns](application-design-patterns.md) |
+| D03-T04 | Distributed system patterns | :material-circle-slice-5: Draft | [distributed-system-patterns](distributed-system-patterns.md) |
 <!-- coverage:end -->
 
 ## How to continue

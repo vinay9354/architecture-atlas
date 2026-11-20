@@ -37,6 +37,20 @@ exist to make them meaningful.
 - [Distributed systems fundamentals, time, and coordination](../distributed-systems/distributed-systems-fundamentals-time-and-coordination.md#knowledge-check)
 - [High availability design](../reliability-and-disaster-recovery/high-availability-design.md#knowledge-check)
 - [Performance fundamentals and Little's Law](../performance-and-scalability/performance-fundamentals-and-littles-law.md#knowledge-check)
+- [Computers, operating systems, and Linux](../foundations/computers-operating-systems-and-linux-for-architects.md#knowledge-check)
+- [Data structures and algorithms](../foundations/programming-fundamentals-data-structures-and-algorithms.md#knowledge-check)
+- [Programming paradigms and concurrency](../foundations/programming-paradigms-and-concurrency.md#knowledge-check)
+- [Software design principles and clean code](../foundations/software-design-principles-and-clean-code.md#knowledge-check)
+- [Software testing types and strategies](../foundations/software-testing-types-and-strategies.md#knowledge-check)
+- [Architecture styles](../software-architecture/architecture-styles.md#knowledge-check)
+- [Microservices architecture](../software-architecture/microservices-architecture.md#knowledge-check)
+- [Application design patterns](../software-architecture/application-design-patterns.md#knowledge-check)
+- [Distributed system patterns](../software-architecture/distributed-system-patterns.md#knowledge-check)
+- [Consistency models, CAP, and PACELC](../distributed-systems/consistency-models-cap-and-pacelc.md#knowledge-check)
+- [Transactions, sagas, and delivery guarantees](../distributed-systems/transactions-sagas-and-delivery-guarantees.md#knowledge-check)
+- [Resilience mechanics](../distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md#knowledge-check)
+- [Scaling, partitioning, and replication](../distributed-systems/scaling-partitioning-and-replication.md#knowledge-check)
+- [The architecture design method](../system-design-exercises/design-method.md#knowledge-check)
 
 ## Planned
 

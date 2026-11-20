@@ -30,14 +30,14 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D29** | **Architecture problem-solving exercises** | | |
-| D29-T01 | Application design exercises | :material-circle-outline: Planned | planned: `system-design-exercises/application-design-exercises.md` |
-| D29-T02 | Infrastructure component exercises | :material-circle-outline: Planned | planned: `system-design-exercises/infrastructure-component-exercises.md` |
+| D29-T01 | Application design exercises | :material-circle-slice-2: Outline | [application-design-exercises](application-design-exercises.md) |
+| D29-T02 | Infrastructure component exercises | :material-circle-slice-2: Outline | [infrastructure-component-exercises](infrastructure-component-exercises.md) |
 | D29-T03 | Data platform exercises | :material-circle-outline: Planned | planned: `system-design-exercises/data-platform-exercises.md` |
 | D29-T04 | Cloud and enterprise platform exercises | :material-circle-outline: Planned | planned: `system-design-exercises/cloud-and-enterprise-platform-exercises.md` |
 | D29-T05 | AI platform exercises | :material-circle-outline: Planned | planned: `system-design-exercises/ai-platform-exercises.md` |
 | **D30** | **Architecture design method** | | |
-| D30-T01 | Architecture design method | :material-circle-outline: Planned | planned: `system-design-exercises/design-method.md` |
-| D30-T02 | AI system design decisions | :material-circle-outline: Planned | planned: `system-design-exercises/design-method.md` |
+| D30-T01 | Architecture design method | :material-circle-slice-5: Draft | [design-method](design-method.md) |
+| D30-T02 | AI system design decisions | :material-circle-slice-2: Outline | [design-method](design-method.md) |
 <!-- coverage:end -->
 
 ## How to continue

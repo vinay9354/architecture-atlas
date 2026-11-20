@@ -34,10 +34,10 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 |---|---|---|---|
 | **D04** | **Distributed systems** | | |
 | D04-T01 | Distributed systems fundamentals, time, and coordination | :material-circle-slice-5: Draft | [distributed-systems-fundamentals-time-and-coordination](distributed-systems-fundamentals-time-and-coordination.md) |
-| D04-T02 | Consistency models, CAP, and PACELC | :material-circle-outline: Planned | planned: `distributed-systems/consistency-models-cap-and-pacelc.md` |
-| D04-T03 | Transactions, sagas, and delivery guarantees | :material-circle-outline: Planned | planned: `distributed-systems/transactions-sagas-and-delivery-guarantees.md` |
-| D04-T04 | Resilience mechanics: timeouts, retries, and backpressure | :material-circle-outline: Planned | planned: `distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md` |
-| D04-T05 | Scaling, partitioning, and replication | :material-circle-outline: Planned | planned: `distributed-systems/scaling-partitioning-and-replication.md` |
+| D04-T02 | Consistency models, CAP, and PACELC | :material-circle-slice-5: Draft | [consistency-models-cap-and-pacelc](consistency-models-cap-and-pacelc.md) |
+| D04-T03 | Transactions, sagas, and delivery guarantees | :material-circle-slice-5: Draft | [transactions-sagas-and-delivery-guarantees](transactions-sagas-and-delivery-guarantees.md) |
+| D04-T04 | Resilience mechanics: timeouts, retries, and backpressure | :material-circle-slice-5: Draft | [resilience-mechanics-timeouts-retries-and-backpressure](resilience-mechanics-timeouts-retries-and-backpressure.md) |
+| D04-T05 | Scaling, partitioning, and replication | :material-circle-slice-5: Draft | [scaling-partitioning-and-replication](scaling-partitioning-and-replication.md) |
 <!-- coverage:end -->
 
 ## How to continue

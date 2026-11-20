@@ -34,11 +34,11 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D02** | **Computer science and software engineering foundations** | | |
-| D02-T01 | Computers, operating systems, and Linux for architects | :material-circle-outline: Planned | planned: `foundations/computers-operating-systems-and-linux-for-architects.md` |
-| D02-T02 | Programming fundamentals, data structures, and algorithms | :material-circle-outline: Planned | planned: `foundations/programming-fundamentals-data-structures-and-algorithms.md` |
-| D02-T03 | Programming paradigms and concurrency | :material-circle-outline: Planned | planned: `foundations/programming-paradigms-and-concurrency.md` |
-| D02-T04 | Software design principles and clean code | :material-circle-outline: Planned | planned: `foundations/software-design-principles-and-clean-code.md` |
-| D02-T05 | Software testing types and strategies | :material-circle-outline: Planned | planned: `foundations/software-testing-types-and-strategies.md` |
+| D02-T01 | Computers, operating systems, and Linux for architects | :material-circle-slice-5: Draft | [computers-operating-systems-and-linux-for-architects](computers-operating-systems-and-linux-for-architects.md) |
+| D02-T02 | Programming fundamentals, data structures, and algorithms | :material-circle-slice-5: Draft | [programming-fundamentals-data-structures-and-algorithms](programming-fundamentals-data-structures-and-algorithms.md) |
+| D02-T03 | Programming paradigms and concurrency | :material-circle-slice-5: Draft | [programming-paradigms-and-concurrency](programming-paradigms-and-concurrency.md) |
+| D02-T04 | Software design principles and clean code | :material-circle-slice-5: Draft | [software-design-principles-and-clean-code](software-design-principles-and-clean-code.md) |
+| D02-T05 | Software testing types and strategies | :material-circle-slice-5: Draft | [software-testing-types-and-strategies](software-testing-types-and-strategies.md) |
 <!-- coverage:end -->
 
 ## How to continue

@@ -3,7 +3,7 @@
 # status: Planned | Outline | Draft | Reviewed | Needs update
 # destination: canonical page (must exist unless status is Planned).
 version: 1
-last_updated: '2026-11-15'
+last_updated: '2026-11-20'
 description: >-
   Machine-readable curriculum coverage matrix. One topic entry per inventory bullet in MASTER_PROMPT.md
   Section 8. Edit by hand; scripts/build-coverage.py renders it.
@@ -89,7 +89,7 @@ domains:
   topics:
   - id: D02-T01
     title: Computers, operating systems, and Linux for architects
-    status: Planned
+    status: Draft
     destination: docs/foundations/computers-operating-systems-and-linux-for-architects.md
     inventory: >-
       CPU architecture, cores, threads, RAM, virtual memory, memory management, storage and I/O, disk
@@ -98,7 +98,7 @@ domains:
       hardware acceleration.
   - id: D02-T02
     title: Programming fundamentals, data structures, and algorithms
-    status: Planned
+    status: Draft
     destination: docs/foundations/programming-fundamentals-data-structures-and-algorithms.md
     inventory: >-
       Programming fundamentals: variables, types, data structures, arrays, lists, stacks, queues, hash
@@ -106,7 +106,7 @@ domains:
       complexity, recursion.
   - id: D02-T03
     title: Programming paradigms and concurrency
-    status: Planned
+    status: Draft
     destination: docs/foundations/programming-paradigms-and-concurrency.md
     inventory: >-
       Object-oriented programming, functional programming, exception handling, memory management, multithreading,
@@ -114,7 +114,7 @@ domains:
       locks, semaphores.
   - id: D02-T04
     title: Software design principles and clean code
-    status: Planned
+    status: Draft
     destination: docs/foundations/software-design-principles-and-clean-code.md
     inventory: >-
       SOLID, DRY, KISS, YAGNI, separation of concerns, loose coupling, cohesion, encapsulation, abstraction,
@@ -122,7 +122,7 @@ domains:
       programming, clean code, refactoring, design by contract.
   - id: D02-T05
     title: Software testing types and strategies
-    status: Planned
+    status: Draft
     destination: docs/foundations/software-testing-types-and-strategies.md
     inventory: >-
       Testing: unit, integration, component, system, end-to-end, smoke, regression, acceptance, contract,
@@ -134,7 +134,7 @@ domains:
   topics:
   - id: D03-T01
     title: Architecture styles
-    status: Planned
+    status: Draft
     destination: docs/software-architecture/architecture-styles.md
     inventory: >-
       Monolith, modular monolith, layered, three-tier, N-tier, client-server, peer-to-peer, microservices,
@@ -143,7 +143,7 @@ domains:
       edge, hybrid cloud.
   - id: D03-T02
     title: Microservices architecture
-    status: Planned
+    status: Draft
     destination: docs/software-architecture/microservices-architecture.md
     inventory: >-
       Microservices: decomposition, domain boundaries, bounded contexts, service discovery/registration,
@@ -152,7 +152,7 @@ domains:
       observability, testing, security, service sprawl, distributed monolith anti-pattern.
   - id: D03-T03
     title: Application design patterns
-    status: Planned
+    status: Draft
     destination: docs/software-architecture/application-design-patterns.md
     inventory: >-
       Application patterns: MVC, MVP, MVVM, Repository, Unit of Work, Factory, Abstract Factory, Builder,
@@ -160,7 +160,7 @@ domains:
       Template Method, Chain of Responsibility, Dependency Injection, Specification.
   - id: D03-T04
     title: Distributed system patterns
-    status: Planned
+    status: Draft
     destination: docs/software-architecture/distributed-system-patterns.md
     inventory: >-
       Distributed patterns: CQRS, Event Sourcing, Saga, Strangler Fig, Anti-Corruption Layer, API Composition,
@@ -183,7 +183,7 @@ domains:
       leases, fencing tokens, gossip, membership protocols, consensus, quorum, split brain.
   - id: D04-T02
     title: Consistency models, CAP, and PACELC
-    status: Planned
+    status: Draft
     destination: docs/distributed-systems/consistency-models-cap-and-pacelc.md
     inventory: >-
       CAP theorem, PACELC, strong/eventual/weak/causal/sequential consistency, linearizability, read-after-write,
@@ -191,7 +191,7 @@ domains:
       resolution, last-write-wins, CRDTs.
   - id: D04-T03
     title: Transactions, sagas, and delivery guarantees
-    status: Planned
+    status: Draft
     destination: docs/distributed-systems/transactions-sagas-and-delivery-guarantees.md
     inventory: >-
       ACID, distributed transactions, two-phase commit, three-phase commit, Saga choreography/orchestration,
@@ -199,7 +199,7 @@ domains:
       deduplication, at-most-once, at-least-once, exactly-once processing limitations.
   - id: D04-T04
     title: 'Resilience mechanics: timeouts, retries, and backpressure'
-    status: Planned
+    status: Draft
     destination: docs/distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md
     inventory: >-
       Timeouts, retries, exponential backoff, jitter, retry storms, circuit breakers, bulkheads, fail-fast,
@@ -208,7 +208,7 @@ domains:
       and containment.
   - id: D04-T05
     title: Scaling, partitioning, and replication
-    status: Planned
+    status: Draft
     destination: docs/distributed-systems/scaling-partitioning-and-replication.md
     inventory: >-
       Horizontal/vertical scaling, sharding, partitioning, replication, leader-follower, active-active,
@@ -1188,14 +1188,14 @@ domains:
   topics:
   - id: D29-T01
     title: Application design exercises
-    status: Planned
+    status: Outline
     destination: docs/system-design-exercises/application-design-exercises.md
     inventory: >-
       URL shortener, file sharing, notification service, chat, email, social feed, search engine, image
       hosting, video streaming, real-time messaging.
   - id: D29-T02
     title: Infrastructure component exercises
-    status: Planned
+    status: Outline
     destination: docs/system-design-exercises/infrastructure-component-exercises.md
     inventory: >-
       Distributed cache, distributed lock service, rate limiter, configuration service, service discovery,
@@ -1230,7 +1230,7 @@ domains:
   topics:
   - id: D30-T01
     title: Architecture design method
-    status: Planned
+    status: Draft
     destination: docs/system-design-exercises/design-method.md
     inventory: >-
       Design method sequence: (1) Understand the business problem, users, stakeholders, and outcome. →
@@ -1245,7 +1245,7 @@ domains:
       ADRs.
   - id: D30-T02
     title: AI system design decisions
-    status: Planned
+    status: Outline
     destination: docs/system-design-exercises/design-method.md
     inventory: >-
       For AI systems, additionally decide on model selection, managed vs self-hosted, RAG vs fine-tuning,

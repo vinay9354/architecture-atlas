@@ -612,6 +612,317 @@ use the search box for a specific word.
 :   Comparing two systems' records after the fact to find and repair differences that event delivery
     missed.
 
+## Computers, concurrency, and algorithms
+
+**vCPU**
+:   A virtual CPU sold by a cloud provider or allotted to a container; often one hardware thread rather than a whole core.
+
+**Hardware thread (SMT)**
+:   One of the instruction streams a single core interleaves, sharing that core's execution units with its sibling.
+
+**Cache line**
+:   The fixed-size block, commonly 64 bytes, in which data moves between main memory and the CPU caches.
+
+**Page fault**
+:   An access to a memory page that is not mapped; minor when the kernel resolves it from memory, major when it must read from disk.
+
+**Page cache**
+:   Kernel memory holding recently used file data, so repeated reads skip the storage device.
+
+**Context switch**
+:   The kernel saving one thread's state and restoring another's on a core; frequent switches cost CPU time.
+
+**cgroup**
+:   A Linux control group that limits and accounts CPU, memory, and I/O for a set of processes; the mechanism behind container resource limits.
+
+**Steal time**
+:   Time a virtual CPU was ready to run while the hypervisor ran another tenant's work.
+
+**Big O**
+:   An upper bound on how an algorithm's time or memory grows with input size, ignoring constant factors.
+
+**Amortized cost**
+:   The average cost per operation over a long sequence, even though a few operations in it are expensive.
+
+**Hash table**
+:   A structure that stores key-value pairs in buckets chosen by hashing the key, giving constant expected-time lookups. Its load factor (entries per bucket) is kept bounded by resizing.
+
+**B-tree**
+:   A balanced tree with many keys per node, each node sized to a storage page, so a lookup reads only a few pages. Most database indexes are B-trees.
+
+**Heap (binary)**
+:   An array-backed tree in which every parent is no larger than its children, so the smallest item is always at the root. The usual structure behind priority queues and timers.
+
+**Topological sort**
+:   An ordering of a directed acyclic graph in which every node comes after everything it depends on; it fails exactly when there is a cycle.
+
+**Race condition**
+:   A bug whose outcome depends on the timing or order of concurrent operations.
+
+**Lost update**
+:   Two concurrent read-modify-write operations in which one silently overwrites the other's result.
+
+**Deadlock**
+:   A set of actors each waiting for a resource another holds, so none can proceed.
+
+**Starvation**
+:   A runnable actor that never gets a resource because others are always chosen first.
+
+**Mutex / semaphore**
+:   A mutex is a lock held by one owner at a time. A semaphore is a counter of permits that lets up to N holders in at once.
+
+**Compare-and-set (CAS)**
+:   An atomic write that succeeds only if the value is still what the writer last read; the basis of optimistic concurrency control.
+
+**Event loop**
+:   A single thread that runs many tasks, switching to another whenever the current one waits on I/O.
+
+**Garbage collection pause**
+:   A period when a language runtime stops application threads to reclaim unreachable memory; it shows up as tail latency.
+
+## Software design and architecture styles
+
+**Coupling / cohesion**
+:   Coupling is how far a change in one module forces changes in another; cohesion is how far a module's parts serve one purpose. Good designs have low coupling and high cohesion.
+
+**Dependency injection / inversion of control**
+:   Passing a component its collaborators instead of letting it create them; control over wiring moves to a framework or a composition root.
+
+**Composition root**
+:   The single place near program start where concrete implementations are created and wired together.
+
+**Design by contract**
+:   Stating each routine's preconditions, postconditions, and invariants explicitly so callers and implementers know who is responsible for what.
+
+**Refactoring**
+:   Changing code structure without changing behavior, in small steps each protected by tests.
+
+**Design pattern**
+:   A named, reusable arrangement of code elements with a stated intent and known trade-offs.
+
+**Repository / Unit of Work**
+:   A Repository is a collection-like interface that loads and saves domain objects without exposing storage. A Unit of Work tracks the changes of one business operation and commits or rolls them back together.
+
+**State machine**
+:   A set of states and the only transitions allowed between them, each triggered by a named event.
+
+**Architecture style**
+:   A named structure for a whole system, defined by its kinds of components, its connectors, and the rules for combining them.
+
+**Modular monolith**
+:   One deployable unit split into modules with enforced public interfaces and their own data.
+
+**Hexagonal architecture (ports and adapters)**
+:   The domain defines interfaces (ports) that technology code (adapters) implements, so source-code dependencies point toward the domain. Clean and onion architecture share the same dependency rule.
+
+**Bounded context**
+:   A part of the domain inside which one model and vocabulary stay consistent; the usual unit for drawing service boundaries.
+
+**Conway's law**
+:   The observation that systems tend to mirror the communication structure of the organizations that build them.
+
+**Blast radius**
+:   The share of users or functions affected by a single failure.
+
+**Event-driven architecture**
+:   A style in which components announce facts as events and others react, without the sender knowing who listens.
+
+**Microservice**
+:   An independently deployable service that owns one bounded context and its data.
+
+**Distributed monolith**
+:   Services that deploy separately but must still change, release, or fail together; the costs of distribution without its benefits.
+
+**Temporal coupling**
+:   Two components must both be available at the same moment for an operation to succeed, as with a synchronous call chain.
+
+**API gateway**
+:   The single public entry point that terminates TLS, checks tokens, applies rate limits, and routes requests to services.
+
+**Backend for frontend (BFF)**
+:   A server-side API tailored to one kind of client, owned by that client's team.
+
+**Service mesh**
+:   Sidecar proxies plus a control plane that handle mutual TLS, retries, timeouts, and telemetry for service-to-service traffic.
+
+**Service discovery**
+:   Resolving a service name to the addresses of its currently healthy instances.
+
+**CQRS**
+:   Command Query Responsibility Segregation: separating the model that changes state from read models shaped for queries.
+
+**Event sourcing**
+:   Storing every state change as an event in an append-only log and deriving current state by replaying it.
+
+**Read model (projection)**
+:   A copy of data shaped for specific queries, built from the write side's changes and usually eventually consistent with it.
+
+**Strangler fig**
+:   Replacing a legacy system piece by piece behind an interception point until nothing routes to the old system.
+
+**Sidecar / ambassador**
+:   A sidecar is a helper process deployed beside each application instance and sharing its lifecycle. An ambassador is a sidecar that handles the application's outbound calls.
+
+**Claim check**
+:   Storing a large payload elsewhere and passing only a reference to it through the message broker.
+
+**Competing consumers**
+:   Several consumers reading one queue so that each message is processed by only one of them.
+
+## Testing
+
+**Test double**
+:   A stand-in for a real dependency in a test: a stub returns canned answers, a fake is a working lightweight implementation, a mock checks how it was called.
+
+**Flaky test**
+:   A test that both passes and fails on the same code; it erodes trust in the whole suite.
+
+**Test pyramid / testing trophy**
+:   Two suite shapes. The pyramid favors many unit tests, fewer integration tests, and few end-to-end tests; the trophy puts static checks at the base and makes integration tests the largest layer.
+
+**Consumer-driven contract**
+:   A contract generated from a consumer's tests, listing exactly what it uses of a provider, which the provider's pipeline verifies before release.
+
+**Quality gate**
+:   A pipeline stage whose failing checks block promotion to the next environment.
+
+**Soak test**
+:   A long run at realistic load that exposes leaks, drift, and slow resource exhaustion.
+
+**Steady-state hypothesis**
+:   The measurable normal behavior a chaos experiment expects to hold while a failure is injected.
+
+## Consistency and transactions
+
+**Linearizability**
+:   The strongest single-object consistency model: every operation appears to take effect at one instant between its start and end, so all clients see one up-to-date order.
+
+**CAP theorem**
+:   The result that, during a network partition, a replicated system must give up either linearizable consistency or availability for some requests. It says nothing about systems without partitions.
+
+**PACELC**
+:   An extension of CAP: if there is a Partition, choose Availability or Consistency; Else, choose Latency or Consistency. The else-branch is the everyday trade-off.
+
+**Eventual consistency**
+:   A guarantee only that replicas converge once writes stop, with no promise about what a read returns before then.
+
+**Session guarantees**
+:   Consistency promises made to one client's sequence of operations: read-your-writes (you see your own writes), monotonic reads (you never go back in time), monotonic writes, and writes-follow-reads.
+
+**Replication lag / stale read**
+:   Replication lag is the time between a write committing on the leader and a follower applying it. A stale read returns a version older than one already committed.
+
+**Log sequence number (LSN)**
+:   The position of a write in a database's ordered log, used to tell whether a replica has applied it.
+
+**Last-write-wins (LWW)**
+:   Resolving concurrent writes by keeping the one with the latest timestamp and silently discarding the rest.
+
+**CRDT**
+:   Conflict-free replicated data type: a data structure whose replicas can be updated independently and always merge to the same result without coordination.
+
+**Two-phase commit (2PC)**
+:   A protocol in which a coordinator asks all participants to prepare, then tells them all to commit or abort. A coordinator failure between the phases leaves participants blocked.
+
+**Saga**
+:   A long-running business transaction split into local transactions, each with a compensating action that semantically undoes it if a later step fails. Coordinated by choreography (events) or orchestration (a central coordinator).
+
+**Compensating transaction**
+:   An action that semantically undoes an earlier committed step, such as refunding a captured payment; it is not a rollback.
+
+**Inbox (idempotent consumer)**
+:   A table of processed message IDs that a consumer checks inside its own transaction so redelivered messages have no second effect.
+
+## Resilience mechanics
+
+**Timeout**
+:   The maximum time a caller waits for a response before treating the call as failed; chosen from the callee's latency percentiles and the caller's own budget.
+
+**Exponential backoff with jitter**
+:   Waiting longer after each failed attempt (doubling the delay) and randomizing the wait, so retrying clients do not synchronize into waves.
+
+**Retry amplification / retry storm**
+:   Retries at several layers multiplying load on a struggling dependency (three layers of three attempts can mean 27 calls), which keeps it from recovering.
+
+**Circuit breaker**
+:   A guard that stops calls to a failing dependency after a threshold (open), fails fast while open, and lets trial calls through (half-open) to detect recovery.
+
+**Bulkhead**
+:   Separate resource pools per dependency or tenant, so exhaustion in one cannot consume the capacity of the others.
+
+**Load shedding**
+:   Deliberately rejecting some work when overloaded, cheapest and least important first, to keep serving the rest within its targets.
+
+**Graceful degradation**
+:   Continuing to serve a reduced but useful response when a dependency fails, such as cached data with a staleness notice.
+
+**Cascading failure**
+:   A failure that spreads because each overloaded component pushes extra load or latency onto the next.
+
+**Liveness / readiness check**
+:   Liveness asks whether a process should be restarted; readiness asks whether it should receive traffic now. Mixing them up causes restart loops and cascades.
+
+**Poison message**
+:   A message that fails processing every time it is delivered; without a receive limit and a dead-letter queue it blocks or wastes consumers forever.
+
+## Partitioning and replication
+
+**Partition (shard) / partition key**
+:   A partition is a subset of a dataset stored and served independently. The partition key is the field whose value decides which partition a record lives in.
+
+**Hot partition**
+:   A partition receiving a disproportionate share of traffic, usually because of a skewed partition key.
+
+**Consistent hashing**
+:   Placing both nodes and keys on one hash ring so that adding or removing a node moves only about one node's share of keys.
+
+**Virtual node**
+:   One of many ring positions owned by a physical node, which evens out load and spreads recovery work.
+
+**Rendezvous (highest random weight) hashing**
+:   Each node scores a key from a hash of node and key together, and the highest score owns the key; like a ring, it moves few keys on membership change.
+
+**Stable hash**
+:   A hash function that returns the same value for the same input in every process and language; Python's built-in hash() is randomized per process and is not one.
+
+**Leader-follower / multi-leader / leaderless replication**
+:   Three replication arrangements: one node accepts writes and others copy it; several nodes accept writes and reconcile; or any replica accepts writes and quorums decide reads and writes.
+
+**Rebalancing**
+:   Moving partitions between nodes when the cluster grows, shrinks, or becomes uneven, ideally without downtime and without moving more data than necessary.
+
+## Design exercises and AI decisions
+
+**Timebox**
+:   A fixed time allowance for a step; when it ends, open items are recorded and the work moves on.
+
+**Base62**
+:   Encoding numbers with the ten digits plus lower- and upper-case letters, 62 symbols in all; common for short identifiers.
+
+**Birthday bound**
+:   The approximation that among n random values drawn from N possibilities, the chance of at least one collision is about 1 − e^(−n²/2N).
+
+**Open redirect**
+:   An endpoint that sends users to any URL it is given, which attackers use to make phishing links look trustworthy.
+
+**Token bucket / leaky bucket**
+:   Rate-limiting algorithms. A token bucket refills at a fixed rate up to a capacity and each request spends a token, allowing bursts. A leaky bucket drains requests at a fixed rate, smoothing them.
+
+**Fail open / fail closed**
+:   When a protective check is unavailable, allow traffic (open) or reject it (closed); the right choice depends on what the check protects.
+
+**Misfire (catch-up) policy**
+:   What a scheduler does with runs missed during an outage: run them all, run one, or skip them.
+
+**Dead-man's switch**
+:   An alert that fires when an expected success has not happened within a time limit, catching jobs that silently stopped running.
+
+**Retrieval-augmented generation (RAG)**
+:   Fetching relevant documents at request time and adding them to a language model's prompt, instead of relying only on what the model learned in training.
+
+**Guardrail (AI)**
+:   A control outside the model that checks, filters, or blocks unsafe inputs, outputs, or actions.
+
 ## Diagrams and documentation
 
 **C4 model**

@@ -30,11 +30,14 @@ You are new to architecture, possibly new to parts of software engineering, and 
 10. [Trade-offs, principles, ADRs, and architecture governance](../architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md)
 11. [Quiz: Architecture fundamentals (D01)](../quizzes/d01-architecture-fundamentals.md)
 
-**Stage 2 — Foundations** (partly available; see [Foundations](../foundations/index.md))
+**Stage 2 — Foundations** (available; see [Foundations](../foundations/index.md))
 
-12. Computers, operating systems, and Linux for architects (planned)
-13. Programming fundamentals, data structures, and algorithms (planned)
-14. Programming paradigms and concurrency (planned)
+12. [Computers, operating systems, and Linux for architects](../foundations/computers-operating-systems-and-linux-for-architects.md)
+13. [Programming fundamentals, data structures, and algorithms](../foundations/programming-fundamentals-data-structures-and-algorithms.md)
+14. [Programming paradigms and concurrency](../foundations/programming-paradigms-and-concurrency.md)
+    with [Lab 05: race condition](../labs/lab-05-race-condition.md); then
+    [design principles and clean code](../foundations/software-design-principles-and-clean-code.md) and
+    [testing types and strategies](../foundations/software-testing-types-and-strategies.md)
 15. [Networking fundamentals: IP, CIDR, routing, and DNS](../networking/networking-fundamentals-ip-cidr-routing-and-dns.md)
 16. [Transport and application protocols](../networking/transport-and-application-protocols.md)
 17. [Relational databases and SQL internals](../databases-and-storage/relational-databases-and-sql-internals.md)
@@ -43,19 +46,24 @@ You are new to architecture, possibly new to parts of software engineering, and 
 
 **Stage 3 — Core application architecture** (mostly available)
 
-19. Architecture styles (planned)
+19. [Architecture styles](../software-architecture/architecture-styles.md), then
+    [microservices architecture](../software-architecture/microservices-architecture.md) and
+    [application design patterns](../software-architecture/application-design-patterns.md)
 20. [API design: REST, GraphQL, gRPC, and async APIs](../application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md)
 21. [Integration architecture](../application-and-api-architecture/integration-architecture.md)
 22. [Caching architecture](../databases-and-storage/caching-architecture.md)
 23. [Message queues and brokers](../messaging-and-streaming/message-queues-and-brokers.md)
 24. [Distributed systems fundamentals, time, and coordination](../distributed-systems/distributed-systems-fundamentals-time-and-coordination.md)
-25. Consistency models, CAP, and PACELC (planned)
+25. [Consistency models, CAP, and PACELC](../distributed-systems/consistency-models-cap-and-pacelc.md)
+    with [Lab 09: replication lag](../labs/lab-09-replication-lag.md)
 26. [High availability design](../reliability-and-disaster-recovery/high-availability-design.md)
 27. Security principles and threat modeling (planned)
 
 **Stage 4 — Practice**
 
-28. Design exercises: URL shortener, rate limiter, notification service (planned)
+28. Read [the architecture design method](../system-design-exercises/design-method.md), then attempt the
+    [URL shortener](../system-design-exercises/url-shortener.md) and
+    [rate limiter](../system-design-exercises/rate-limiter.md) exercises
 29. Case study 01: Highly available three-tier web application (planned)
 
 ## I already know cloud and DevOps (accelerated path)
@@ -71,11 +79,15 @@ read the governance pair:
 [SLAs, SLOs, SLIs, and error budgets](../architecture-fundamentals/slas-slos-slis-error-budgets-and-recovery-objectives.md)
 and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-principles-adrs-and-architecture-governance.md).
 
-**Stage 2 — Distributed systems and data** (partly available)
+**Stage 2 — Distributed systems and data** (mostly available)
 
 - [Distributed systems fundamentals, time, and coordination](../distributed-systems/distributed-systems-fundamentals-time-and-coordination.md)
-  → Consistency models, CAP, and PACELC → Transactions, sagas, and delivery guarantees →
-  Resilience mechanics → Scaling, partitioning, and replication (the last four planned)
+  → [Consistency models, CAP, and PACELC](../distributed-systems/consistency-models-cap-and-pacelc.md) →
+  [Transactions, sagas, and delivery guarantees](../distributed-systems/transactions-sagas-and-delivery-guarantees.md) →
+  [Resilience mechanics](../distributed-systems/resilience-mechanics-timeouts-retries-and-backpressure.md) →
+  [Scaling, partitioning, and replication](../distributed-systems/scaling-partitioning-and-replication.md),
+  with Labs [03](../labs/lab-03-queue-retries-and-dead-letter.md), [04](../labs/lab-04-idempotency-and-duplicates.md),
+  [08](../labs/lab-08-sharding-and-consistent-hashing.md), and [09](../labs/lab-09-replication-lag.md)
 - [Relational internals](../databases-and-storage/relational-databases-and-sql-internals.md) →
   NoSQL by access pattern → Advanced database architecture →
   [Caching](../databases-and-storage/caching-architecture.md)
@@ -84,7 +96,9 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
 
 **Stage 3 — Application and enterprise** (partly available)
 
-- Architecture styles → Microservices (and when not) → Distributed system patterns (planned)
+- [Architecture styles](../software-architecture/architecture-styles.md) →
+  [Microservices (and when not)](../software-architecture/microservices-architecture.md) →
+  [Distributed system patterns](../software-architecture/distributed-system-patterns.md)
 - [API design](../application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md) →
   [Integration architecture](../application-and-api-architecture/integration-architecture.md)
 - [Networking fundamentals](../networking/networking-fundamentals-ip-cidr-routing-and-dns.md) and
@@ -102,7 +116,10 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
 
 **Stage 5 — Practice**
 
-- Design exercises: multi-region application, multi-tenant SaaS, landing zone, secure CI/CD
+- [Distributed cache](../system-design-exercises/distributed-cache.md) and
+  [job scheduler](../system-design-exercises/job-scheduler.md) exercises, using the
+  [design method](../system-design-exercises/design-method.md)
+- Design exercises: multi-region application, multi-tenant SaaS, landing zone, secure CI/CD (planned)
 - Case studies 02, 03, 08, 10, 11
 
 ## AI architecture path
@@ -128,7 +145,7 @@ All AI pages are planned; the sections exist with their topic lists:
 
 ## How the paths map to the design method
 
-Every path ends in the twelve-step [design method](../system-design-exercises/index.md). The
+Every path ends in the twelve-step [design method](../system-design-exercises/design-method.md). The
 Stage 1 pages cover steps 1-3 (understand the problem, gather requirements, estimate load) and the
 communication skill (C4) you need for every later step.
 

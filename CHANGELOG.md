@@ -7,6 +7,36 @@ Format follows the spirit of [Keep a Changelog](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+### Added — 2026-11-20, software and distributed architecture batch (Phase 3)
+
+- Thirteen topic pages (Draft): computers, operating systems, and Linux; data structures and
+  algorithms; programming paradigms and concurrency; software design principles and clean code;
+  software testing types and strategies; architecture styles; microservices architecture; application
+  design patterns; distributed system patterns; consistency models, CAP, and PACELC; transactions,
+  sagas, and delivery guarantees; resilience mechanics (timeouts, retries, backpressure); scaling,
+  partitioning, and replication.
+- The twelve-step architecture design method (D30-T01 Draft, D30-T02 Outline).
+- Design exercises (Draft): URL shortener, rate limiter, distributed cache, job scheduler; exercise
+  collection pages for D29-T01 and D29-T02 (Outline) with briefs for every listed exercise.
+- Labs 03 (queue retries and dead-letter queue), 04 (idempotency and duplicates), 05 (race
+  condition), 08 (sharding and consistent hashing), and 09 (replication lag), each with code under
+  `labs/local/`, sample results under `labs/solutions/`, and a smoke test under `tests/examples/`.
+- Glossary, navigation, learning paths, labs and quiz indexes, curriculum index, README, and roadmap
+  updated; `curriculum/coverage.yaml` marks 33 topic entries Draft and 3 Outline.
+
+### Changed — 2026-11-20
+
+- Repository history rewritten so every commit is authored and committed by `vinay9354`; content
+  unchanged.
+- CI checkout fetches full history so the gitleaks secret scan can resolve the pushed commit range.
+
+### Fixed — 2026-11-20
+
+- `tests/examples/__init__.py` added: lab smoke tests were never discovered by
+  `python -m unittest discover -s tests`, so CI did not run them. Discovery now runs 49 tests.
+- Two exercise-collection diagrams switched to left-to-right layout (they rendered as thin strips);
+  the circuit breaker state diagram's overlapping labels shortened.
+
 ### Added — 2026-11-15, core learning path batch (Phase 2)
 
 - Fifteen topic pages (Draft): stakeholders, business capabilities, and success metrics; constraints,

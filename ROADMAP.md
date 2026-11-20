@@ -23,7 +23,7 @@ Status legend: ✅ done · 🔄 in progress · ⬜ not started
 - 33 section landing pages with injected topic tables; coverage matrix generator and validator; tests.
 - Open: GitHub Pages must be enabled by the maintainer (Settings → Pages → GitHub Actions).
 
-## Phase 2 — Core learning path 🔄 (pages written 2026-11-15; review step open)
+## Phase 2 — Core learning path ✅ (2026-11-15; human review carried into Phase 9)
 
 | # | Page | Status |
 |---|---|---|
@@ -41,16 +41,23 @@ Status legend: ✅ done · 🔄 in progress · ⬜ not started
 | 12 | SLAs, SLOs, SLIs, error budgets, and recovery objectives (D01-T06) | ✅ Draft |
 | 13 | Trade-offs, principles, ADRs, and architecture governance (D01-T07) | ✅ Draft |
 | 14 | Stakeholders and success metrics (D01-T02); constraints and scope (D01-T03); As-Is/To-Be and build vs buy (D01-T04), three pages | ✅ Draft |
-| 15 | Second-person review of all Draft pages → promote to Reviewed | ⬜ needs a human reviewer |
+| 15 | Second-person review of all Draft pages → promote to Reviewed | ➡️ moved to Phase 9 (needs a human reviewer) |
 
 Also in this phase: Lab 01 (latency and throughput) ✅ Draft, with a CI smoke test; glossary growth ✅;
 first domain quiz for D01 ✅ Draft.
 
-## Phase 3 — Software and distributed architecture ⬜
+## Phase 3 — Software and distributed architecture 🔄 (written 2026-11-20)
 
-D03 (styles, microservices, application patterns, distributed patterns), D04 (consistency,
-transactions and sagas, resilience mechanics, scaling and partitioning), D02 (foundations).
-Labs 03-05, 08, 09. Design exercises: URL shortener, rate limiter, distributed cache, job scheduler.
+| Area | Pages | Status |
+|---|---|---|
+| D02 foundations | Computers, OS, and Linux (T01); data structures and algorithms (T02); paradigms and concurrency (T03); design principles and clean code (T04); testing types and strategies (T05) | Draft |
+| D03 software architecture | Architecture styles (T01); microservices (T02); application design patterns (T03); distributed system patterns (T04) | Draft |
+| D04 distributed systems | Consistency, CAP, and PACELC (T02); transactions, sagas, and delivery guarantees (T03); resilience mechanics (T04); scaling, partitioning, and replication (T05) | Draft |
+| D30 design method | The twelve-step architecture design method (T01); AI design decisions at definition depth (T02) | Draft / Outline |
+| D29 exercises | URL shortener, rate limiter, distributed cache, job scheduler (full); application and infrastructure exercise collections with briefs for the rest | Draft / Outline |
+| Labs | 03 queue retries and DLQ; 04 idempotency; 05 race condition; 08 sharding and consistent hashing; 09 replication lag, each with a CI smoke test | Draft |
+
+The design method page was scheduled for Phase 8; it moved here because the exercises are built on it.
 
 ## Phase 4 — Cloud and enterprise architecture ⬜
 
@@ -86,9 +93,10 @@ agent trace viewer), quizzes per domain.
 - Accessibility pass: keyboard, contrast, reduced motion, alt text, mobile.
 - Headless Mermaid render check in CI (ADR-0003 follow-up); offline Mermaid bundle decision.
 - Cross-check page front matter against coverage YAML (ADR-0004 follow-up).
+- Second-person review of every Draft page; promote to `Reviewed` only after that review (carried from Phase 2).
 - Release checklist; enable Pages; announce. No remote changes without maintainer approval.
 
-## Known gaps and technical debt (as of 2026-11-15)
+## Known gaps and technical debt (as of 2026-11-20)
 
 - Mermaid syntax is only type-checked by the validator; rendering was verified manually in a browser
   for every page written so far. CI does not render diagrams.
@@ -107,3 +115,15 @@ agent trace viewer), quizzes per domain.
   overhead; the page says to compare ratios. An open-loop load generator is left as a stretch task.
 - Page 15 of Phase 2 (promotion to Reviewed) cannot be done by the build agent; it needs a second
   person.
+- On 2026-11-20 the history was rewritten so every commit is authored by `vinay9354`. The force-push
+  made one CI run fail in the gitleaks step (it scans from the parent of the first pushed commit, and
+  the root commit has none). The checkout now fetches full history; the one-off failure needs no fix.
+- Until 2026-11-20 `tests/examples/` had no `__init__.py`, so `unittest discover` (locally and in
+  CI) silently skipped every lab smoke test, including Lab 01's. The package marker is now in place
+  and discovery runs 49 tests (8 content, 41 lab).
+- Two code samples in Phase 3 exercises are illustrative and were not executed against the real
+  system: the Lua token-bucket script in the rate limiter exercise (no Redis available) and the
+  `SKIP LOCKED` claim query in the job scheduler exercise (no PostgreSQL available). Both pages say
+  so in their review notes.
+- Five Phase 3 pages run longer than the 650-line target (up to 725 lines); they were kept whole
+  rather than cut.

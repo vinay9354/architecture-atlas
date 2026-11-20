@@ -23,13 +23,13 @@ code lives under `labs/` in the repository and solutions under `labs/solutions/`
 |---|---|---|---|
 | 01 | [Measure latency and throughput for a simple HTTP service](lab-01-latency-and-throughput.md) | Local, free | Draft |
 | 02 | Add a cache and compare hit/miss behavior | Local, free | Planned |
-| 03 | Simulate a queue with multiple consumers, retries, and a dead-letter queue | Local, free | Planned |
-| 04 | Demonstrate idempotency and duplicate message handling | Local, free | Planned |
-| 05 | Reproduce a race condition and fix it with synchronization | Local, free | Planned |
+| 03 | [Simulate a queue with multiple consumers, retries, and a dead-letter queue](lab-03-queue-retries-and-dead-letter.md) | Local, free | Draft |
+| 04 | [Demonstrate idempotency and duplicate message handling](lab-04-idempotency-and-duplicates.md) | Local, free | Draft |
+| 05 | [Reproduce a race condition and fix it with synchronization](lab-05-race-condition.md) | Local, free | Draft |
 | 06 | Demonstrate database indexing and query plans | Local, free | Planned |
 | 07 | Compare SQL and NoSQL access patterns with a concrete workload | Local, free | Planned |
-| 08 | Simulate sharding and consistent hashing | Local, free | Planned |
-| 09 | Demonstrate eventual consistency and replication lag | Local, free | Planned |
+| 08 | [Simulate sharding and consistent hashing](lab-08-sharding-and-consistent-hashing.md) | Local, free | Draft |
+| 09 | [Demonstrate eventual consistency and replication lag](lab-09-replication-lag.md) | Local, free | Draft |
 | 10 | Build a small REST API with authentication and request validation | Local, free | Planned |
 | 11 | Add distributed tracing and structured logging to two services | Local, free | Planned |
 | 12 | Deploy a small application to local Kubernetes | Local, free | Planned |

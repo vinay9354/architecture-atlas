@@ -1,5 +1,5 @@
 # Validates content and builds the documentation site on every push and pull request.
-# Action versions last verified: 2026-11-15.
+# Action versions last verified: 2026-11-15. Checkout depth changed 2026-11-20 for gitleaks.
 name: Docs build and validation
 
 on:
@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # gitleaks scans the pushed commit range, so it needs history, not a shallow clone.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:

@@ -28,7 +28,8 @@ marked for experienced engineers.
 
 ## Status (2026-11-15)
 
-Foundation batch and the first core-learning-path batch complete:
+Foundation, core learning path (Phase 2), and software and distributed architecture (Phase 3)
+batches written:
 
 - Repository structure, MkDocs Material site, CI (build, validation, link check, Pages deploy).
 - Complete 30-domain curriculum index and a machine-readable coverage matrix with 140 topic entries,
@@ -39,6 +40,10 @@ Foundation batch and the first core-learning-path batch complete:
   and protocols; relational databases; caching; message queues; API design; integration architecture;
   distributed systems fundamentals; high availability; performance fundamentals; capacity estimation.
 - Lab 01 (latency and throughput, standard-library Python, tested in CI) and a D01 domain quiz.
+- Phase 3, all **Draft**: five CS foundations pages (D02), architecture styles, microservices, and
+  application and distributed patterns (D03), consistency, transactions and sagas, resilience, and
+  partitioning (D04), the twelve-step design method, four design exercises (URL shortener, rate
+  limiter, distributed cache, job scheduler), and Labs 03, 04, 05, 08, and 09 with CI smoke tests.
 - Six Architecture Decision Records for the repository itself.
 
 Everything else is `Planned`. See [`ROADMAP.md`](ROADMAP.md) and the
