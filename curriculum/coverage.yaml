@@ -3,7 +3,7 @@
 # status: Planned | Outline | Draft | Reviewed | Needs update
 # destination: canonical page (must exist unless status is Planned).
 version: 1
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 description: >-
   Machine-readable curriculum coverage matrix. One topic entry per inventory bullet in MASTER_PROMPT.md
   Section 8. Edit by hand; scripts/build-coverage.py renders it.
@@ -387,7 +387,7 @@ domains:
       IMAP, ICMP, SNMP, NTP, BGP, OSPF, IPsec, WebSocket, gRPC.
   - id: D09-T03
     title: Network security, load balancing, and traffic flow
-    status: Planned
+    status: Draft
     destination: docs/networking/network-security-load-balancing-and-traffic-flow.md
     inventory: >-
       Segmentation, isolation, ingress/egress, east-west/north-south traffic, perimeter security, DMZ,
@@ -396,7 +396,7 @@ domains:
       peering, hub-and-spoke, transit networking, SDN, SD-WAN, Zero Trust networking.
   - id: D09-T04
     title: Hybrid connectivity and VPNs
-    status: Planned
+    status: Draft
     destination: docs/networking/hybrid-connectivity-and-vpns.md
     inventory: >-
       Site-to-Site VPN, client VPN, dedicated private connectivity, Direct Connect/ExpressRoute/Cloud
@@ -408,7 +408,7 @@ domains:
   topics:
   - id: D10-T01
     title: Cloud service and deployment models
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/cloud-service-and-deployment-models.md
     inventory: >-
       IaaS, PaaS, SaaS, FaaS, CaaS; public/private/hybrid/multi-cloud/community/distributed/edge cloud;
@@ -416,7 +416,7 @@ domains:
       vs data plane.
   - id: D10-T02
     title: Cloud building blocks and landing zones
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/cloud-building-blocks-and-landing-zones.md
     inventory: >-
       Compute, storage, network, database, identity, security, logging, monitoring, backup, DR, multi-account,
@@ -424,14 +424,14 @@ domains:
       landing zones, governance.
   - id: D10-T03
     title: Compute options and sizing
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/compute-options-and-sizing.md
     inventory: >-
       Physical servers, VMs, hypervisors, bare metal, autoscaling, instance groups, spot/preemptible compute,
       serverless, containers, batch, HPC, GPU, ARM vs x86, placement, CPU/memory sizing.
   - id: D10-T04
     title: Multi-account strategy and infrastructure automation
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/multi-account-strategy-and-infrastructure-automation.md
     inventory: >-
       Multi-account strategy, shared services, centralized logging/security, hub-and-spoke, landing zones,
@@ -439,7 +439,7 @@ domains:
       backup/recovery, resource lifecycle.
   - id: D10-T05
     title: 'Cloud providers: principles before catalogs'
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/cloud-providers-principles-before-catalogs.md
     inventory: >-
       AWS, Microsoft Azure, Google Cloud, Oracle Cloud Infrastructure, private-cloud platforms, VMware-based
@@ -450,7 +450,7 @@ domains:
   topics:
   - id: D11-T01
     title: Containers and images
-    status: Planned
+    status: Draft
     destination: docs/containers-and-kubernetes/containers-and-images.md
     inventory: >-
       Containers vs VMs, runtimes, Docker, images/layers/registries, networking, storage, persistent volumes,
@@ -458,7 +458,7 @@ domains:
       SBOM, vulnerability scanning.
   - id: D11-T02
     title: Kubernetes architecture and workloads
-    status: Planned
+    status: Draft
     destination: docs/containers-and-kubernetes/kubernetes-architecture-and-workloads.md
     inventory: >-
       Kubernetes: control plane, worker nodes, API server, scheduler, controller manager, etcd, kubelet,
@@ -469,7 +469,7 @@ domains:
       DR.
   - id: D11-T03
     title: Kubernetes networking, storage, and service mesh
-    status: Planned
+    status: Draft
     destination: docs/containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md
     inventory: >-
       CNI, CSI, CRI, CoreDNS, ClusterIP/NodePort/LoadBalancer, ingress controllers, service mesh, sidecars,
@@ -477,7 +477,7 @@ domains:
       clusters.
   - id: D11-T04
     title: Cloud-native ecosystem tools
-    status: Planned
+    status: Draft
     destination: docs/containers-and-kubernetes/cloud-native-ecosystem-tools.md
     inventory: >-
       Ecosystem: Helm, Kustomize, Argo CD, Flux, GitOps, Karpenter, ExternalDNS, cert-manager, External
@@ -489,7 +489,7 @@ domains:
   topics:
   - id: D12-T01
     title: Security principles and threat modeling
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/security-principles-and-threat-modeling.md
     inventory: >-
       CIA triad, defense in depth, least privilege, Zero Trust, security by design/default, shared responsibility,
@@ -497,7 +497,7 @@ domains:
       boundaries, posture management.
   - id: D12-T02
     title: Identity and access management
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/identity-and-access-management.md
     inventory: >-
       IAM: authentication, authorization, identity lifecycle, federation, SSO, MFA, OAuth 2.0, OIDC, SAML,
@@ -505,7 +505,7 @@ domains:
       service-to-service auth, machine identities, API keys, JWT, sessions, governance, access reviews.
   - id: D12-T03
     title: Network security architecture
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/network-security-architecture.md
     inventory: >-
       Network security: segmentation, microsegmentation, firewalls, WAF, DDoS, IDS/IPS, VPN, NAC, private
@@ -513,7 +513,7 @@ domains:
       traffic inspection, ZTNA.
   - id: D12-T04
     title: Application security
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/application-security.md
     inventory: >-
       Application security: secure SDLC, OWASP Top 10, validation, encoding, SQL injection, XSS, CSRF,
@@ -521,7 +521,7 @@ domains:
       secrets leakage, secure coding, SAST, DAST, SCA, IAST, RASP, penetration testing, fuzzing.
   - id: D12-T05
     title: Data security and privacy
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/data-security-and-privacy.md
     inventory: >-
       Data security: classification/sensitivity, encryption at rest/in transit/in use, KMS, HSM, PKI,
@@ -529,7 +529,7 @@ domains:
       encryption, DLP, exfiltration prevention, privacy by design, residency, sovereignty, retention/deletion.
   - id: D12-T06
     title: Infrastructure and supply-chain security
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/infrastructure-and-supply-chain-security.md
     inventory: >-
       Infrastructure/supply chain: infrastructure security, CSPM, CWPP, CIEM, container/Kubernetes/VM/host
@@ -537,14 +537,14 @@ domains:
       build integrity, dependency pinning, IaC scanning, policy as code, runtime detection.
   - id: D12-T07
     title: Security operations
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/security-operations.md
     inventory: >-
       SecOps: SIEM, SOAR, monitoring, threat intelligence, incident detection/response, forensics, prioritization,
       alerting, audit logs, continuous compliance, posture assessment, breach response, BCP, DR testing.
   - id: D12-T08
     title: Compliance and regulatory frameworks
-    status: Planned
+    status: Draft
     destination: docs/security-architecture/compliance-and-regulatory-frameworks.md
     inventory: >-
       Compliance: ISO 27001, SOC 1/SOC 2, PCI DSS, HIPAA, GDPR, India's DPDP framework, NIST CSF, NIST
@@ -1209,7 +1209,7 @@ domains:
       fraud detection, recommendation engine, search platform, big-data processing.
   - id: D29-T04
     title: Cloud and enterprise platform exercises
-    status: Planned
+    status: Outline
     destination: docs/system-design-exercises/cloud-and-enterprise-platform-exercises.md
     inventory: >-
       AWS multi-account landing zone, centralized cross-account logging, multi-region DR, hybrid cloud

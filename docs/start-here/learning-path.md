@@ -57,14 +57,18 @@ You are new to architecture, possibly new to parts of software engineering, and 
 25. [Consistency models, CAP, and PACELC](../distributed-systems/consistency-models-cap-and-pacelc.md)
     with [Lab 09: replication lag](../labs/lab-09-replication-lag.md)
 26. [High availability design](../reliability-and-disaster-recovery/high-availability-design.md)
-27. Security principles and threat modeling (planned)
+27. [Security principles and threat modeling](../security-architecture/security-principles-and-threat-modeling.md),
+    then [identity and access management](../security-architecture/identity-and-access-management.md)
+    with [Lab 10: REST API authentication and validation](../labs/lab-10-rest-api-auth-and-validation.md)
+28. [Cloud service and deployment models](../cloud-architecture/cloud-service-and-deployment-models.md)
+    and [containers and images](../containers-and-kubernetes/containers-and-images.md)
 
 **Stage 4 — Practice**
 
-28. Read [the architecture design method](../system-design-exercises/design-method.md), then attempt the
+29. Read [the architecture design method](../system-design-exercises/design-method.md), then attempt the
     [URL shortener](../system-design-exercises/url-shortener.md) and
     [rate limiter](../system-design-exercises/rate-limiter.md) exercises
-29. Case study 01: Highly available three-tier web application (planned)
+30. [Case study 01: Highly available three-tier web application](../end-to-end-case-studies/cs-01-highly-available-three-tier-web-application.md)
 
 ## I already know cloud and DevOps (accelerated path)
 
@@ -106,6 +110,21 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
   refresher before hybrid connectivity
 - Enterprise architecture practice → Legacy modernization → Hybrid and multi-cloud (planned)
 
+**Stage 3b — Cloud, platform, and security** (available)
+
+- [Cloud building blocks and landing zones](../cloud-architecture/cloud-building-blocks-and-landing-zones.md) →
+  [Multi-account strategy and infrastructure automation](../cloud-architecture/multi-account-strategy-and-infrastructure-automation.md)
+  (with [Lab 15](../labs/lab-15-infrastructure-module-and-static-checks.md)) →
+  [Network security, load balancing, and traffic flow](../networking/network-security-load-balancing-and-traffic-flow.md)
+  (with [Lab 14](../labs/lab-14-network-segmentation.md)) →
+  [Hybrid connectivity and VPNs](../networking/hybrid-connectivity-and-vpns.md)
+- [Kubernetes architecture and workloads](../containers-and-kubernetes/kubernetes-architecture-and-workloads.md) →
+  [Kubernetes networking, storage, and service mesh](../containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md)
+  (with [Lab 12](../labs/lab-12-local-kubernetes-deployment.md)) →
+  [Cloud-native ecosystem tools](../containers-and-kubernetes/cloud-native-ecosystem-tools.md)
+- The [security architecture](../security-architecture/index.md) section in order: principles and threat
+  modeling, IAM, network, application, data, supply chain, operations, compliance
+
 **Stage 4 — Operate at scale** (partly available)
 
 - [Performance fundamentals](../performance-and-scalability/performance-fundamentals-and-littles-law.md)
@@ -119,8 +138,12 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
 - [Distributed cache](../system-design-exercises/distributed-cache.md) and
   [job scheduler](../system-design-exercises/job-scheduler.md) exercises, using the
   [design method](../system-design-exercises/design-method.md)
-- Design exercises: multi-region application, multi-tenant SaaS, landing zone, secure CI/CD (planned)
-- Case studies 02, 03, 08, 10, 11
+- [Multi-account landing zone](../system-design-exercises/multi-account-landing-zone.md) and
+  [zero-trust enterprise](../system-design-exercises/zero-trust-enterprise.md) exercises; the other
+  [cloud and enterprise platform exercises](../system-design-exercises/cloud-and-enterprise-platform-exercises.md)
+  are briefs
+- Case studies [08](../end-to-end-case-studies/cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md)
+  and [15](../end-to-end-case-studies/cs-15-zero-trust-application-architecture.md); 02, 03, 10, and 11 are planned
 
 ## AI architecture path
 

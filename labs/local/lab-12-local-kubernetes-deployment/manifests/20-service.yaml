@@ -1,0 +1,17 @@
+# A stable in-cluster name and virtual IP for the ready replicas.
+apiVersion: v1
+kind: Service
+metadata:
+  name: tracking-stub
+  namespace: atlas-tracking-lab
+  labels:
+    app.kubernetes.io/name: tracking-stub
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: tracking-stub
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

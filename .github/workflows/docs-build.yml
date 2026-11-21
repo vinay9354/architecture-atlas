@@ -1,5 +1,6 @@
 # Validates content and builds the documentation site on every push and pull request.
-# Action versions last verified: 2026-11-15. Checkout depth changed 2026-11-20 for gitleaks.
+# Action versions last verified: 2026-11-15 (setup-terraform v4.0.1 added 2026-11-21).
+# Checkout depth changed 2026-11-20 for gitleaks.
 name: Docs build and validation
 
 on:
@@ -37,6 +38,13 @@ jobs:
           python scripts/validate-content.py
           python scripts/build-coverage.py --check
           python scripts/check-assets.py
+
+      # Lab 15's smoke test runs terraform fmt/validate/test on a provider-free module (no downloads,
+      # no credentials). Pinned to the version the lab was verified with.
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_version: "1.15.6"
+          terraform_wrapper: false
 
       - name: Unit tests
         run: python -m unittest discover -s tests -v

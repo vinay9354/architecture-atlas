@@ -30,12 +30,12 @@ code lives under `labs/` in the repository and solutions under `labs/solutions/`
 | 07 | Compare SQL and NoSQL access patterns with a concrete workload | Local, free | Planned |
 | 08 | [Simulate sharding and consistent hashing](lab-08-sharding-and-consistent-hashing.md) | Local, free | Draft |
 | 09 | [Demonstrate eventual consistency and replication lag](lab-09-replication-lag.md) | Local, free | Draft |
-| 10 | Build a small REST API with authentication and request validation | Local, free | Planned |
+| 10 | [Build a small REST API with authentication and request validation](lab-10-rest-api-auth-and-validation.md) | Local, free | Draft |
 | 11 | Add distributed tracing and structured logging to two services | Local, free | Planned |
-| 12 | Deploy a small application to local Kubernetes | Local, free | Planned |
+| 12 | [Deploy a small application to local Kubernetes](lab-12-local-kubernetes-deployment.md) | Local, free (Docker and kind) | Draft |
 | 13 | Implement a GitOps deployment locally | Local, free | Planned |
-| 14 | Demonstrate network segmentation with containers or a local lab | Local, free | Planned |
-| 15 | Create an infrastructure module and run static checks | Local, free | Planned |
+| 14 | [Demonstrate network segmentation with containers or a local lab](lab-14-network-segmentation.md) | Local, free | Draft |
+| 15 | [Create an infrastructure module and run static checks](lab-15-infrastructure-module-and-static-checks.md) | Local, free (Terraform or OpenTofu) | Draft |
 | 16 | Build a simple event-driven workflow | Local, free | Planned |
 | 17 | Implement a basic RAG pipeline using local documents and a local or optional embedding/model endpoint | Local, free | Planned |
 | 18 | Compare keyword, vector, and hybrid retrieval on a small dataset | Local, free | Planned |

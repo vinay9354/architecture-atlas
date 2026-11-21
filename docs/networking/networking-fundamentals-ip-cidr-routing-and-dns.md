@@ -367,7 +367,10 @@ The platform registry hands out `/16`s from `10.0.0.0/8`. AtlasMart takes:
 
 Why a `/16` each: it is far more than today's need, but address space inside `10.0.0.0/8` is cheap
 and renumbering later is not. The gaps (`10.11` to `10.19`) are left for future environments or
-regions of the same workload so that `10.10.0.0/12` could one day summarize "all of AtlasMart prod".
+regions of the same workload: a second prod region could take `10.11.0.0/16`, and then the single
+prefix `10.10.0.0/15` would summarize "all of AtlasMart prod". (A summary must start on its own
+boundary: a `/15` starts on an even second octet, so `10.10` works; `10.10.0.0/12` would not,
+because a `/12` must start on a multiple of 16 and would really be `10.0.0.0/12`.)
 None of these overlap the office `192.168.0.0/16` or the existing `10.0` to `10.9` blocks.
 
 ### Step 3 — Split each /16 by zone, then by tier

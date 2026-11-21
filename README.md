@@ -26,10 +26,10 @@ Primarily engineers with working cloud and DevOps experience who want to grow in
 architecture roles. Written to stay readable for motivated beginners, with advanced (Level 3) sections
 marked for experienced engineers.
 
-## Status (2026-11-15)
+## Status (2026-11-21)
 
-Foundation, core learning path (Phase 2), and software and distributed architecture (Phase 3)
-batches written:
+Foundation, core learning path (Phase 2), software and distributed architecture (Phase 3), and the
+first half of cloud and enterprise architecture (Phase 4A) written:
 
 - Repository structure, MkDocs Material site, CI (build, validation, link check, Pages deploy).
 - Complete 30-domain curriculum index and a machine-readable coverage matrix with 140 topic entries,
@@ -44,6 +44,12 @@ batches written:
   application and distributed patterns (D03), consistency, transactions and sagas, resilience, and
   partitioning (D04), the twelve-step design method, four design exercises (URL shortener, rate
   limiter, distributed cache, job scheduler), and Labs 03, 04, 05, 08, and 09 with CI smoke tests.
+- Phase 4A, all **Draft**: network security and hybrid connectivity (D09), cloud service models,
+  landing zones, compute sizing, multi-account strategy, and providers (D10), containers, Kubernetes,
+  and the cloud-native ecosystem (D11), the full security architecture domain (D12: principles and
+  threat modeling, IAM, network, application, data, supply chain, security operations, compliance),
+  case studies 01, 08, and 15, two platform exercises (multi-account landing zone, zero-trust
+  enterprise), and Labs 10, 12, 14, and 15 with CI smoke tests.
 - Six Architecture Decision Records for the repository itself.
 
 Everything else is `Planned`. See [`ROADMAP.md`](ROADMAP.md) and the

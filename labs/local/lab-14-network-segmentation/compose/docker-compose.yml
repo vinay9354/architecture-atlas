@@ -1,0 +1,35 @@
+# Lab 14 optional appendix: the same three tiers as Docker networks.
+#
+# NOT EXECUTED by the lab author: Docker Engine was installed but not running when this lab was
+# written, so the expected results in the lab page are predictions from the Compose documentation,
+# not observed output. The automated smoke test only parses this file with PyYAML.
+#
+# Three stand-in services, all from the same small Python image, each running Python's built-in
+# HTTP server on the port its tier would use. Nothing here is a real web server or database.
+#   web: frontend network only (the only service with a published port, bound to 127.0.0.1)
+#   app: frontend AND data networks (the only path between the two)
+#   db:  data network only; `internal: true` gives that network no route outside the host
+name: lab14-segmentation
+
+services:
+  web:
+    image: python:3.12-alpine
+    command: ["python", "-m", "http.server", "8000"]
+    networks: [frontend]
+    ports:
+      - "127.0.0.1:8000:8000"
+
+  app:
+    image: python:3.12-alpine
+    command: ["python", "-m", "http.server", "8080"]
+    networks: [frontend, data]
+
+  db:
+    image: python:3.12-alpine
+    command: ["python", "-m", "http.server", "5432"]
+    networks: [data]
+
+networks:
+  frontend: {}
+  data:
+    internal: true

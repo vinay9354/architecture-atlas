@@ -25,3 +25,9 @@ package-lock.json
 .env.*
 *.local.yml
 .lycheecache
+
+# Terraform / OpenTofu working files (Lab 15 and any IaC example run in place)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log

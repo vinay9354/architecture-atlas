@@ -31,8 +31,8 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | **D09** | **Networking and hybrid connectivity** | | |
 | D09-T01 | Networking fundamentals: IP, CIDR, routing, and DNS | :material-circle-slice-5: Draft | [networking-fundamentals-ip-cidr-routing-and-dns](networking-fundamentals-ip-cidr-routing-and-dns.md) |
 | D09-T02 | Transport and application protocols | :material-circle-slice-5: Draft | [transport-and-application-protocols](transport-and-application-protocols.md) |
-| D09-T03 | Network security, load balancing, and traffic flow | :material-circle-outline: Planned | planned: `networking/network-security-load-balancing-and-traffic-flow.md` |
-| D09-T04 | Hybrid connectivity and VPNs | :material-circle-outline: Planned | planned: `networking/hybrid-connectivity-and-vpns.md` |
+| D09-T03 | Network security, load balancing, and traffic flow | :material-circle-slice-5: Draft | [network-security-load-balancing-and-traffic-flow](network-security-load-balancing-and-traffic-flow.md) |
+| D09-T04 | Hybrid connectivity and VPNs | :material-circle-slice-5: Draft | [hybrid-connectivity-and-vpns](hybrid-connectivity-and-vpns.md) |
 <!-- coverage:end -->
 
 ## How to continue

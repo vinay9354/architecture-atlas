@@ -30,10 +30,10 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D11** | **Containers, Kubernetes, and cloud-native architecture** | | |
-| D11-T01 | Containers and images | :material-circle-outline: Planned | planned: `containers-and-kubernetes/containers-and-images.md` |
-| D11-T02 | Kubernetes architecture and workloads | :material-circle-outline: Planned | planned: `containers-and-kubernetes/kubernetes-architecture-and-workloads.md` |
-| D11-T03 | Kubernetes networking, storage, and service mesh | :material-circle-outline: Planned | planned: `containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md` |
-| D11-T04 | Cloud-native ecosystem tools | :material-circle-outline: Planned | planned: `containers-and-kubernetes/cloud-native-ecosystem-tools.md` |
+| D11-T01 | Containers and images | :material-circle-slice-5: Draft | [containers-and-images](containers-and-images.md) |
+| D11-T02 | Kubernetes architecture and workloads | :material-circle-slice-5: Draft | [kubernetes-architecture-and-workloads](kubernetes-architecture-and-workloads.md) |
+| D11-T03 | Kubernetes networking, storage, and service mesh | :material-circle-slice-5: Draft | [kubernetes-networking-storage-and-service-mesh](kubernetes-networking-storage-and-service-mesh.md) |
+| D11-T04 | Cloud-native ecosystem tools | :material-circle-slice-5: Draft | [cloud-native-ecosystem-tools](cloud-native-ecosystem-tools.md) |
 <!-- coverage:end -->
 
 ## How to continue

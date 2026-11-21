@@ -7,6 +7,49 @@ Format follows the spirit of [Keep a Changelog](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+### Added — 2026-11-21, cloud, platform, and security batch (Phase 4A)
+
+- Nineteen topic pages (Draft): network security, load balancing, and traffic flow; hybrid
+  connectivity and VPNs; cloud service and deployment models; cloud building blocks and landing zones;
+  compute options and sizing; multi-account strategy and infrastructure automation; cloud providers
+  (principles before catalogs); containers and images; Kubernetes architecture and workloads;
+  Kubernetes networking, storage, and service mesh; cloud-native ecosystem tools; and the whole
+  security architecture domain (principles and threat modeling, identity and access management,
+  network security, application security, data security and privacy, infrastructure and supply-chain
+  security, security operations, compliance and regulatory frameworks).
+- The first end-to-end case studies (Draft): 01 highly available three-tier web application, 08
+  multi-account landing zone and hub-and-spoke network, 15 zero-trust application architecture.
+- Design exercises (Draft): multi-account landing zone and zero-trust enterprise; the D29-T04 cloud and
+  enterprise platform exercise collection (Outline) with briefs for all thirteen listed exercises.
+- Labs 10 (REST API authentication and validation), 12 (local Kubernetes deployment), 14 (network
+  segmentation), and 15 (infrastructure module and static checks), each with code, results, and a
+  smoke test. Lab 12's cluster steps and the Docker parts of Labs 14 and D11-T01 were not executed by
+  the author (no container runtime available); their pages say so.
+- Glossary: 149 new terms in six sections (cloud foundations; containers and Kubernetes; network
+  security and hybrid connectivity; security principles, identity, and data protection; security
+  operations, supply chain, and compliance; deployment and data recovery), 402 terms in total.
+- Navigation, learning paths, quiz index, labs and case-study indexes, curriculum index, README, and
+  roadmap updated; `curriculum/coverage.yaml` marks 52 topic entries Draft and 4 Outline.
+
+### Changed — 2026-11-21
+
+- CI installs Terraform 1.15.6 (`hashicorp/setup-terraform` v4) so Lab 15's `fmt`, `validate`, and
+  `test` checks run instead of being skipped. The module has no providers, so nothing is downloaded.
+- `.gitignore` excludes Terraform and OpenTofu working directories and state files.
+- Curriculum index: the "Written" column is now generated from `curriculum/coverage.yaml` for every
+  domain (it had not been updated for D02-D04 in Phase 3).
+
+### Fixed — 2026-11-21
+
+- Six new diagrams that rendered as unreadable strips were re-laid out: two side-by-side stacks
+  (hypervisors, containers versus VMs) now stack vertically, a zone figure stacks its nodes, and three
+  organizational-unit trees run left to right.
+
+- Networking fundamentals: the address-plan step claimed `10.10.0.0/12` could summarize all AtlasMart
+  prod networks. A `/12` must start on a multiple of 16 in the second octet, so that prefix is really
+  `10.0.0.0/12` and overlaps other workloads. The text now uses `10.10.0.0/15` for two prod regions and
+  explains the boundary rule.
+
 ### Added — 2026-11-20, software and distributed architecture batch (Phase 3)
 
 - Thirteen topic pages (Draft): computers, operating systems, and Linux; data structures and

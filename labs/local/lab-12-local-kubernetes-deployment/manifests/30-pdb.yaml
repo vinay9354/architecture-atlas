@@ -1,0 +1,11 @@
+# Voluntary disruptions (node drains, cluster upgrades) may never leave fewer than 2 ready replicas.
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: tracking-stub
+  namespace: atlas-tracking-lab
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: tracking-stub

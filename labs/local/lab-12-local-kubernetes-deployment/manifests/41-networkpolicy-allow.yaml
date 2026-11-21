@@ -1,0 +1,68 @@
+# Allow rules on top of the default deny. NetworkPolicies are additive: traffic is allowed if any
+# policy that selects the Pod allows it.
+
+# 1. Every Pod in the namespace may resolve names through the cluster DNS (CoreDNS in kube-system).
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-dns-egress
+  namespace: atlas-tracking-lab
+spec:
+  podSelector: {}
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: kube-system
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+---
+# 2. The tracking stub accepts connections on 8080 only from Pods labelled access=tracking-stub.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-ingress-to-tracking-stub
+  namespace: atlas-tracking-lab
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: tracking-stub
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              access: tracking-stub
+      ports:
+        - protocol: TCP
+          port: 8080
+---
+# 3. Pods labelled access=tracking-stub may open connections to the tracking stub on 8080.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-egress-to-tracking-stub
+  namespace: atlas-tracking-lab
+spec:
+  podSelector:
+    matchLabels:
+      access: tracking-stub
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app.kubernetes.io/name: tracking-stub
+      ports:
+        - protocol: TCP
+          port: 8080

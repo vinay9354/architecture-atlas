@@ -31,11 +31,11 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D10** | **Cloud and infrastructure architecture** | | |
-| D10-T01 | Cloud service and deployment models | :material-circle-outline: Planned | planned: `cloud-architecture/cloud-service-and-deployment-models.md` |
-| D10-T02 | Cloud building blocks and landing zones | :material-circle-outline: Planned | planned: `cloud-architecture/cloud-building-blocks-and-landing-zones.md` |
-| D10-T03 | Compute options and sizing | :material-circle-outline: Planned | planned: `cloud-architecture/compute-options-and-sizing.md` |
-| D10-T04 | Multi-account strategy and infrastructure automation | :material-circle-outline: Planned | planned: `cloud-architecture/multi-account-strategy-and-infrastructure-automation.md` |
-| D10-T05 | Cloud providers: principles before catalogs | :material-circle-outline: Planned | planned: `cloud-architecture/cloud-providers-principles-before-catalogs.md` |
+| D10-T01 | Cloud service and deployment models | :material-circle-slice-5: Draft | [cloud-service-and-deployment-models](cloud-service-and-deployment-models.md) |
+| D10-T02 | Cloud building blocks and landing zones | :material-circle-slice-5: Draft | [cloud-building-blocks-and-landing-zones](cloud-building-blocks-and-landing-zones.md) |
+| D10-T03 | Compute options and sizing | :material-circle-slice-5: Draft | [compute-options-and-sizing](compute-options-and-sizing.md) |
+| D10-T04 | Multi-account strategy and infrastructure automation | :material-circle-slice-5: Draft | [multi-account-strategy-and-infrastructure-automation](multi-account-strategy-and-infrastructure-automation.md) |
+| D10-T05 | Cloud providers: principles before catalogs | :material-circle-slice-5: Draft | [cloud-providers-principles-before-catalogs](cloud-providers-principles-before-catalogs.md) |
 <!-- coverage:end -->
 
 ## How to continue

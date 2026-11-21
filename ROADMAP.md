@@ -46,7 +46,7 @@ Status legend: ✅ done · 🔄 in progress · ⬜ not started
 Also in this phase: Lab 01 (latency and throughput) ✅ Draft, with a CI smoke test; glossary growth ✅;
 first domain quiz for D01 ✅ Draft.
 
-## Phase 3 — Software and distributed architecture 🔄 (written 2026-11-20)
+## Phase 3 — Software and distributed architecture ✅ (2026-11-20; human review carried into Phase 9)
 
 | Area | Pages | Status |
 |---|---|---|
@@ -59,10 +59,31 @@ first domain quiz for D01 ✅ Draft.
 
 The design method page was scheduled for Phase 8; it moved here because the exercises are built on it.
 
-## Phase 4 — Cloud and enterprise architecture ⬜
+## Phase 4 — Cloud and enterprise architecture 🔄 (batch 4A written 2026-11-21)
 
-D09, D10, D11, D12, D13, D15, D16, D17, D18, D28 (Well-Architected and adoption frameworks).
-Labs 10-15. Case studies 01, 08, 09, 10, 11, 15. Exercises: landing zone, multi-region, zero trust.
+Phase 4 is split into two batches because of its size (41 topics, 6 labs, 6 case studies, 3 exercises).
+
+**Batch 4A — networking, cloud, containers, security** (written, Draft)
+
+| Area | Pages | Status |
+|---|---|---|
+| D09 networking | Network security, load balancing, and traffic flow (T03); hybrid connectivity and VPNs (T04) | Draft |
+| D10 cloud | Service and deployment models (T01); building blocks and landing zones (T02); compute options and sizing (T03); multi-account strategy and automation (T04); providers, principles before catalogs (T05) | Draft |
+| D11 containers and Kubernetes | Containers and images (T01); Kubernetes architecture and workloads (T02); networking, storage, and service mesh (T03); ecosystem tools (T04) | Draft |
+| D12 security | Principles and threat modeling; IAM; network; application; data and privacy; infrastructure and supply chain; security operations; compliance (T01-T08) | Draft |
+| Case studies | 01 three-tier HA web app; 08 landing zone and hub-and-spoke; 15 zero-trust application | Draft |
+| D29-T04 exercises | Multi-account landing zone and zero-trust enterprise (full); collection page with briefs for the other eleven | Draft / Outline |
+| Labs | 10 REST API auth and validation; 12 local Kubernetes; 14 network segmentation; 15 infrastructure module and static checks | Draft |
+
+**Batch 4B — reliability, operations, delivery, cost, enterprise, frameworks** ⬜
+
+D13-T02 to T04 (reliability engineering, DR strategies, advanced resilience); D15 (observability,
+monitoring and on-call, incident management and SRE); D16 (DevOps lifecycle, CI/CD, IaC, DevSecOps,
+platform engineering); D17 (FinOps, sustainability); D18 (EA practice, frameworks, modernization,
+hybrid and multi-cloud); D28 (Well-Architected, adoption frameworks, reference models, applying them).
+Labs 11 (tracing and structured logging) and 13 (GitOps). Case studies 09 (hybrid migration), 10
+(multi-region DR), 11 (enterprise Kubernetes with GitOps). Exercise: multi-region DR. Case study 09
+must reuse the hybrid network values fixed in D09-T04 (ASNs, tunnel and DNS addresses).
 
 ## Phase 5 — Data architecture ⬜
 
@@ -96,7 +117,7 @@ agent trace viewer), quizzes per domain.
 - Second-person review of every Draft page; promote to `Reviewed` only after that review (carried from Phase 2).
 - Release checklist; enable Pages; announce. No remote changes without maintainer approval.
 
-## Known gaps and technical debt (as of 2026-11-20)
+## Known gaps and technical debt (as of 2026-11-21)
 
 - Mermaid syntax is only type-checked by the validator; rendering was verified manually in a browser
   for every page written so far. CI does not render diagrams.
@@ -127,3 +148,18 @@ agent trace viewer), quizzes per domain.
   so in their review notes.
 - Five Phase 3 pages run longer than the 650-line target (up to 725 lines); they were kept whole
   rather than cut.
+- Batch 4A steps that were not executed because no container runtime or cluster was available to the
+  build agent: Lab 12's cluster steps (create, load, apply, drain, NetworkPolicy test), the Docker
+  Compose appendix of Lab 14, the Dockerfiles on the containers page, and the Kubernetes YAML on the D11
+  pages (parsed, never applied). OpenTofu commands in Lab 15 were not run (Terraform 1.15.6 was). A
+  reviewer with Docker and kind should run Lab 12 end to end; three behaviours need confirmation
+  (replacement Pod placement after a zone drain with `nodeTaintsPolicy: Honor`, the drain sequence, and
+  kubelet probes under default-deny NetworkPolicies).
+- Facts in batch 4A that rest on secondary sources and need a reviewer: the mapping of NIST SP 800-61
+  Rev. 3 to CSF functions; SP 800-86 phase names; the claim that Microsoft moved away from DREAD; PCI DSS
+  requirement titles (the official PDF is behind a licence page). iso.org and hhs.gov return 403 to
+  scripts; their links were kept.
+- Several batch 4A pages run past the 650-line target (up to about 720 lines).
+- docs.aws.amazon.com answers HTTP 200 even for pages that do not exist, so a status check cannot
+  prove an AWS link is real. On 2026-11-21 all 68 AWS documentation URLs in batch 4A were checked by
+  page title instead (a missing page returns only the generic service name); all were real.

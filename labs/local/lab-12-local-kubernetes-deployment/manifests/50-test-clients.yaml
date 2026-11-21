@@ -1,0 +1,71 @@
+# Two idle client Pods from the same image, used to test the NetworkPolicy from inside the cluster.
+# Only allowed-client carries the access=tracking-stub label.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: allowed-client
+  namespace: atlas-tracking-lab
+  labels:
+    app.kubernetes.io/name: lab-client
+    access: tracking-stub
+spec:
+  automountServiceAccountToken: false
+  terminationGracePeriodSeconds: 5
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+    - name: client
+      image: tracking-stub:0.1.0
+      imagePullPolicy: IfNotPresent
+      command: ["python", "/app/probe.py", "--idle"]
+      resources:
+        requests:
+          cpu: 10m
+          memory: 32Mi
+        limits:
+          cpu: 100m
+          memory: 64Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop: ["ALL"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: blocked-client
+  namespace: atlas-tracking-lab
+  labels:
+    app.kubernetes.io/name: lab-client
+spec:
+  automountServiceAccountToken: false
+  terminationGracePeriodSeconds: 5
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    runAsGroup: 10001
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+    - name: client
+      image: tracking-stub:0.1.0
+      imagePullPolicy: IfNotPresent
+      command: ["python", "/app/probe.py", "--idle"]
+      resources:
+        requests:
+          cpu: 10m
+          memory: 32Mi
+        limits:
+          cpu: 100m
+          memory: 64Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop: ["ALL"]

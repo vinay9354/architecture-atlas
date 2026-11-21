@@ -31,14 +31,14 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D12** | **Security architecture and cybersecurity** | | |
-| D12-T01 | Security principles and threat modeling | :material-circle-outline: Planned | planned: `security-architecture/security-principles-and-threat-modeling.md` |
-| D12-T02 | Identity and access management | :material-circle-outline: Planned | planned: `security-architecture/identity-and-access-management.md` |
-| D12-T03 | Network security architecture | :material-circle-outline: Planned | planned: `security-architecture/network-security-architecture.md` |
-| D12-T04 | Application security | :material-circle-outline: Planned | planned: `security-architecture/application-security.md` |
-| D12-T05 | Data security and privacy | :material-circle-outline: Planned | planned: `security-architecture/data-security-and-privacy.md` |
-| D12-T06 | Infrastructure and supply-chain security | :material-circle-outline: Planned | planned: `security-architecture/infrastructure-and-supply-chain-security.md` |
-| D12-T07 | Security operations | :material-circle-outline: Planned | planned: `security-architecture/security-operations.md` |
-| D12-T08 | Compliance and regulatory frameworks | :material-circle-outline: Planned | planned: `security-architecture/compliance-and-regulatory-frameworks.md` |
+| D12-T01 | Security principles and threat modeling | :material-circle-slice-5: Draft | [security-principles-and-threat-modeling](security-principles-and-threat-modeling.md) |
+| D12-T02 | Identity and access management | :material-circle-slice-5: Draft | [identity-and-access-management](identity-and-access-management.md) |
+| D12-T03 | Network security architecture | :material-circle-slice-5: Draft | [network-security-architecture](network-security-architecture.md) |
+| D12-T04 | Application security | :material-circle-slice-5: Draft | [application-security](application-security.md) |
+| D12-T05 | Data security and privacy | :material-circle-slice-5: Draft | [data-security-and-privacy](data-security-and-privacy.md) |
+| D12-T06 | Infrastructure and supply-chain security | :material-circle-slice-5: Draft | [infrastructure-and-supply-chain-security](infrastructure-and-supply-chain-security.md) |
+| D12-T07 | Security operations | :material-circle-slice-5: Draft | [security-operations](security-operations.md) |
+| D12-T08 | Compliance and regulatory frameworks | :material-circle-slice-5: Draft | [compliance-and-regulatory-frameworks](compliance-and-regulatory-frameworks.md) |
 <!-- coverage:end -->
 
 ## How to continue

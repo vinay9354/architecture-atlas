@@ -161,12 +161,34 @@ nav:
           - networking/index.md
           - Networking fundamentals (IP, CIDR, routing, DNS): networking/networking-fundamentals-ip-cidr-routing-and-dns.md
           - Transport and application protocols: networking/transport-and-application-protocols.md
-      - Cloud and infrastructure architecture: cloud-architecture/index.md
-      - Containers and Kubernetes: containers-and-kubernetes/index.md
+          - Network security, load balancing, and traffic flow: networking/network-security-load-balancing-and-traffic-flow.md
+          - Hybrid connectivity and VPNs: networking/hybrid-connectivity-and-vpns.md
+      - Cloud and infrastructure architecture:
+          - cloud-architecture/index.md
+          - Cloud service and deployment models: cloud-architecture/cloud-service-and-deployment-models.md
+          - Cloud building blocks and landing zones: cloud-architecture/cloud-building-blocks-and-landing-zones.md
+          - Compute options and sizing: cloud-architecture/compute-options-and-sizing.md
+          - Multi-account strategy and infrastructure automation: cloud-architecture/multi-account-strategy-and-infrastructure-automation.md
+          - "Cloud providers: principles before catalogs": cloud-architecture/cloud-providers-principles-before-catalogs.md
+      - Containers and Kubernetes:
+          - containers-and-kubernetes/index.md
+          - Containers and images: containers-and-kubernetes/containers-and-images.md
+          - Kubernetes architecture and workloads: containers-and-kubernetes/kubernetes-architecture-and-workloads.md
+          - Kubernetes networking, storage, and service mesh: containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md
+          - Cloud-native ecosystem tools: containers-and-kubernetes/cloud-native-ecosystem-tools.md
       - DevOps and platform engineering: devops-and-platform-engineering/index.md
       - FinOps and sustainability: finops-and-sustainability/index.md
   - Security and Operations:
-      - Security architecture: security-architecture/index.md
+      - Security architecture:
+          - security-architecture/index.md
+          - Security principles and threat modeling: security-architecture/security-principles-and-threat-modeling.md
+          - Identity and access management: security-architecture/identity-and-access-management.md
+          - Network security architecture: security-architecture/network-security-architecture.md
+          - Application security: security-architecture/application-security.md
+          - Data security and privacy: security-architecture/data-security-and-privacy.md
+          - Infrastructure and supply-chain security: security-architecture/infrastructure-and-supply-chain-security.md
+          - Security operations: security-architecture/security-operations.md
+          - Compliance and regulatory frameworks: security-architecture/compliance-and-regulatory-frameworks.md
       - Reliability and disaster recovery:
           - reliability-and-disaster-recovery/index.md
           - High availability design: reliability-and-disaster-recovery/high-availability-design.md
@@ -190,11 +212,18 @@ nav:
           - The architecture design method: system-design-exercises/design-method.md
           - Application design exercises: system-design-exercises/application-design-exercises.md
           - Infrastructure component exercises: system-design-exercises/infrastructure-component-exercises.md
+          - Cloud and enterprise platform exercises: system-design-exercises/cloud-and-enterprise-platform-exercises.md
           - "Exercise: URL shortener": system-design-exercises/url-shortener.md
           - "Exercise: Rate limiter": system-design-exercises/rate-limiter.md
           - "Exercise: Distributed cache": system-design-exercises/distributed-cache.md
           - "Exercise: Job scheduler": system-design-exercises/job-scheduler.md
-      - End-to-end case studies: end-to-end-case-studies/index.md
+          - "Exercise: Multi-account landing zone": system-design-exercises/multi-account-landing-zone.md
+          - "Exercise: Zero-trust enterprise": system-design-exercises/zero-trust-enterprise.md
+      - End-to-end case studies:
+          - end-to-end-case-studies/index.md
+          - "Case study 01: Highly available three-tier web application": end-to-end-case-studies/cs-01-highly-available-three-tier-web-application.md
+          - "Case study 08: Multi-account landing zone and hub-and-spoke network": end-to-end-case-studies/cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md
+          - "Case study 15: Zero-trust application architecture": end-to-end-case-studies/cs-15-zero-trust-application-architecture.md
       - Labs:
           - labs/index.md
           - "Lab 01: Latency and throughput": labs/lab-01-latency-and-throughput.md
@@ -203,6 +232,10 @@ nav:
           - "Lab 05: Race condition": labs/lab-05-race-condition.md
           - "Lab 08: Sharding and consistent hashing": labs/lab-08-sharding-and-consistent-hashing.md
           - "Lab 09: Replication lag": labs/lab-09-replication-lag.md
+          - "Lab 10: REST API authentication and validation": labs/lab-10-rest-api-auth-and-validation.md
+          - "Lab 12: Local Kubernetes deployment": labs/lab-12-local-kubernetes-deployment.md
+          - "Lab 14: Network segmentation": labs/lab-14-network-segmentation.md
+          - "Lab 15: Infrastructure module and static checks": labs/lab-15-infrastructure-module-and-static-checks.md
       - Quizzes:
           - quizzes/index.md
           - "Quiz: Architecture fundamentals (D01)": quizzes/d01-architecture-fundamentals.md

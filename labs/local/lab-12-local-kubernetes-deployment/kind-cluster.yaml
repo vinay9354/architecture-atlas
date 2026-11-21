@@ -1,0 +1,22 @@
+# Lab 12 kind cluster: one control-plane node and three workers, each worker labelled with a
+# different zone so the cluster mimics a region with three availability zones.
+# Tested against kind v0.33.0. The node image is the Kubernetes v1.37.0 image listed in the
+# v0.33.0 release notes; kind asks you to pin it by digest.
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: atlas-lab12
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5
+  - role: worker
+    image: kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5
+    labels:
+      topology.kubernetes.io/zone: zone-a
+  - role: worker
+    image: kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5
+    labels:
+      topology.kubernetes.io/zone: zone-b
+  - role: worker
+    image: kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5
+    labels:
+      topology.kubernetes.io/zone: zone-c

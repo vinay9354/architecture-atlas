@@ -12,3 +12,7 @@ for the testing strategy.
 | `test_lab05.py` | Lab 05 race condition: lost updates in the racy mode, exact results with a lock and with optimistic concurrency |
 | `test_lab08.py` | Lab 08 hashing: keys moved by mod-N versus the ring and rendezvous hashing, spread versus virtual nodes |
 | `test_lab09.py` | Lab 09 replication lag: read-your-writes and monotonic-read guarantees per routing policy |
+| `test_lab10.py` | Lab 10 REST API: every authentication failure returns 401, owner-only reads, scope checks, request validation with problem details |
+| `test_lab12.py` | Lab 12 local Kubernetes: manifest invariants (spread, probes, limits, security context, PDB, NetworkPolicy) and the stub service's endpoints |
+| `test_lab14.py` | Lab 14 network segmentation: flat versus segmented flows, the stateless ACL return-traffic trap, CIDR versus group references |
+| `test_lab15.py` | Lab 15 infrastructure module: static file checks always; `fmt`, `validate`, and `test` when Terraform or OpenTofu is installed |

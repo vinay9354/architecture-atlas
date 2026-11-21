@@ -1,0 +1,9 @@
+# The lab namespace. Pod Security Admission rejects any Pod here that does not meet the
+# "restricted" profile (non-root, no privilege escalation, all capabilities dropped, seccomp).
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: atlas-tracking-lab
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/warn: restricted

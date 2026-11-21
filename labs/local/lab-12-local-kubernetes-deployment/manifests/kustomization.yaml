@@ -1,0 +1,12 @@
+# Apply everything with: kubectl apply -k manifests/
+# (Kustomize is built into kubectl. It also orders the Namespace before the objects inside it.)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - 00-namespace.yaml
+  - 10-deployment.yaml
+  - 20-service.yaml
+  - 30-pdb.yaml
+  - 40-networkpolicy-default-deny.yaml
+  - 41-networkpolicy-allow.yaml
+  - 50-test-clients.yaml

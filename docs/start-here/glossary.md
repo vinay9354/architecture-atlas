@@ -923,6 +923,465 @@ use the search box for a specific word.
 **Guardrail (AI)**
 :   A control outside the model that checks, filters, or blocks unsafe inputs, outputs, or actions.
 
+## Cloud foundations
+
+**IaaS**
+:   Renting virtual machines, storage, and networks while you run everything from the operating system up.
+
+**PaaS**
+:   A managed runtime or component where the provider runs the OS and engine and you supply code, configuration, and data.
+
+**SaaS**
+:   A complete application run by a vendor; you keep configuration, users, and data.
+
+**FaaS**
+:   Code run per event, scaled to zero, billed per invocation and duration.
+
+**CaaS**
+:   A service that runs containers for you, usually with a provider-managed orchestrator.
+
+**Private cloud**
+:   Cloud-style self-service infrastructure dedicated to one organization.
+
+**Shared responsibility model**
+:   The provider's statement of which security and operational duties it owns and which stay with the customer.
+
+**Control plane / data plane**
+:   Management APIs that create and change resources / the part that does the service's job for existing resources.
+
+**Lock-in**
+:   The cost, time, and risk of moving a workload to another provider or platform.
+
+**Resource hierarchy**
+:   The tree of containers (organization, groups, accounts or projects) where policy, billing, and quotas attach and inherit.
+
+**Principal**
+:   An identity (person, group, or workload) that can be granted permissions.
+
+**Service quota**
+:   A provider-enforced cap per scope, sometimes raisable on request.
+
+**Availability domain**
+:   OCI's term for an isolated data-centre group within a region.
+
+**Hypervisor**
+:   Software that runs virtual machines and shares physical hardware among them (type 1 on hardware, type 2 on a host OS).
+
+**Virtual machine**
+:   An emulated computer with its own kernel and virtual devices, run by a hypervisor.
+
+**Bare metal instance**
+:   A whole physical server rented from a provider with no provider hypervisor in between.
+
+**Instance group**
+:   Identical VMs from one template managed as a unit, with autoscaling and health-based replacement.
+
+**Spot capacity**
+:   Discounted spare provider capacity that the provider can reclaim after a short notice (also called preemptible); fits interruptible work.
+
+**Serverless function**
+:   Code the provider runs per event, scaling sandboxes with demand, billed per invocation and duration.
+
+**Cold start**
+:   Extra latency when an invocation must first create and initialize a new sandbox.
+
+**Landing zone**
+:   A governed, multi-account cloud environment whose shared foundation (identity, network, logging, guardrails) every account inherits before workloads arrive.
+
+**Organizational unit (OU)**
+:   A group of cloud accounts under an organization that receives the same inherited policies (Azure management group, Google Cloud folder).
+
+**Guardrail (cloud)**
+:   An automated rule that keeps accounts within policy; preventive ones block an action, proactive ones reject a definition before creation, detective ones report non-compliance.
+
+**Account vending**
+:   An automated, self-service process that turns an approved request into a new account with the full baseline applied and verified.
+
+**Infrastructure as code (IaC)**
+:   Defining infrastructure in version-controlled files that a tool applies to reach the described state.
+
+**Policy as code**
+:   Guardrails and compliance rules written as versioned, testable code that machines evaluate.
+
+**Drift**
+:   Any difference between live resources or objects and the declared desired state in code or Git.
+
+**Golden image**
+:   A hardened, scanned, signed, versioned base image that all compute in an estate starts from.
+
+**Immutable infrastructure**
+:   Never changing running servers in place; every change ships as a new image that replaces them.
+
+**Hub-and-spoke**
+:   A topology where every network connects only to a central hub, which owns shared routing, inspection, egress, and hybrid links.
+
+**Service control policy (SCP)**
+:   An organization-level policy that caps the maximum permissions principals in member accounts can use, whatever their own policies grant (AWS term; Azure Policy and Google Cloud organization policies play similar roles).
+
+**Data perimeter**
+:   A set of preventive policies that let only trusted identities, from expected networks, reach trusted resources.
+
+**Tenant isolation**
+:   Keeping one customer's data, performance, and failures from affecting another customer on a shared platform.
+
+## Containers and Kubernetes
+
+**Container image**
+:   A read-only, content-addressed package of filesystem layers plus the configuration to start a container.
+
+**Image layer**
+:   A tar archive of filesystem changes; layers stack to form the image's root filesystem.
+
+**Digest**
+:   A content hash identifying exact bytes; any change gives a new digest.
+
+**Registry**
+:   A service that stores and serves images over the OCI distribution API.
+
+**OCI (Open Container Initiative)**
+:   The Open Container Initiative, publisher of the image, runtime, and distribution specifications.
+
+**Linux namespace**
+:   A kernel feature giving a process its own view of one resource type.
+
+**Pod**
+:   The smallest unit Kubernetes schedules; one or more containers sharing a network identity and volumes.
+
+**Kubernetes control plane**
+:   The API server, etcd, scheduler, and controller managers that store desired state and drive the cluster toward it.
+
+**Controller / reconciliation loop**
+:   A process that repeatedly compares declared state with actual state and acts to close the gap; the core mechanism of Kubernetes (not the same as data reconciliation above).
+
+**Request / limit**
+:   The resources the scheduler reserves for a container / the ceiling the kernel enforces.
+
+**Allocatable**
+:   A node's capacity minus what is reserved for the OS, kubelet, and eviction thresholds.
+
+**QoS class**
+:   Guaranteed, Burstable, or BestEffort, derived from requests and limits; decides eviction order.
+
+**Taint / toleration**
+:   A node mark that repels Pods / a Pod's permission to ignore it.
+
+**Topology spread constraint**
+:   A scheduling rule that keeps a workload's replicas balanced across zones or nodes.
+
+**PodDisruptionBudget**
+:   A limit on how many replicas voluntary disruptions such as drains may take down at once.
+
+**Cordon / drain**
+:   Mark a node unschedulable / also evict its Pods while respecting their disruption budgets.
+
+**CNI / CSI / CRI**
+:   Plugin interfaces for Pod networking, volumes, and container runtimes.
+
+**Service (Kubernetes)**
+:   A stable virtual IP and DNS name in front of the ready Pods matching a label selector.
+
+**NetworkPolicy**
+:   A Kubernetes object stating which traffic may reach or leave selected Pods, enforced by the network plugin.
+
+**PersistentVolumeClaim / StorageClass**
+:   A request for storage / the recipe used to provision it.
+
+**Gateway API**
+:   A role-based family of Kubernetes routing resources (GatewayClass, Gateway, routes) that succeeds Ingress.
+
+**Ambient (sidecarless) mesh**
+:   A mesh data plane using shared per-node L4 proxies and optional L7 waypoints instead of a proxy per Pod.
+
+**Admission controller**
+:   Code in the Kubernetes API server's request path that can change or reject an object before it is stored; policy engines and image-signature checks run here.
+
+**Pod Security Admission**
+:   The built-in check that rejects Pods not meeting the privileged, baseline, or restricted profile set on their namespace.
+
+**CustomResourceDefinition (CRD)**
+:   An extension that adds a new object type to the Kubernetes API.
+
+**Operator**
+:   A controller plus CRDs that encodes how to run one piece of software.
+
+**GitOps**
+:   Operating a system from desired state kept in a versioned store, pulled and continuously reconciled by agents inside the system.
+
+**Helm chart / release**
+:   A package of templated manifests with default values / one installed copy of it, with revision history.
+
+**Kustomize overlay**
+:   A directory that points at base manifests and patches them for one environment.
+
+**kind**
+:   A tool that runs a Kubernetes cluster with each node as a Docker container.
+
+## Network security and hybrid connectivity
+
+**East-west / north-south traffic**
+:   Traffic between services inside the platform / traffic entering or leaving it.
+
+**Security group / network ACL**
+:   Stateful allow-list on an interface vs stateless numbered allow/deny list on a subnet that also needs return-traffic rules.
+
+**Ephemeral port**
+:   The temporary source port a client picks for a connection; replies are addressed to it.
+
+**WAF (web application firewall)**
+:   A filter that inspects decrypted HTTP requests and blocks attack or abuse patterns.
+
+**DMZ**
+:   A perimeter network for internet-facing components, filtered on both sides.
+
+**Anycast**
+:   One prefix announced from many locations so routing picks a nearby one.
+
+**Private endpoint**
+:   A private-address interface in your network that fronts a provider or partner service.
+
+**Transit router**
+:   A managed router that networks attach to, segmented by its route tables.
+
+**Site-to-site VPN**
+:   An IPsec tunnel joining two networks through gateway devices.
+
+**IPsec / IKE**
+:   IP-layer encryption / the protocol that negotiates its keys.
+
+**BGP / ASN**
+:   The inter-network routing protocol / the number identifying each routing domain.
+
+**Route propagation**
+:   Automatically copying learned routes into chosen route tables.
+
+**AS path prepending**
+:   Repeating your own ASN so a path looks longer and less preferred.
+
+**Conditional forwarding**
+:   A resolver rule that sends one domain's queries to named servers.
+
+**MSS clamping**
+:   Rewriting the TCP maximum segment size so segments fit a smaller path MTU.
+
+**Dedicated private connection**
+:   A private circuit into a provider's network that carries BGP sessions.
+
+**ZTNA (zero trust network access)**
+:   A broker grants one user on a healthy device access to one application per session instead of network-level access.
+
+**Content delivery network (CDN)**
+:   A network of edge caches that serves static and cacheable content close to users and shields the origin from traffic surges.
+
+**Flow registry**
+:   A reviewed list of allowed network flows between segments, each with an owner and an expiry, from which firewall rules are generated.
+
+## Security principles, identity, and data protection
+
+**CIA triad**
+:   Confidentiality, integrity, availability, the three properties security controls protect.
+
+**Defense in depth**
+:   Layering independent controls so one failing control does not mean a breach.
+
+**Least privilege**
+:   Each identity gets only the access its task needs, for only as long as needed.
+
+**Zero Trust**
+:   No implicit trust from network location; every request authenticated and authorized against dynamic policy.
+
+**STRIDE**
+:   Six threat categories (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege), each violating one security property.
+
+**Identity provider (IdP)**
+:   The service that authenticates users and issues signed assertions or tokens about them to applications.
+
+**OAuth 2.0**
+:   A framework that issues a client a limited access token for an API, on behalf of a user or itself.
+
+**OpenID Connect (OIDC)**
+:   An identity layer on OAuth 2.0 adding an ID token that tells the client who signed in.
+
+**JSON Web Token (JWT)**
+:   A compact signed set of claims (issuer, audience, subject, expiry) the recipient must verify before trusting.
+
+**PKCE (Proof Key for Code Exchange)**
+:   A one-time secret whose hash accompanies the authorization request so a stolen code cannot be redeemed without it.
+
+**Phishing-resistant MFA**
+:   Authentication whose cryptographic response is bound to the genuine site's origin.
+
+**Workload identity**
+:   A short-lived credential the platform issues to a running workload instead of a stored key.
+
+**Just-in-time (JIT) access**
+:   Privileged rights granted on approved request for a short window, then removed automatically.
+
+**SQL injection**
+:   Input that becomes part of a SQL statement's text, so the database runs it as code.
+
+**Cross-site scripting (XSS)**
+:   Attacker-supplied script that runs in another user's browser with that user's session.
+
+**Cross-site request forgery (CSRF)**
+:   A hostile site gets the victim's browser to send a request the target accepts because cookies are attached automatically.
+
+**Server-side request forgery (SSRF)**
+:   The server is tricked into requesting a destination the attacker chooses, often an internal one.
+
+**BOLA (broken object level authorization)**
+:   Broken object level authorization; an API acts on an object without checking the caller may access it.
+
+**SAST (static application security testing)**
+:   Static application security testing; analyzes source or bytecode without running it.
+
+**DAST (dynamic application security testing)**
+:   Dynamic application security testing; probes the running application from outside.
+
+**SCA (software composition analysis)**
+:   Software composition analysis; inventories third-party components and matches known vulnerabilities and licenses.
+
+**Data classification**
+:   Giving each data element a sensitivity level that decides its handling rules.
+
+**Envelope encryption**
+:   Data encrypted with a data key that is itself encrypted by a key-encryption key that never leaves the KMS.
+
+**Key management service (KMS)**
+:   A managed service that creates, stores, and uses keys without exposing root keys, with access policies and audit logs.
+
+**HSM (hardware security module)**
+:   Tamper-resistant hardware that generates and uses keys so they never leave it in plaintext.
+
+**Tokenization**
+:   Replacing a sensitive value with a random token, the mapping held in a separate protected vault.
+
+**Pseudonymization**
+:   Processing personal data so it cannot be linked to a person without separately kept extra information.
+
+**Anonymization**
+:   Irreversibly removing the ability to identify a person by any means reasonably likely to be used.
+
+**Crypto-shredding**
+:   Making data unreadable everywhere, backups included, by destroying its encryption key.
+
+**Policy enforcement point (PEP)**
+:   The component in front of a resource (proxy, gateway, or sidecar) that lets a request through only when a policy decision allows it.
+
+**Policy decision point (PDP)**
+:   The logic that evaluates identity, device, and context signals against policy and returns allow or deny.
+
+**Identity-aware proxy**
+:   A reverse proxy that authenticates the user through single sign-on and checks device state before forwarding a request to one application.
+
+**Device posture**
+:   A device's security state (managed or not, patch level, encryption, endpoint protection), used as an input to access decisions.
+
+**Sender-constrained token**
+:   An access token bound to a key the client holds (mTLS certificate binding or DPoP), so a stolen copy is useless without that key.
+
+**Break-glass access**
+:   A few sealed emergency identities that work outside the normal sign-in path, are used only in a declared emergency, alert on every use, and are rotated afterwards.
+
+**Separation of duties**
+:   Splitting change, approval, and oversight of a control between different people, so no single person can both act and hide the act.
+
+**Access package**
+:   A bundle of group memberships and application rights for one purpose, with an approver, an expiry, and a renewal rule.
+
+**SCIM (System for Cross-domain Identity Management)**
+:   A standard protocol (RFC 7643 and RFC 7644) that an identity provider uses to create, update, and remove user accounts in other applications.
+
+## Security operations, supply chain, and compliance
+
+**SBOM (software bill of materials)**
+:   A machine-readable list of the components in an artifact, with versions and identifiers.
+
+**Provenance**
+:   Verifiable metadata, produced by the build platform, about how an artifact was built (source, builder, inputs).
+
+**Artifact signing**
+:   A cryptographic signature over an artifact's digest that lets consumers verify who produced it and that it is unchanged.
+
+**SLSA (Supply-chain Levels for Software Artifacts)**
+:   An OpenSSF framework of tracks and levels for software supply-chain integrity.
+
+**CSPM / CWPP / CIEM**
+:   Continuous checks of cloud configuration, workload security, and cloud entitlements.
+
+**KEV (Known Exploited Vulnerabilities catalog)**
+:   CISA's catalogue of vulnerabilities with evidence of exploitation in the wild.
+
+**SIEM (security information and event management)**
+:   A central store and analytics engine for security events that produces alerts.
+
+**SOAR (security orchestration, automation, and response)**
+:   Workflow automation that runs response playbooks on alerts.
+
+**Detection rule**
+:   A versioned query that turns matching events into an alert with a severity and an owner.
+
+**Playbook**
+:   A documented, often partly automated, sequence of response steps for one alert or incident type.
+
+**Threat intelligence**
+:   Evidence-based knowledge about adversaries, their methods, and indicators, used to guide detection and response.
+
+**IOC / TTP**
+:   Observable artifacts tied to malicious activity / how an adversary operates.
+
+**Chain of custody**
+:   A record of who collected and handled each piece of evidence, when, and how its integrity was protected.
+
+**Immutable backup**
+:   A backup that cannot be changed or deleted before its retention ends, even by an administrator.
+
+**Compliance**
+:   Showing, with evidence an outsider accepts, that an organization meets a defined set of external requirements.
+
+**Control (security)**
+:   A safeguard or practice that addresses a risk or requirement, with an owner and a way to test it.
+
+**Control mapping**
+:   A table linking each internal control to the framework requirements it helps satisfy.
+
+**Attestation report**
+:   An independent practitioner's opinion on a described system and its controls, such as a SOC 2 report.
+
+**Data controller / data fiduciary**
+:   The party that decides why and how personal data is processed (GDPR / India DPDP term).
+
+**DPIA (data protection impact assessment)**
+:   A documented assessment of risks to individuals, done before high-risk processing.
+
+**Cardholder data environment (CDE)**
+:   People, processes, and systems that store, process, or transmit card data, plus connected systems.
+
+**Data residency**
+:   Where data is stored, processed, and accessed from; a design choice sometimes required by law, contract, or policy.
+
+**Write-once retention (WORM)**
+:   Storage that blocks overwriting or deleting an object until its retention period ends; in compliance mode not even administrators can shorten it.
+
+## Deployment and data recovery
+
+**Rolling deployment**
+:   Replacing a fleet's instances with a new version in small batches while the rest keep serving traffic.
+
+**Blue-green deployment**
+:   Running two complete environments and switching traffic from the old one to the new one in one step, which also gives a fast rollback.
+
+**Golden signals**
+:   The four service-health measures of latency, traffic, errors, and saturation, tracked for every tier.
+
+**Synchronous standby**
+:   A database replica that must confirm each change before the primary acknowledges the commit, so promoting it loses no committed data.
+
+**Read replica**
+:   An asynchronously updated database copy that serves reads and may lag behind the primary.
+
+**Point-in-time recovery (PITR)**
+:   Restoring a database to a chosen moment by replaying archived transaction logs on top of a base backup.
+
 ## Diagrams and documentation
 
 **C4 model**
