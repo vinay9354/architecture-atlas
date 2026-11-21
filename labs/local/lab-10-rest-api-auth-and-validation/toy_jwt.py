@@ -42,7 +42,9 @@ ISSUER = "https://id.atlasmart.example"
 AUDIENCE = "tracking-api"
 TOKEN_TYPE = "at+jwt"
 ALLOWED_ALGS = frozenset({"HS256"})
-KEY_ENV_VAR = "LAB10_SIGNING_KEY"
+# The value below is the NAME of an environment variable, not a key; the key itself is generated
+# at runtime and never stored in the repository.
+KEY_ENV_VAR = "LAB10_SIGNING_KEY"  # gitleaks:allow
 MIN_KEY_BYTES = 32  # 256 bits for HMAC-SHA256
 
 
