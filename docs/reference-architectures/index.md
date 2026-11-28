@@ -29,10 +29,10 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D28** | **Architecture frameworks and reference models** | | |
-| D28-T01 | Well-Architected frameworks (AWS, Azure, Google Cloud) | :material-circle-outline: Planned | planned: `cloud-architecture/well-architected-frameworks.md` |
-| D28-T02 | Cloud adoption frameworks | :material-circle-outline: Planned | planned: `cloud-architecture/cloud-adoption-frameworks.md` |
-| D28-T03 | Architecture frameworks and reference models | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` |
-| D28-T04 | Applying architecture frameworks in practice | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` |
+| D28-T01 | Well-Architected frameworks (AWS, Azure, Google Cloud) | :material-circle-slice-5: Draft | [well-architected-frameworks](../cloud-architecture/well-architected-frameworks.md) |
+| D28-T02 | Cloud adoption frameworks | :material-circle-slice-5: Draft | [cloud-adoption-frameworks](../cloud-architecture/cloud-adoption-frameworks.md) |
+| D28-T03 | Architecture frameworks and reference models | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) |
+| D28-T04 | Applying architecture frameworks in practice | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) |
 <!-- coverage:end -->
 
 ## How to continue

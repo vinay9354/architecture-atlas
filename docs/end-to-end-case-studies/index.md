@@ -26,11 +26,11 @@ and the twelve-step [design method](../system-design-exercises/index.md).
 | 06 | Real-time notification and event-processing platform | Core | Planned |
 | 07 | Centralized enterprise logging and security monitoring platform | Core | Planned |
 | 08 | [Multi-account cloud landing zone and hub-and-spoke network](cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md) | Core | Draft |
-| 09 | Hybrid on-premises/cloud migration with private connectivity | Core | Planned |
-| 10 | Multi-region active-passive and active-active disaster recovery | Core | Planned |
-| 11 | Enterprise Kubernetes platform with GitOps and policy controls | Core | Planned |
-| 12 | Data lakehouse with batch and streaming ingestion | Core | Planned |
-| 13 | Real-time fraud detection pipeline | Core | Planned |
+| 09 | [Hybrid on-premises/cloud migration with private connectivity](cs-09-hybrid-migration-with-private-connectivity.md) | Core | Draft |
+| 10 | [Multi-region active-passive and active-active disaster recovery](cs-10-multi-region-disaster-recovery.md) | Core | Draft |
+| 11 | [Enterprise Kubernetes platform with GitOps and policy controls](cs-11-enterprise-kubernetes-platform-with-gitops.md) | Core | Draft |
+| 12 | [Data lakehouse with batch and streaming ingestion](cs-12-data-lakehouse-with-batch-and-streaming-ingestion.md) | Core | Draft |
+| 13 | [Real-time fraud detection pipeline](cs-13-real-time-fraud-detection-pipeline.md) | Core | Draft |
 | 14 | Enterprise API platform with authentication, quotas, and developer onboarding | Core | Planned |
 | 15 | [Zero-trust application architecture](cs-15-zero-trust-application-architecture.md) | Core | Draft |
 | 16 | Enterprise document RAG assistant with document-level access control | AI | Planned |
@@ -44,6 +44,6 @@ and the twelve-step [design method](../system-design-exercises/index.md).
 | 24 | Multimodal knowledge assistant using text, documents, and images | AI | Planned |
 | 25 | Production AI platform with governance, security, tenant isolation, and audit trails | AI | Planned |
 
-Case studies 01, 08, and 15 are written (Draft, awaiting review). The rest are scheduled in the
+Case studies 01, 08, 09, 10, 11, 12, 13, and 15 are written (Draft, awaiting review). The rest are scheduled in the
 [roadmap](https://github.com/vinay9354/architecture-atlas/blob/main/ROADMAP.md) after the concept
 pages they depend on: each case study links to the topic pages it applies.

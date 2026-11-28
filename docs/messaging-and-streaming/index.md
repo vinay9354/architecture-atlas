@@ -32,9 +32,9 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 |---|---|---|---|
 | **D08** | **Messaging, event-driven systems, and streaming** | | |
 | D08-T01 | Message queues and brokers | :material-circle-slice-5: Draft | [message-queues-and-brokers](message-queues-and-brokers.md) |
-| D08-T02 | Event-driven architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-driven-architecture.md` |
-| D08-T03 | Event streaming and log-based architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-streaming-and-log-based-architecture.md` |
-| D08-T04 | Messaging technologies compared | :material-circle-outline: Planned | planned: `messaging-and-streaming/messaging-technologies-compared.md` |
+| D08-T02 | Event-driven architecture | :material-circle-slice-5: Draft | [event-driven-architecture](event-driven-architecture.md) |
+| D08-T03 | Event streaming and log-based architecture | :material-circle-slice-5: Draft | [event-streaming-and-log-based-architecture](event-streaming-and-log-based-architecture.md) |
+| D08-T04 | Messaging technologies compared | :material-circle-slice-5: Draft | [messaging-technologies-compared](messaging-technologies-compared.md) |
 <!-- coverage:end -->
 
 ## How to continue

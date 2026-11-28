@@ -59,7 +59,7 @@ first domain quiz for D01 ✅ Draft.
 
 The design method page was scheduled for Phase 8; it moved here because the exercises are built on it.
 
-## Phase 4 — Cloud and enterprise architecture 🔄 (batch 4A written 2026-11-21)
+## Phase 4 — Cloud and enterprise architecture ✅ (4A 2026-11-21, 4B 2026-11-27; human review carried into Phase 9)
 
 Phase 4 is split into two batches because of its size (41 topics, 6 labs, 6 case studies, 3 exercises).
 
@@ -75,20 +75,30 @@ Phase 4 is split into two batches because of its size (41 topics, 6 labs, 6 case
 | D29-T04 exercises | Multi-account landing zone and zero-trust enterprise (full); collection page with briefs for the other eleven | Draft / Outline |
 | Labs | 10 REST API auth and validation; 12 local Kubernetes; 14 network segmentation; 15 infrastructure module and static checks | Draft |
 
-**Batch 4B — reliability, operations, delivery, cost, enterprise, frameworks** ⬜
+**Batch 4B — reliability, operations, delivery, cost, enterprise, frameworks** (written, Draft)
 
-D13-T02 to T04 (reliability engineering, DR strategies, advanced resilience); D15 (observability,
-monitoring and on-call, incident management and SRE); D16 (DevOps lifecycle, CI/CD, IaC, DevSecOps,
-platform engineering); D17 (FinOps, sustainability); D18 (EA practice, frameworks, modernization,
-hybrid and multi-cloud); D28 (Well-Architected, adoption frameworks, reference models, applying them).
-Labs 11 (tracing and structured logging) and 13 (GitOps). Case studies 09 (hybrid migration), 10
-(multi-region DR), 11 (enterprise Kubernetes with GitOps). Exercise: multi-region DR. Case study 09
-must reuse the hybrid network values fixed in D09-T04 (ASNs, tunnel and DNS addresses).
+| Area | Pages | Status |
+|---|---|---|
+| D13 reliability | Reliability engineering (T02); disaster recovery strategies (T03); advanced resilience and failure containment (T04) | Draft |
+| D15 operations | Observability fundamentals (T01); monitoring, alerting, and on-call (T02); incident management and SRE (T03) | Draft |
+| D16 delivery | DevOps lifecycle (T01); CI/CD and deployment strategies (T02); Infrastructure as Code (T03); DevSecOps (T04); platform engineering (T05) | Draft |
+| D17 cost | Cloud cost models and FinOps (T01); sustainable and carbon-aware architecture (T02) | Draft |
+| D18 enterprise | EA practice (T01); EA frameworks (T02, also D28-T03/T04); legacy modernization (T03); hybrid and multi-cloud (T04) | Draft |
+| D28 frameworks | Well-Architected frameworks (T01); cloud adoption frameworks (T02) | Draft |
+| Case studies | 09 hybrid migration; 10 multi-region DR; 11 enterprise Kubernetes with GitOps | Draft |
+| Exercise | Multi-region disaster recovery (D29-T04) | Draft |
+| Labs | 11 tracing and structured logging; 13 GitOps reconciliation | Draft |
 
-## Phase 5 — Data architecture ⬜
+## Phase 5 — Data architecture ✅ (2026-11-28; human review carried into Phase 9)
 
-D06 (remaining), D07, D08. Labs 02, 06, 07, 16. Case studies 12, 13. Exercises: data lake, CDC
-pipeline, real-time analytics.
+| Area | Pages | Status |
+|---|---|---|
+| D06 databases and storage | NoSQL (T02); advanced database architecture (T03); storage architecture (T04) | Draft |
+| D07 data engineering | Modeling, metadata, governance (T01); pipelines (T02); warehouses, lakes, lakehouses, mesh (T03); engines and table formats (T04); OLTP vs OLAP and BI (T05) | Draft |
+| D08 messaging and streaming | Event-driven architecture (T02); event streaming (T03); technologies compared (T04) | Draft |
+| Case studies | 12 lakehouse with batch and streaming ingestion; 13 real-time fraud detection | Draft |
+| D29-T03 exercises | Data lake, CDC pipeline, real-time analytics (full); collection with briefs for the rest | Draft / Outline |
+| Labs | 02 cache hit and miss; 06 indexing and query plans; 07 SQL vs NoSQL; 16 event-driven workflow | Draft |
 
 ## Phase 6 — AI and ML foundations ⬜
 
@@ -117,7 +127,7 @@ agent trace viewer), quizzes per domain.
 - Second-person review of every Draft page; promote to `Reviewed` only after that review (carried from Phase 2).
 - Release checklist; enable Pages; announce. No remote changes without maintainer approval.
 
-## Known gaps and technical debt (as of 2026-11-21)
+## Known gaps and technical debt (as of 2026-11-28)
 
 - Mermaid syntax is only type-checked by the validator; rendering was verified manually in a browser
   for every page written so far. CI does not render diagrams.
@@ -163,3 +173,25 @@ agent trace viewer), quizzes per domain.
 - docs.aws.amazon.com answers HTTP 200 even for pages that do not exist, so a status check cannot
   prove an AWS link is real. On 2026-11-21 all 68 AWS documentation URLs in batch 4A were checked by
   page title instead (a missing page returns only the generic service name); all were real.
+- Batch 4B steps not executed: the optional OpenTelemetry SDK appendix of Lab 11, the optional kind plus
+  Argo CD appendix of Lab 13, and the Kyverno policies in case study 11 (not run against a cluster or the
+  Kyverno CLI). Lab 11 and Lab 13 themselves run in CI.
+- Kyverno's `ClusterPolicy`, `Policy`, `CleanupPolicy`, and legacy `PolicyException` are deprecated as of
+  v1.19 and due for removal in v1.20 (kyverno.io, checked 2026-11-27); case study 11 uses the CEL-based
+  kinds. Re-check when v1.20 ships.
+- Facts in batch 4B from secondary or partial sources, for a reviewer: SPACE dimension names (abstract
+  only; the ACM Queue paper blocks scripts); the four green-software principle names (the GSF learning
+  site blocks scripts); TOGAF method phase names (pubs.opengroup.org now needs a sign-in); the Google
+  Cloud Well-Architected review tooling, which is likely to change.
+- The scratchpad used by the build agent was cleared between sessions on 2026-11-27, which removed the
+  pre-rewrite history backup bundle. The rewrite was verified and pushed earlier, so nothing depends on it.
+- Phase 5 items for a reviewer: the advanced database page's PostgreSQL mini-lab was not run (no
+  PostgreSQL available); the storage page costs the event store by provisioned volume (2 × 600 GB) while
+  the FinOps page costs stored data (430 GB), which is deliberate but should be cross-referenced; Lab 07
+  generates about 4.5 scan events per shipment while the AtlasMart figure is 8 (480,000 ÷ 60,000); the
+  data fabric definition has no vendor-neutral primary source; recent messaging features (Kafka share
+  groups, Kinesis queue consumers, the new EventBridge custom event bus, Event Hubs Kafka transactions in
+  preview) should be re-checked against owner docs.
+- Earlier pages cite a 13-month event-store retention (relational page) that predates the 180-day rule
+  on the data security page; a note now points to the later decision, but the original example text is
+  unchanged.

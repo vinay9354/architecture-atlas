@@ -16,8 +16,21 @@ LAB = ROOT / "labs" / "local" / "lab-10-rest-api-auth-and-validation"
 
 
 def load(name):
-    if str(LAB) not in sys.path:
-        sys.path.insert(0, str(LAB))  # the lab modules import each other by name
+    """Import a lab module by name, making sure it comes from THIS lab's folder.
+
+    Several labs reuse module names (for example tracking_api.py in Labs 10 and 11). When the whole
+    suite runs in one process, a module cached by another lab's test would otherwise be reused here.
+    """
+    lab = str(LAB)
+    if lab in sys.path:
+        sys.path.remove(lab)
+    sys.path.insert(0, lab)  # the lab modules import each other by name
+    cached = sys.modules.get(name)
+    if cached is not None and not str(getattr(cached, "__file__", "")).startswith(lab):
+        for mod_name, mod in list(sys.modules.items()):
+            mod_file = str(getattr(mod, "__file__", "") or "")
+            if mod_file.startswith(str(LAB.parent)) and not mod_file.startswith(lab):
+                del sys.modules[mod_name]
     return importlib.import_module(name)
 
 

@@ -3,7 +3,7 @@
 # status: Planned | Outline | Draft | Reviewed | Needs update
 # destination: canonical page (must exist unless status is Planned).
 version: 1
-last_updated: '2026-11-21'
+last_updated: '2026-11-27'
 description: >-
   Machine-readable curriculum coverage matrix. One topic entry per inventory bullet in MASTER_PROMPT.md
   Section 8. Edit by hand; scripts/build-coverage.py renders it.
@@ -259,7 +259,7 @@ domains:
       procedures, constraints, partitioning, read replicas, replication, failover, migration, schema evolution.
   - id: D06-T02
     title: NoSQL databases
-    status: Planned
+    status: Draft
     destination: docs/databases-and-storage/nosql-databases.md
     inventory: >-
       NoSQL: key-value, document, wide-column, graph, time-series, search, in-memory, distributed, multi-model,
@@ -267,7 +267,7 @@ domains:
       secondary indexes.
   - id: D06-T03
     title: Advanced database architecture
-    status: Planned
+    status: Draft
     destination: docs/databases-and-storage/advanced-database-architecture.md
     inventory: >-
       Advanced databases: sharding, horizontal/vertical partitioning, federation, replication strategies,
@@ -276,7 +276,7 @@ domains:
       low-downtime migration.
   - id: D06-T04
     title: Storage architecture
-    status: Planned
+    status: Draft
     destination: docs/databases-and-storage/storage-architecture.md
     inventory: >-
       Storage: block, object, file, distributed filesystems, NAS, SAN, DAS, ephemeral, persistent, replication,
@@ -296,7 +296,7 @@ domains:
   topics:
   - id: D07-T01
     title: Data modeling, metadata, and data governance
-    status: Planned
+    status: Draft
     destination: docs/data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md
     inventory: >-
       Data modeling, conceptual/logical/physical models, structured/semi-structured/unstructured data,
@@ -304,7 +304,7 @@ domains:
       lifecycle, retention, privacy.
   - id: D07-T02
     title: Batch, streaming, ETL/ELT, and pipelines
-    status: Planned
+    status: Draft
     destination: docs/data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md
     inventory: >-
       Batch, stream, real-time, near-real-time processing; ETL, ELT, transformation, ingestion, orchestration,
@@ -312,14 +312,14 @@ domains:
       serialization, Avro, Parquet, ORC, JSON, Protocol Buffers.
   - id: D07-T03
     title: Warehouses, lakes, lakehouses, and data mesh
-    status: Planned
+    status: Draft
     destination: docs/data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md
     inventory: >-
       Data warehouse, data lake, lakehouse, data mart, ODS, data mesh, data fabric, medallion architecture,
       Bronze/Silver/Gold, Lambda, Kappa, virtualization, federated queries, EDW, platform modernization.
   - id: D07-T04
     title: Big data processing engines and table formats
-    status: Planned
+    status: Draft
     destination: docs/data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md
     inventory: >-
       Hadoop, HDFS, MapReduce, Spark, Spark SQL/Streaming, Flink, Beam, Hive, Iceberg, Delta Lake, Hudi,
@@ -327,7 +327,7 @@ domains:
       event time vs processing time, exactly-once stream processing.
   - id: D07-T05
     title: OLTP vs OLAP, dimensional modeling, and BI
-    status: Planned
+    status: Draft
     destination: docs/data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md
     inventory: >-
       OLTP vs OLAP, analytical queries, aggregation, dimensional modeling, star/snowflake schemas, fact/dimension
@@ -347,7 +347,7 @@ domains:
       DLQs, retries, poison messages, backpressure, consumer concurrency/groups, replay.
   - id: D08-T02
     title: Event-driven architecture
-    status: Planned
+    status: Draft
     destination: docs/messaging-and-streaming/event-driven-architecture.md
     inventory: >-
       Events vs commands, producers, consumers, brokers, buses, routing/filtering, schemas/versioning/contracts,
@@ -355,14 +355,14 @@ domains:
       outbox.
   - id: D08-T03
     title: Event streaming and log-based architecture
-    status: Planned
+    status: Draft
     destination: docs/messaging-and-streaming/event-streaming-and-log-based-architecture.md
     inventory: >-
       Data/event streaming, log-based architecture, partitions, retention, offsets, consumer lag, replication,
       joins, windows, watermarks, enrichment, aggregation, exactly-once and at-least-once semantics.
   - id: D08-T04
     title: Messaging technologies compared
-    status: Planned
+    status: Draft
     destination: docs/messaging-and-streaming/messaging-technologies-compared.md
     inventory: >-
       Technologies to understand conceptually: Apache Kafka, Amazon Kinesis, SQS, SNS, EventBridge, RabbitMQ,
@@ -564,7 +564,7 @@ domains:
       global routing, regional isolation, cell-based architecture, availability calculations.
   - id: D13-T02
     title: Reliability engineering
-    status: Planned
+    status: Draft
     destination: docs/reliability-and-disaster-recovery/reliability-engineering.md
     inventory: >-
       Reliability engineering: FMEA/FMECA, fault tree analysis, reliability block diagrams, redundancy
@@ -573,7 +573,7 @@ domains:
       testing, SRE, error budgets, SLO management.
   - id: D13-T03
     title: Disaster recovery strategies
-    status: Planned
+    status: Draft
     destination: docs/reliability-and-disaster-recovery/disaster-recovery-strategies.md
     inventory: >-
       DR: backup/restore, pilot light, warm standby, hot standby, active-active, cold recovery, full/incremental/differential
@@ -581,7 +581,7 @@ domains:
       DNS failover, orchestration, recovery tests, BCP, DRP.
   - id: D13-T04
     title: Advanced resilience and failure containment
-    status: Planned
+    status: Draft
     destination: docs/reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md
     inventory: >-
       Advanced resilience: dependency failures, blast radius, cascading failure, partitions, consistency
@@ -621,7 +621,7 @@ domains:
   topics:
   - id: D15-T01
     title: 'Observability fundamentals: logs, metrics, and traces'
-    status: Planned
+    status: Draft
     destination: docs/observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md
     inventory: >-
       Monitoring vs observability, logs, metrics, traces, events, profiles, correlation/trace IDs, context
@@ -629,7 +629,7 @@ domains:
       pipelines, application/infrastructure/network/database observability.
   - id: D15-T02
     title: Monitoring, alerting, and on-call
-    status: Planned
+    status: Draft
     destination: docs/observability-and-sre/monitoring-alerting-and-on-call.md
     inventory: >-
       Infrastructure monitoring, APM, RUM, synthetic monitoring, uptime, health checks, golden signals,
@@ -637,7 +637,7 @@ domains:
       on-call and escalation.
   - id: D15-T03
     title: Incident management and SRE practices
-    status: Planned
+    status: Draft
     destination: docs/observability-and-sre/incident-management-and-sre-practices.md
     inventory: >-
       Incident/problem/change/release/deployment management, runbooks, playbooks, postmortems, blameless
@@ -649,7 +649,7 @@ domains:
   topics:
   - id: D16-T01
     title: DevOps lifecycle and source control
-    status: Planned
+    status: Draft
     destination: docs/devops-and-platform-engineering/devops-lifecycle-and-source-control.md
     inventory: >-
       DevOps lifecycle, source control, Git, branching, GitFlow, trunk-based development, pull requests,
@@ -657,7 +657,7 @@ domains:
       infrastructure automation, GitOps, rollback, feature flags.
   - id: D16-T02
     title: CI/CD pipeline design and deployment strategies
-    status: Planned
+    status: Draft
     destination: docs/devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md
     inventory: >-
       CI/CD design: CI, continuous delivery/deployment, pipeline stages, security/tests, artifact repositories/promotion,
@@ -665,7 +665,7 @@ domains:
       delivery, shadow/A/B, rollback, pipeline security/scalability, multi-account pipelines.
   - id: D16-T03
     title: Infrastructure as Code
-    status: Planned
+    status: Draft
     destination: docs/devops-and-platform-engineering/infrastructure-as-code.md
     inventory: >-
       IaC: declarative/imperative, Terraform, CloudFormation, Pulumi, CDK, state, remote state/locking,
@@ -673,7 +673,7 @@ domains:
       modules, policy as code, testing, security scans, FinOps.
   - id: D16-T04
     title: DevSecOps and secure delivery
-    status: Planned
+    status: Draft
     destination: docs/devops-and-platform-engineering/devsecops-and-secure-delivery.md
     inventory: >-
       DevSecOps: shift left, secure CI/CD, SAST/DAST/SCA, container/IaC/secret scanning, SBOM, signing,
@@ -681,7 +681,7 @@ domains:
       policies.
   - id: D16-T05
     title: Platform engineering
-    status: Planned
+    status: Draft
     destination: docs/devops-and-platform-engineering/platform-engineering.md
     inventory: >-
       Platform engineering: IDPs, developer portals, golden paths, self-service, platform as product,
@@ -693,7 +693,7 @@ domains:
   topics:
   - id: D17-T01
     title: Cloud cost models and FinOps
-    status: Planned
+    status: Draft
     destination: docs/finops-and-sustainability/cloud-cost-models-and-finops.md
     inventory: >-
       Cloud cost models, pay-as-you-go, reserved capacity, savings plans, spot, compute/storage/database/network
@@ -702,7 +702,7 @@ domains:
       inference, TCO, ROI, break-even, governance.
   - id: D17-T02
     title: Sustainable and carbon-aware architecture
-    status: Planned
+    status: Draft
     destination: docs/finops-and-sustainability/sustainable-and-carbon-aware-architecture.md
     inventory: >-
       Energy-efficient computing, carbon-aware computing, compute/storage efficiency, data lifecycle,
@@ -714,7 +714,7 @@ domains:
   topics:
   - id: D18-T01
     title: Enterprise architecture practice
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/enterprise-architecture-practice.md
     inventory: >-
       Enterprise Architecture; business/application/data/technology/security/integration architecture;
@@ -722,14 +722,14 @@ domains:
       governance, review boards, roadmaps, operating models, domain ownership, repositories.
   - id: D18-T02
     title: Enterprise architecture frameworks
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
     inventory: >-
       Frameworks: TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, Gartner EA concepts, DDD, capability-based
       planning, reference architectures.
   - id: D18-T03
     title: Legacy modernization and migration
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/legacy-modernization-and-migration.md
     inventory: >-
       Legacy modernization: assessment, dependency discovery, portfolio assessment, mainframe, monolith
@@ -738,7 +738,7 @@ domains:
       incremental modernization, wave planning, cutover, rollback, validation, parallel run, debt reduction.
   - id: D18-T04
     title: Hybrid and multi-cloud architecture
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/hybrid-and-multi-cloud-architecture.md
     inventory: >-
       Hybrid/multi-cloud: on-prem integration, hybrid identity/network/storage/database/monitoring/DR,
@@ -1157,26 +1157,26 @@ domains:
   topics:
   - id: D28-T01
     title: Well-Architected frameworks (AWS, Azure, Google Cloud)
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/well-architected-frameworks.md
     inventory: >-
       AWS Well-Architected Framework; Azure Well-Architected Framework; Google Cloud Well-Architected
       Framework.
   - id: D28-T02
     title: Cloud adoption frameworks
-    status: Planned
+    status: Draft
     destination: docs/cloud-architecture/cloud-adoption-frameworks.md
     inventory: AWS Cloud Adoption Framework; Azure Cloud Adoption Framework.
   - id: D28-T03
     title: Architecture frameworks and reference models
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
     inventory: >-
       TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, C4, DDD, Twelve-Factor App, NIST Cybersecurity Framework,
       NIST AI RMF, OWASP, FinOps Framework, SRE, CNCF landscape.
   - id: D28-T04
     title: Applying architecture frameworks in practice
-    status: Planned
+    status: Draft
     destination: docs/enterprise-architecture/enterprise-architecture-frameworks.md
     inventory: >-
       Teach the purpose, scope, strengths, limitations, and practical application of each. For AWS Well-Architected,
@@ -1202,7 +1202,7 @@ domains:
       job scheduler, event bus, task queue, API gateway, multi-region application.
   - id: D29-T03
     title: Data platform exercises
-    status: Planned
+    status: Outline
     destination: docs/system-design-exercises/data-platform-exercises.md
     inventory: >-
       Data lake, data warehouse, real-time analytics, log aggregation, ingestion pipeline, CDC pipeline,

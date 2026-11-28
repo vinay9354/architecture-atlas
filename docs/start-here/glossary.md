@@ -1382,6 +1382,730 @@ use the search box for a specific word.
 **Point-in-time recovery (PITR)**
 :   Restoring a database to a chosen moment by replaying archived transaction logs on top of a base backup.
 
+## Reliability and disaster recovery
+
+**FMEA (failure mode and effects analysis)**
+:   A table of each component's failure modes with effects, causes, and current controls, scored to rank risk.
+
+**Risk priority number (RPN)**
+:   Severity × occurrence × detection; a rough ranking aid, not a measure of risk.
+
+**Fault tree analysis**
+:   A top-down diagram from one undesired event through AND/OR gates to the basic events that cause it.
+
+**Minimal cut set**
+:   A smallest set of basic events that together cause the top event.
+
+**Reliability block diagram**
+:   A diagram of which components must all work (series) and which can stand in for each other (parallel or k-out-of-n).
+
+**Common-cause failure**
+:   One cause that fails several redundant copies at once.
+
+**Fault injection**
+:   Deliberately introducing errors, latency, crashes, or partitions to observe how a system responds.
+
+**Metastable failure**
+:   A degraded state that persists after its trigger is gone because a feedback loop keeps load above capacity.
+
+**Shuffle sharding**
+:   Giving each customer a nearly unique combination of shared resources so one customer's failure rarely takes out another's whole combination.
+
+**Witness**
+:   A data-less voting member in a third fault domain that breaks ties between two data nodes.
+
+**Epoch (term)**
+:   A number that increases with every leadership change and is stamped on writes so stale leaders can be recognized.
+
+**Thundering herd**
+:   Many clients acting at the same instant, for example reconnecting after an outage.
+
+**Degraded operating mode**
+:   A designed, labelled reduced service with a trigger, a scope, and an exit criterion.
+
+**Quorum loss**
+:   Losing enough members that no majority can form, so the cluster stops accepting writes.
+
+**Pilot light**
+:   A DR strategy where data is replicated and core infrastructure exists in the recovery location, but compute stays off until a disaster is declared.
+
+**Warm standby**
+:   A scaled-down but fully working copy of the stack in the recovery location that can serve traffic immediately.
+
+**Hot standby**
+:   A full-scale running copy of the stack that serves no traffic until failover.
+
+**Full / incremental / differential backup**
+:   A complete copy / changes since the previous backup of any kind / changes since the last full backup.
+
+**Air-gapped backup**
+:   A copy the production environment cannot reach by network or identity ("logical" when separated by account, credentials, and policy).
+
+**Runbook**
+:   A written step-by-step procedure with owners, commands, checks, and expected durations.
+
+**Game day**
+:   A planned exercise in which a team injects a failure or runs a recovery and measures the result.
+
+**BCP / DRP**
+:   The plan that keeps business functions going during a disruption / the plan that restores the technology.
+
+**Failback**
+:   Returning service to the original region after a failover, as a planned switchover after re-seeding, never by merging old data.
+
+**Global load balancer**
+:   An entry point with one address that spreads traffic across regions by health and proximity at the connection level, rather than through DNS caches.
+
+**Waiting room (virtual queue)**
+:   A front-end queue that admits users to a scarce-capacity flow at a controlled rate, recording each place in a signed pass.
+
+**Recovery wave**
+:   A group of recovery steps run together that may start only after the previous wave's gate checks pass.
+
+**Decision deadline**
+:   A tier's RTO minus the work that follows a failover declaration: the latest moment a failover can still meet the target.
+
+**Capacity reservation**
+:   Compute capacity held in a region in advance, so scale-out during a regional event does not depend on on-demand availability.
+
+## Observability and operations
+
+**Trace**
+:   All spans sharing one trace id, describing one request's or message's journey through a system.
+
+**Span**
+:   One timed operation within a trace, with its own id, its parent's id, a duration, attributes, and a status.
+
+**Context propagation**
+:   Carrying trace identifiers between services by writing them into outgoing requests or messages and reading them on arrival.
+
+**Structured logging**
+:   Writing log records as named fields, usually JSON, so they can be filtered, counted, and joined to traces.
+
+**Cardinality**
+:   The number of distinct values a field takes; for metrics, each distinct label combination is a separate time series.
+
+**Head sampling / tail sampling**
+:   Deciding whether to keep a trace when it starts / after its spans arrive and its outcome is known.
+
+**OpenTelemetry Collector**
+:   A vendor-neutral process that receives, processes (batching, redaction, sampling), and exports telemetry.
+
+**OTLP (OpenTelemetry Protocol)**
+:   The OpenTelemetry Protocol for sending traces, metrics, and logs between SDKs, Collectors, and backends.
+
+**APM (application performance monitoring)**
+:   In-process measurement of each request's latency, errors, and downstream calls, usually through tracing.
+
+**RUM (real user monitoring)**
+:   Timings and errors measured in real users' browsers and apps.
+
+**Synthetic monitoring**
+:   Scripted requests or journeys run on a schedule from outside the system to test availability and correctness.
+
+**RED method**
+:   For each request-driven service, track Rate, Errors, and Duration.
+
+**USE method**
+:   For each resource, check Utilization, Saturation, and Errors.
+
+**Alert fatigue**
+:   Responders get more alerts than they can handle and start ignoring them.
+
+**Escalation policy**
+:   The written order of who is notified next, and after how long, when a page is not acknowledged or needs help.
+
+**Interruption budget**
+:   The page and ticket load an on-call shift is designed to absorb, used as the target for alert tuning.
+
+**Incident commander**
+:   Holds the overall state of an incident, assigns roles, and makes decisions without hands-on fixing.
+
+**Postmortem**
+:   A written review after an incident covering impact, timeline, contributing factors, and tracked actions.
+
+**Contributing factor**
+:   One of several conditions that together allowed an incident, none sufficient alone.
+
+**Toil**
+:   Manual, repetitive, automatable operational work with no lasting value that grows with the service.
+
+**Production readiness review**
+:   A structured check that a service meets operational standards before launch or handover.
+
+**Service catalog**
+:   A registry of services with owners, on-call, tier, SLOs, runbooks, and dependencies.
+
+**Severity level**
+:   An impact-based incident grade that decides who is engaged and how often updates go out.
+
+## Delivery and platforms
+
+**Trunk-based development**
+:   Everyone integrates into one shared branch at least daily, using short-lived branches or direct commits.
+
+**GitFlow**
+:   A branching model with long-lived main and develop branches plus feature, release, and hotfix branches.
+
+**Pull request**
+:   A proposal to merge a branch, carrying the diff, automated check results, and review discussion.
+
+**Feature flag**
+:   A runtime switch that changes behaviour without deploying new code.
+
+**Flag debt**
+:   The cost of flags that outlive their purpose; n flags allow 2^n code paths.
+
+**Change lead time**
+:   The time from a change being committed to it running in production.
+
+**Continuous integration**
+:   Merging every change to trunk often and verifying it with an automated build and tests.
+
+**Continuous delivery**
+:   Every change that passes the pipeline could be deployed to production at any moment.
+
+**Continuous deployment**
+:   Every change that passes the pipeline is deployed to production automatically.
+
+**Canary release**
+:   Sending a small share of real traffic to a new version, comparing it with the old, and widening only if healthy.
+
+**Progressive delivery**
+:   Canary-style rollouts whose steps, analysis, and abort are automated by a controller.
+
+**Shadow traffic**
+:   Copying live requests to a new version and discarding its responses.
+
+**Promotion**
+:   Moving the same artifact to the next environment by changing what that environment references.
+
+**Roll-forward**
+:   Fixing a bad deployment by deploying a newer version instead of reverting.
+
+**IaC state**
+:   The tool's record mapping each declared resource to its real object id and last known attributes.
+
+**State locking**
+:   A backend mechanism that lets only one run write a given state at a time.
+
+**Plan (IaC)**
+:   The list of create, update, replace, and destroy actions a declarative tool computes before changing anything.
+
+**Module (IaC)**
+:   A reusable, versioned package of infrastructure code with inputs and outputs.
+
+**DevSecOps**
+:   Making security a shared, automated, continuous part of delivery rather than a final gate.
+
+**Shift left**
+:   Moving security and quality activities earlier in the lifecycle, where fixes cost less.
+
+**Poisoned pipeline execution**
+:   Getting a CI/CD pipeline to run attacker-controlled commands by changing its definition or injecting input.
+
+**Workload identity federation**
+:   Exchanging a platform-issued identity token (such as a CI job's OIDC token) for short-lived cloud credentials with no stored key.
+
+**Compliance gate**
+:   A pipeline check that blocks promotion unless required signed evidence is present and passing.
+
+**Platform engineering**
+:   Building and running an internal platform as a product that gives developers self-service capabilities with the organization's rules built in.
+
+**Internal developer platform (IDP)**
+:   The integrated capabilities, automation, and interfaces a platform team provides to internal teams.
+
+**Developer portal**
+:   A web interface to the platform (catalog, templates, docs, status), one of several possible interfaces.
+
+**Golden path (paved road)**
+:   A supported, opinionated route for a common job, packaged as a template, automation, and documentation.
+
+**Thinnest viable platform**
+:   The smallest platform layer that delivers consistency, built mostly on managed services.
+
+**DORA metrics**
+:   DORA's software delivery measures of throughput and instability, meant to be applied per service.
+
+**SPACE framework**
+:   A view of developer productivity along five dimensions, so no single metric stands for productivity.
+
+**Self-heal / prune (GitOps)**
+:   Reverting live-state drift automatically / deleting live objects whose manifests were removed from Git.
+
+**Snowflake cluster**
+:   A cluster built and changed by hand until no two are alike, so none can be rebuilt or upgraded the same way.
+
+**Soft / hard multi-tenancy**
+:   Tenants sharing a cluster under namespace controls because they partly trust each other, versus tenants kept apart by separate clusters, nodes, or control planes.
+
+**Blue-green cluster upgrade**
+:   Upgrading by building a new cluster at the target version, shifting traffic to it, and retiring the old one.
+
+**Policy exception**
+:   A recorded, scoped, time-limited object that lets named resources skip a named admission policy.
+
+**Emergency signer**
+:   A separately controlled signing identity, used only under two-person approval when normal CI cannot build, whose every admission raises an alert.
+
+**Evidence pack**
+:   The linked records that prove one change or one running workload went through the required controls.
+
+**Sync window**
+:   A scheduled period in which a GitOps controller allows or denies automatic syncs.
+
+**Version skew**
+:   The allowed difference in minor versions between Kubernetes components, such as kubelets and the API server.
+
+## Cost and sustainability
+
+**FinOps**
+:   A cross-functional practice that makes technology spend attributable and timely so teams can trade cost against business value.
+
+**Showback**
+:   Reporting each team's allocated cost to it without moving money between budgets.
+
+**Chargeback**
+:   Debiting allocated cost to the consuming team's budget.
+
+**Unit economics**
+:   Cost expressed per unit of business output, such as per order or per API call.
+
+**Commitment coverage**
+:   The share of eligible usage billed at a committed rather than on-demand rate.
+
+**Commitment utilization**
+:   The share of a purchased commitment actually consumed; unused commitment is still paid.
+
+**Cost unit (CU)**
+:   An abstract, illustrative unit of money this site uses for arithmetic instead of real prices.
+
+**FOCUS (FinOps Open Cost and Usage Specification)**
+:   The FinOps Open Cost and Usage Specification, a common format for billing data across vendors.
+
+**Carbon intensity**
+:   Grams of CO2-equivalent emitted per kWh of electricity for a given grid and time.
+
+**Operational emissions**
+:   Energy consumed by software multiplied by the carbon intensity of that energy.
+
+**Embodied emissions**
+:   Emissions from making, shipping, and disposing of hardware, allocated by time and resource share.
+
+**Carbon-aware computing**
+:   Software that changes when, where, or how much it computes in response to a grid carbon signal.
+
+**Time shifting**
+:   Running deferrable work in the lowest-intensity window before its deadline.
+
+**Software Carbon Intensity (SCI)**
+:   The Green Software Foundation specification, published as ISO/IEC 21031:2024, scoring emissions per functional unit as ((E × I) + M) per R.
+
+**Functional unit**
+:   The unit of useful output a carbon score is divided by.
+
+**Power usage effectiveness (PUE)**
+:   Total facility energy divided by the energy delivered to IT equipment.
+
+## Enterprise architecture, migration, and frameworks
+
+**Enterprise architecture (practice)**
+:   Keeping strategy, business capabilities, and the application, data, and technology portfolio aligned across an organization over years.
+
+**Application portfolio**
+:   The inventory of applications with owner, capabilities served, cost, technical health, business fit, and lifecycle dates, used for keep, change, or retire decisions.
+
+**TIME (Tolerate, Invest, Migrate, Eliminate)**
+:   A rationalization model attributed to Gartner that places each application by functional and technical fit.
+
+**Transition architecture**
+:   An intermediate state between current and target architecture that the organization actually runs for a period.
+
+**System of record**
+:   The one application whose copy of a data entity is authoritative.
+
+**Reference architecture**
+:   A reusable solution template for a recurring problem, with components and decisions already made.
+
+**Framework tailoring**
+:   Choosing in writing which parts of a framework to use, renaming them locally, and dropping the rest with reasons.
+
+**Framework theatre**
+:   Producing a framework's artifacts and ceremonies without them changing any decision.
+
+**7 Rs**
+:   The seven migration strategies (rehost, replatform, refactor or re-architect, repurchase, retain, retire, relocate) chosen per application in a portfolio.
+
+**Migration wave**
+:   A batch of applications whose changes go live in the same planned window, grouped by dependency and risk.
+
+**Move group**
+:   The smallest set of components that must change together because splitting them across environments breaks or slows them.
+
+**Cutover**
+:   The controlled switch of traffic, writes, and ownership from an old system to its replacement.
+
+**Parallel run**
+:   Running old and new systems on the same inputs and comparing outputs before trusting the new one.
+
+**Change data capture (CDC)**
+:   Reading a database's change log to replicate inserts, updates, and deletes continuously to another store.
+
+**Cloud adoption framework (CAF)**
+:   Provider guidance on the organizational capabilities, decisions, and sequence needed to adopt its cloud.
+
+**Cloud operating model**
+:   Who decides, builds, runs, secures, and pays for cloud resources, and how those roles interact.
+
+**Workload**
+:   A set of components (code, configuration, cloud resources) that together deliver a business outcome; the unit an architecture review covers.
+
+**Pillar (Well-Architected)**
+:   One quality area, such as reliability or cost, under which a Well-Architected framework groups its principles and review questions.
+
+**Lens (AWS Well-Architected)**
+:   An extra set of questions and best practices for a technology, industry, or organization-specific context.
+
+**High risk issue / medium risk issue (HRI / MRI)**
+:   AWS's labels for a missing best practice that could cause significant, or lesser, business impact.
+
+**Improvement plan**
+:   The prioritised list of actions, with owners and targets, that removes risks found in a review.
+
+**Milestone (review)**
+:   A saved snapshot of a workload's review answers, used to show progress between reviews.
+
+**Hybrid cloud**
+:   On-premises or private infrastructure and at least one public cloud run as one estate with shared identity, network, data flows, and operations.
+
+**Multi-cloud**
+:   Using two or more public cloud providers, split by workload or running one workload on several.
+
+**Cloud bursting**
+:   Sending excess load from on premises (or one cloud) to a cloud when demand peaks.
+
+**Data gravity**
+:   The tendency of large data sets to keep applications near them because moving data costs time and money.
+
+**Egress (data transfer)**
+:   Data leaving a provider's network, usually metered per gigabyte.
+
+**Exit plan**
+:   A documented, periodically tested procedure and estimate for leaving a provider.
+
+**Sovereign cloud**
+:   A cloud offering designed so operations, access, and legal control stay within one jurisdiction.
+
+**Rollback point**
+:   The last moment at which returning to the old system is only a re-point, with no new writes to copy back.
+
+**Logical replication**
+:   Replicating row changes per table from a publisher to a subscriber, rather than copying physical storage blocks.
+
+**Replication slot**
+:   A server-side marker that keeps write-ahead log until a replica confirms receipt, so changes are not lost while it lags.
+
+**Hypercare**
+:   A fixed period of heightened monitoring and support right after go-live, during which rollback stays possible.
+
+## Databases and storage
+
+**Sort key**
+:   A second key that orders items within one partition key and supports range and prefix queries.
+
+**Item collection**
+:   All items sharing one partition key value, readable together in one query.
+
+**Access pattern**
+:   A named question the application asks, with its inputs, ordering, rate, and latency target.
+
+**Single-table design**
+:   Storing several entity types in one table, keyed so items read together share a partition key.
+
+**Global secondary index**
+:   An index with its own partition key, stored apart from the base table and updated asynchronously.
+
+**Local secondary index**
+:   An index that keeps the base table's partition key but orders items by a different sort key.
+
+**Write sharding (key salting)**
+:   Adding a suffix to a hot partition key so its writes spread over several partitions, at the cost of read fan-out.
+
+**Adaptive capacity**
+:   A managed-service behaviour that shifts throughput toward, or splits, partitions that run hot.
+
+**Declarative partitioning**
+:   Declaring a table as partitioned in the schema so the engine routes rows to child tables by key and can prune them.
+
+**Partition pruning**
+:   The planner skipping partitions whose bounds cannot match a query's predicate.
+
+**Federation (database)**
+:   Splitting data into separate databases by function or domain, each owned by one service.
+
+**Distributed SQL**
+:   A SQL database that partitions and replicates data across nodes while keeping transactional guarantees across them.
+
+**Logical decoding**
+:   Converting write-ahead log records into row-level change events for consumers.
+
+**Connection pooler**
+:   A proxy that shares a small pool of server connections among many client connections.
+
+**Write-ahead log (WAL)**
+:   The ordered change log written before data pages, used for crash recovery, replication, and PITR.
+
+**Hot/warm/cold data**
+:   Data classified by how often it is read, which decides its storage tier and lifecycle.
+
+**Query plan**
+:   The access path and steps the engine has chosen for a query, as shown by EXPLAIN.
+
+**Covering index**
+:   An index containing every column a query needs, so the table is never visited.
+
+**Composite index**
+:   An index on several columns, sorted by the first column and then by each next one.
+
+**Expression index**
+:   An index on a computed expression, serving predicates written with that same expression.
+
+**Block storage**
+:   Raw volumes addressed by block offset that one host formats with its own filesystem.
+
+**Object storage**
+:   A flat namespace of whole, immutable objects read and written by key over HTTP.
+
+**File storage (NAS)**
+:   A shared directory tree served over NFS or SMB to many clients.
+
+**Erasure coding**
+:   Storing data as k fragments plus m parity fragments so that any k can rebuild it.
+
+**Crash-consistent vs application-consistent snapshot**
+:   A disk image as if power was cut, versus an image taken after the application flushed and marked a consistent point.
+
+**Lifecycle policy**
+:   Rules on a bucket that move objects to cheaper tiers and delete them by age or condition.
+
+**Content-addressable storage**
+:   Storing data under the hash of its bytes, so identical content has one address.
+
+## Data engineering and analytics
+
+**Data lineage**
+:   The recorded path of data from its sources through each transformation to its consumers.
+
+**Data steward**
+:   The role that maintains a data set's definitions, quality rules, and catalog entry day to day.
+
+**Data profiling**
+:   Computing statistics on actual data (null rates, distinct values, ranges) to discover its real shape.
+
+**Data quality dimension**
+:   A measurable aspect of fitness for use, such as completeness, validity, or timeliness.
+
+**OLTP (online transaction processing)**
+:   A workload of many short transactions that read or write a few rows by key with strict correctness.
+
+**OLAP (online analytical processing)**
+:   A workload of large queries that scan many rows, read few columns, and aggregate them.
+
+**Fact table**
+:   A table of measurements of a business process, one row per event or state at the declared grain.
+
+**Dimension table**
+:   A table of descriptive attributes used to filter and group facts.
+
+**Grain**
+:   The exact business meaning of one row in a fact table.
+
+**Star schema**
+:   A fact table joined directly to denormalized dimension tables.
+
+**Slowly changing dimension**
+:   A technique (types 1, 2, 3, and hybrids) for handling changes to dimension attributes over time.
+
+**Semantic layer**
+:   A governed layer that defines business metrics and joins once for all BI tools.
+
+**ETL / ELT**
+:   ETL transforms data in a separate engine before loading; ELT loads raw data first and transforms it inside the destination.
+
+**DAG (pipeline)**
+:   A directed acyclic graph of tasks with dependency edges and no cycles, the shape an orchestrator runs.
+
+**Backfill**
+:   Running a pipeline for past periods to fill a gap or apply corrected logic to history.
+
+**Idempotent task**
+:   A pipeline task whose rerun for the same period gives the same output and no duplicates.
+
+**Schema registry**
+:   A service that stores versioned schemas per subject and checks each new version against a compatibility mode.
+
+**Data contract**
+:   An agreement between a producing team and consumers about a dataset's schema, meaning, quality, and how changes are announced.
+
+**Write-audit-publish**
+:   Writing new data where readers cannot see it, checking it, and making it visible only if checks pass.
+
+**Late-arriving data**
+:   Records whose event time falls in a period that has already been processed.
+
+**Shuffle (data processing)**
+:   Redistributing records across workers by key between stages (not shuffle sharding).
+
+**Data skew**
+:   Uneven spread of records over keys or partitions so one task does far more work than the rest.
+
+**Salting**
+:   Adding a suffix to a hot key so its records spread over several tasks, then merging partial results.
+
+**Time travel**
+:   Querying a table as of an earlier snapshot, version, or timestamp.
+
+**Watermark**
+:   A stream engine's running estimate that no more events older than time T will arrive, used to decide when a window can be finalized.
+
+**Event time vs processing time**
+:   When something happened at the source versus when the engine processes it.
+
+**Data warehouse**
+:   A database designed for analytical queries over integrated, historical, structured data, with its schema defined before loading.
+
+**Data lake**
+:   Low-cost object storage holding raw data in its original formats, given structure only when read.
+
+**Lakehouse**
+:   A data lake whose files are managed by an open table format, so warehouse-style SQL and machine learning share one transactional copy.
+
+**Data mart**
+:   A subset of analytical data shaped for one business area, fed from an EDW (dependent) or straight from sources (independent).
+
+**Operational data store (ODS)**
+:   An integrated, frequently updated, current-state copy of data from several operational systems, used for operational reporting.
+
+**Data mesh**
+:   An approach in which business domains own and publish analytical data as products on a self-serve platform under federated governance.
+
+**Data product**
+:   A data set published by its owning domain with a named owner, documented schema and meaning, quality and freshness objectives, and access rules.
+
+**Medallion architecture**
+:   A lake or lakehouse layering convention of Bronze (raw), Silver (cleaned, conformed), and Gold (business aggregates), with a contract at each boundary.
+
+**Open table format**
+:   A metadata specification over immutable data files that records each table version as a snapshot, giving atomic commits, schema evolution, and time travel.
+
+**Data catalog**
+:   A searchable register of datasets with owners, meanings, classifications, lineage, and the metadata pointers engines use to find and commit tables.
+
+**Compaction**
+:   Rewriting many small data files of a table into fewer large ones to cut metadata, request, and query-planning overhead.
+
+**Snapshot expiry**
+:   Removing old table versions so files only they reference can be deleted; retention and erasure are not physically complete until it runs.
+
+**Schema drift**
+:   An unannounced change in incoming data structure (renamed field, changed type) that breaks or silently corrupts downstream processing.
+
+**Card chargeback (dispute)**
+:   A cardholder's bank reversing a card payment on the merchant after a dispute (not the FinOps cost-allocation sense of chargeback).
+
+**Feature store (online / offline)**
+:   A system that serves the latest feature values per key at low latency (online) and keeps full feature history for training (offline) from shared definitions.
+
+**Training/serving skew**
+:   A model receiving different feature values in production than it was trained on, because of different code, data, or timing.
+
+**Point-in-time join**
+:   A join that attaches to each training example the feature values as they were at that example's timestamp, never later ones.
+
+**Label maturity**
+:   The age after which a decision's outcome label is treated as final for training.
+
+## Event-driven systems and streaming
+
+**Event time**
+:   The time an event actually happened at its source, as opposed to when the pipeline received or processed it.
+
+**Domain event**
+:   An event belonging to one bounded context's internal model that may change whenever that model changes.
+
+**Integration event**
+:   An event published across team or service boundaries as a stable, versioned contract.
+
+**Event contract**
+:   The envelope, payload schema, meaning, and compatibility promises of an event type.
+
+**CloudEvents**
+:   A CNCF specification for common event metadata (id, source, type, specversion, and optional attributes) across systems.
+
+**AsyncAPI**
+:   A specification for describing event-driven APIs as channels, operations (send/receive), and messages.
+
+**Dual write**
+:   Updating a database and a broker as two separate operations, so one can succeed without the other.
+
+**Offset**
+:   The fixed position number a record receives when appended to a partition; consumers use it to remember where they stopped.
+
+**Consumer lag**
+:   How far a consumer group is behind the newest record in a partition, measured in records or, more usefully, in time.
+
+**In-sync replica (ISR)**
+:   A partition copy that is alive and caught up with the leader within a configured bound, so it can take over without losing acknowledged records.
+
+**Hopping / sliding / session window**
+:   Overlapping fixed-size windows / windows aligned to record timestamps / per-key windows that close after a gap of inactivity.
+
+**Consumer group**
+:   Consumer instances sharing one subscription to a topic, each partition read by one member at a time.
+
+**Kafka-compatible**
+:   A service that accepts the Kafka wire protocol, so Kafka clients connect by configuration change alone.
+
+**Server-side filtering**
+:   The broker evaluates a subscription's rule and delivers only matching messages.
+
+**Replay**
+:   Re-delivering already-consumed messages from retained data or an archive.
+
+**Replica identity**
+:   The columns PostgreSQL writes as the old-row key in update and delete events so a subscriber can find the affected row.
+
+**Tombstone**
+:   A record with a key and a null value that marks the key deleted, so log compaction can drop the key's earlier records.
+
+**Log compaction**
+:   A retention mode that keeps at least the newest record for each key instead of deleting records by age.
+
+**Incremental (chunked) snapshot**
+:   Copying existing rows in key-ordered chunks while change streaming continues, so no long transaction holds the source open.
+
+**Heartbeat table**
+:   A small table a CDC connector writes to regularly so the replication slot keeps advancing when captured tables are quiet.
+
+**Allowed lateness**
+:   How long a window's state is kept after the watermark passes, so late events can still update its result.
+
+**Tumbling window**
+:   A fixed-size event-time window that does not overlap the next one, such as each whole minute.
+
+**Real-time OLAP store**
+:   A column-oriented database that ingests continuously and answers aggregation queries over fresh data in under a second.
+
+**HyperLogLog**
+:   A small, mergeable sketch that estimates how many distinct items a set contains within a known error.
+
+**Two-phase (local) aggregation**
+:   Combining counts per key locally before sending them to the keyed operator, so one hot key cannot overload a single task.
+
+**Request coalescing**
+:   Merging identical concurrent requests into one backend query whose result is shared.
+
 ## Diagrams and documentation
 
 **C4 model**

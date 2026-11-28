@@ -22,21 +22,21 @@ code lives under `labs/` in the repository and solutions under `labs/solutions/`
 | # | Lab | Requirements | Status |
 |---|---|---|---|
 | 01 | [Measure latency and throughput for a simple HTTP service](lab-01-latency-and-throughput.md) | Local, free | Draft |
-| 02 | Add a cache and compare hit/miss behavior | Local, free | Planned |
+| 02 | [Add a cache and compare hit/miss behavior](lab-02-cache-hit-and-miss.md) | Local, free | Draft |
 | 03 | [Simulate a queue with multiple consumers, retries, and a dead-letter queue](lab-03-queue-retries-and-dead-letter.md) | Local, free | Draft |
 | 04 | [Demonstrate idempotency and duplicate message handling](lab-04-idempotency-and-duplicates.md) | Local, free | Draft |
 | 05 | [Reproduce a race condition and fix it with synchronization](lab-05-race-condition.md) | Local, free | Draft |
-| 06 | Demonstrate database indexing and query plans | Local, free | Planned |
-| 07 | Compare SQL and NoSQL access patterns with a concrete workload | Local, free | Planned |
+| 06 | [Demonstrate database indexing and query plans](lab-06-indexing-and-query-plans.md) | Local, free | Draft |
+| 07 | [Compare SQL and NoSQL access patterns with a concrete workload](lab-07-sql-vs-nosql-access-patterns.md) | Local, free | Draft |
 | 08 | [Simulate sharding and consistent hashing](lab-08-sharding-and-consistent-hashing.md) | Local, free | Draft |
 | 09 | [Demonstrate eventual consistency and replication lag](lab-09-replication-lag.md) | Local, free | Draft |
 | 10 | [Build a small REST API with authentication and request validation](lab-10-rest-api-auth-and-validation.md) | Local, free | Draft |
-| 11 | Add distributed tracing and structured logging to two services | Local, free | Planned |
+| 11 | [Add distributed tracing and structured logging to two services](lab-11-tracing-and-structured-logging.md) | Local, free | Draft |
 | 12 | [Deploy a small application to local Kubernetes](lab-12-local-kubernetes-deployment.md) | Local, free (Docker and kind) | Draft |
-| 13 | Implement a GitOps deployment locally | Local, free | Planned |
+| 13 | [Implement a GitOps deployment locally](lab-13-gitops-reconciliation.md) | Local, free (Git) | Draft |
 | 14 | [Demonstrate network segmentation with containers or a local lab](lab-14-network-segmentation.md) | Local, free | Draft |
 | 15 | [Create an infrastructure module and run static checks](lab-15-infrastructure-module-and-static-checks.md) | Local, free (Terraform or OpenTofu) | Draft |
-| 16 | Build a simple event-driven workflow | Local, free | Planned |
+| 16 | [Build a simple event-driven workflow](lab-16-event-driven-workflow.md) | Local, free | Draft |
 | 17 | Implement a basic RAG pipeline using local documents and a local or optional embedding/model endpoint | Local, free | Planned |
 | 18 | Compare keyword, vector, and hybrid retrieval on a small dataset | Local, free | Planned |
 | 19 | Visualize chunking and embedding similarity | Local, free | Planned |

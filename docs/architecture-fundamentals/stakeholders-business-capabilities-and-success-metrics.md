@@ -520,7 +520,7 @@ acceptance criteria or they are lost. For AtlasMart, this work replaced "build a
 
 | Source | Type | Checked |
 |---|---|---|
-| The Open Group, [The TOGAF Standard, 10th Edition](https://pubs.opengroup.org/togaf-standard/) — Business Architecture guide on business capabilities; ADM techniques on stakeholder management | Standard (free to read online; chapter pages are rendered by JavaScript) | 2026-11-15 |
+| The Open Group, [The TOGAF Standard, 10th Edition](https://www.opengroup.org/togaf) — Business Architecture guide on business capabilities; ADM techniques on stakeholder management | Standard (overview page; the full text on pubs.opengroup.org now requires a free sign-in) | 2026-11-27 |
 | A. L. Mendelow, ["Environmental Scanning: The Impact of the Stakeholder Concept"](https://aisel.aisnet.org/icis1981/20/), ICIS 1981 Proceedings | Paper (origin of the power/interest grid) | 2026-11-15 |
 | Mike Cohn, [User Stories](https://www.mountaingoatsoftware.com/agile/user-stories) — Mountain Goat Software | Article | 2026-11-15 |
 | Cucumber, [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/) | Documentation (Given / When / Then syntax) | 2026-11-15 |

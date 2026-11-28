@@ -29,10 +29,10 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D18** | **Enterprise architecture, governance, hybrid cloud, and modernization** | | |
-| D18-T01 | Enterprise architecture practice | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-practice.md` |
-| D18-T02 | Enterprise architecture frameworks | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` |
-| D18-T03 | Legacy modernization and migration | :material-circle-outline: Planned | planned: `enterprise-architecture/legacy-modernization-and-migration.md` |
-| D18-T04 | Hybrid and multi-cloud architecture | :material-circle-outline: Planned | planned: `enterprise-architecture/hybrid-and-multi-cloud-architecture.md` |
+| D18-T01 | Enterprise architecture practice | :material-circle-slice-5: Draft | [enterprise-architecture-practice](enterprise-architecture-practice.md) |
+| D18-T02 | Enterprise architecture frameworks | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](enterprise-architecture-frameworks.md) |
+| D18-T03 | Legacy modernization and migration | :material-circle-slice-5: Draft | [legacy-modernization-and-migration](legacy-modernization-and-migration.md) |
+| D18-T04 | Hybrid and multi-cloud architecture | :material-circle-slice-5: Draft | [hybrid-and-multi-cloud-architecture](hybrid-and-multi-cloud-architecture.md) |
 <!-- coverage:end -->
 
 ## How to continue

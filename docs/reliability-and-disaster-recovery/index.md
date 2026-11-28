@@ -30,9 +30,9 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 |---|---|---|---|
 | **D13** | **High availability, reliability, resilience, and DR** | | |
 | D13-T01 | High availability design | :material-circle-slice-5: Draft | [high-availability-design](high-availability-design.md) |
-| D13-T02 | Reliability engineering | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/reliability-engineering.md` |
-| D13-T03 | Disaster recovery strategies | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/disaster-recovery-strategies.md` |
-| D13-T04 | Advanced resilience and failure containment | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md` |
+| D13-T02 | Reliability engineering | :material-circle-slice-5: Draft | [reliability-engineering](reliability-engineering.md) |
+| D13-T03 | Disaster recovery strategies | :material-circle-slice-5: Draft | [disaster-recovery-strategies](disaster-recovery-strategies.md) |
+| D13-T04 | Advanced resilience and failure containment | :material-circle-slice-5: Draft | [advanced-resilience-and-failure-containment](advanced-resilience-and-failure-containment.md) |
 <!-- coverage:end -->
 
 ## How to continue

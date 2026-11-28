@@ -14,15 +14,15 @@ This matrix maps every topic bullet from the master curriculum inventory
 to the page that teaches it, or to the planned destination where it will live.
 The **ID** is stable: use it in issues and pull requests.
 
-**Last updated:** 2026-11-21  
+**Last updated:** 2026-11-27  
 **Domains:** 30 · **Topic entries:** 140
 
 | Status | Count | Meaning |
 |---|---:|---|
 | :material-check-circle: Reviewed | 0 | Technical accuracy, diagrams, references, and exercises checked |
-| :material-circle-slice-5: Draft | 52 | Content exists; needs technical and teaching review |
-| :material-circle-slice-2: Outline | 4 | Objectives and structure exist; explanation incomplete |
-| :material-circle-outline: Planned | 84 | Identified; destination page not yet written |
+| :material-circle-slice-5: Draft | 84 | Content exists; needs technical and teaching review |
+| :material-circle-slice-2: Outline | 5 | Objectives and structure exist; explanation incomplete |
+| :material-circle-outline: Planned | 51 | Identified; destination page not yet written |
 | :material-alert-circle-outline: Needs update | 0 | May be stale or a reference changed |
 
 !!! note "How to read the Page column"
@@ -92,38 +92,38 @@ Section: [application-and-api-architecture](../application-and-api-architecture/
 
 ## D06 — Database, storage, and caching architecture
 
-Section: [databases-and-storage](../databases-and-storage/index.md) · 2/5 topic entries have a page
+Section: [databases-and-storage](../databases-and-storage/index.md) · 5/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D06-T01 | Relational databases and SQL internals | :material-circle-slice-5: Draft | [relational-databases-and-sql-internals](../databases-and-storage/relational-databases-and-sql-internals.md) | Relational models, tables/rows/columns, primary/foreign keys, normalization, denormalization, relationships, joins, indexes, B-tree, composite indexes, query execution/plans/optimization, connection pooling, transactions, ACID, isolation levels, dirty/non-repeatable/phantom reads, locking, deadlocks, stored procedures, constraints, partitioning, read replicas, replication, failover, migration, schema evolution. |
-| D06-T02 | NoSQL databases | :material-circle-outline: Planned | planned: `databases-and-storage/nosql-databases.md` | NoSQL: key-value, document, wide-column, graph, time-series, search, in-memory, distributed, multi-model, consistency models, partition keys, access patterns, denormalization, hot partition management, secondary indexes. |
-| D06-T03 | Advanced database architecture | :material-circle-outline: Planned | planned: `databases-and-storage/advanced-database-architecture.md` | Advanced databases: sharding, horizontal/vertical partitioning, federation, replication strategies, multi-region/global databases, distributed SQL, CDC, transaction logs, connection management, backup/recovery, point-in-time recovery, encryption, auditing, consistency, archiving, hot/warm/cold data, retention/deletion, low-downtime migration. |
-| D06-T04 | Storage architecture | :material-circle-outline: Planned | planned: `databases-and-storage/storage-architecture.md` | Storage: block, object, file, distributed filesystems, NAS, SAN, DAS, ephemeral, persistent, replication, snapshots, tiering, lifecycle management, compression, deduplication, encryption, gateways, hybrid storage, backup/archive, object versioning/locking, content-addressable storage. |
+| D06-T02 | NoSQL databases | :material-circle-slice-5: Draft | [nosql-databases](../databases-and-storage/nosql-databases.md) | NoSQL: key-value, document, wide-column, graph, time-series, search, in-memory, distributed, multi-model, consistency models, partition keys, access patterns, denormalization, hot partition management, secondary indexes. |
+| D06-T03 | Advanced database architecture | :material-circle-slice-5: Draft | [advanced-database-architecture](../databases-and-storage/advanced-database-architecture.md) | Advanced databases: sharding, horizontal/vertical partitioning, federation, replication strategies, multi-region/global databases, distributed SQL, CDC, transaction logs, connection management, backup/recovery, point-in-time recovery, encryption, auditing, consistency, archiving, hot/warm/cold data, retention/deletion, low-downtime migration. |
+| D06-T04 | Storage architecture | :material-circle-slice-5: Draft | [storage-architecture](../databases-and-storage/storage-architecture.md) | Storage: block, object, file, distributed filesystems, NAS, SAN, DAS, ephemeral, persistent, replication, snapshots, tiering, lifecycle management, compression, deduplication, encryption, gateways, hybrid storage, backup/archive, object versioning/locking, content-addressable storage. |
 | D06-T05 | Caching architecture | :material-circle-slice-5: Draft | [caching-architecture](../databases-and-storage/caching-architecture.md) | Caching: application, database, distributed, in-memory, local, CDN; cache-aside, read-through, write-through, write-behind; invalidation, TTL, eviction (LRU/LFU/FIFO), cache stampede, penetration, poisoning, hot keys, consistency, failure handling. |
 
 ## D07 — Data engineering, analytics, and big data
 
-Section: [data-engineering-and-analytics](../data-engineering-and-analytics/index.md) · 0/5 topic entries have a page
+Section: [data-engineering-and-analytics](../data-engineering-and-analytics/index.md) · 5/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D07-T01 | Data modeling, metadata, and data governance | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md` | Data modeling, conceptual/logical/physical models, structured/semi-structured/unstructured data, metadata, catalogs, lineage, governance, quality, validation, profiling, ownership, classification, lifecycle, retention, privacy. |
-| D07-T02 | Batch, streaming, ETL/ELT, and pipelines | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md` | Batch, stream, real-time, near-real-time processing; ETL, ELT, transformation, ingestion, orchestration, workflow orchestration, pipelines, CDC, synchronization, validation, reconciliation, schema evolution/registry, serialization, Avro, Parquet, ORC, JSON, Protocol Buffers. |
-| D07-T03 | Warehouses, lakes, lakehouses, and data mesh | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md` | Data warehouse, data lake, lakehouse, data mart, ODS, data mesh, data fabric, medallion architecture, Bronze/Silver/Gold, Lambda, Kappa, virtualization, federated queries, EDW, platform modernization. |
-| D07-T04 | Big data processing engines and table formats | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md` | Hadoop, HDFS, MapReduce, Spark, Spark SQL/Streaming, Flink, Beam, Hive, Iceberg, Delta Lake, Hudi, distributed processing/storage, partitioning, compaction, shuffle, data skew, windowing, watermarks, event time vs processing time, exactly-once stream processing. |
-| D07-T05 | OLTP vs OLAP, dimensional modeling, and BI | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md` | OLTP vs OLAP, analytical queries, aggregation, dimensional modeling, star/snowflake schemas, fact/dimension tables, slowly changing dimensions, BI, reporting, visualization, self-service analytics, real-time dashboards, descriptive/diagnostic/predictive/prescriptive analytics. |
+| D07-T01 | Data modeling, metadata, and data governance | :material-circle-slice-5: Draft | [data-modeling-metadata-and-data-governance](../data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md) | Data modeling, conceptual/logical/physical models, structured/semi-structured/unstructured data, metadata, catalogs, lineage, governance, quality, validation, profiling, ownership, classification, lifecycle, retention, privacy. |
+| D07-T02 | Batch, streaming, ETL/ELT, and pipelines | :material-circle-slice-5: Draft | [batch-streaming-etl-elt-and-pipelines](../data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md) | Batch, stream, real-time, near-real-time processing; ETL, ELT, transformation, ingestion, orchestration, workflow orchestration, pipelines, CDC, synchronization, validation, reconciliation, schema evolution/registry, serialization, Avro, Parquet, ORC, JSON, Protocol Buffers. |
+| D07-T03 | Warehouses, lakes, lakehouses, and data mesh | :material-circle-slice-5: Draft | [warehouses-lakes-lakehouses-and-data-mesh](../data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md) | Data warehouse, data lake, lakehouse, data mart, ODS, data mesh, data fabric, medallion architecture, Bronze/Silver/Gold, Lambda, Kappa, virtualization, federated queries, EDW, platform modernization. |
+| D07-T04 | Big data processing engines and table formats | :material-circle-slice-5: Draft | [big-data-processing-engines-and-table-formats](../data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md) | Hadoop, HDFS, MapReduce, Spark, Spark SQL/Streaming, Flink, Beam, Hive, Iceberg, Delta Lake, Hudi, distributed processing/storage, partitioning, compaction, shuffle, data skew, windowing, watermarks, event time vs processing time, exactly-once stream processing. |
+| D07-T05 | OLTP vs OLAP, dimensional modeling, and BI | :material-circle-slice-5: Draft | [oltp-vs-olap-dimensional-modeling-and-bi](../data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md) | OLTP vs OLAP, analytical queries, aggregation, dimensional modeling, star/snowflake schemas, fact/dimension tables, slowly changing dimensions, BI, reporting, visualization, self-service analytics, real-time dashboards, descriptive/diagnostic/predictive/prescriptive analytics. |
 
 ## D08 — Messaging, event-driven systems, and streaming
 
-Section: [messaging-and-streaming](../messaging-and-streaming/index.md) · 1/4 topic entries have a page
+Section: [messaging-and-streaming](../messaging-and-streaming/index.md) · 4/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D08-T01 | Message queues and brokers | :material-circle-slice-5: Draft | [message-queues-and-brokers](../messaging-and-streaming/message-queues-and-brokers.md) | Message queues/brokers, pub-sub, point-to-point, request-response, asynchronous messaging, routing, filtering, persistence, acknowledgments, visibility timeout, ordering, priority, expiry, deduplication, DLQs, retries, poison messages, backpressure, consumer concurrency/groups, replay. |
-| D08-T02 | Event-driven architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-driven-architecture.md` | Events vs commands, producers, consumers, brokers, buses, routing/filtering, schemas/versioning/contracts, event sourcing, choreography/orchestration, replay, ordering, domain/integration events, CDC, transactional outbox. |
-| D08-T03 | Event streaming and log-based architecture | :material-circle-outline: Planned | planned: `messaging-and-streaming/event-streaming-and-log-based-architecture.md` | Data/event streaming, log-based architecture, partitions, retention, offsets, consumer lag, replication, joins, windows, watermarks, enrichment, aggregation, exactly-once and at-least-once semantics. |
-| D08-T04 | Messaging technologies compared | :material-circle-outline: Planned | planned: `messaging-and-streaming/messaging-technologies-compared.md` | Technologies to understand conceptually: Apache Kafka, Amazon Kinesis, SQS, SNS, EventBridge, RabbitMQ, Apache Pulsar, Google Pub/Sub, Azure Service Bus. |
+| D08-T02 | Event-driven architecture | :material-circle-slice-5: Draft | [event-driven-architecture](../messaging-and-streaming/event-driven-architecture.md) | Events vs commands, producers, consumers, brokers, buses, routing/filtering, schemas/versioning/contracts, event sourcing, choreography/orchestration, replay, ordering, domain/integration events, CDC, transactional outbox. |
+| D08-T03 | Event streaming and log-based architecture | :material-circle-slice-5: Draft | [event-streaming-and-log-based-architecture](../messaging-and-streaming/event-streaming-and-log-based-architecture.md) | Data/event streaming, log-based architecture, partitions, retention, offsets, consumer lag, replication, joins, windows, watermarks, enrichment, aggregation, exactly-once and at-least-once semantics. |
+| D08-T04 | Messaging technologies compared | :material-circle-slice-5: Draft | [messaging-technologies-compared](../messaging-and-streaming/messaging-technologies-compared.md) | Technologies to understand conceptually: Apache Kafka, Amazon Kinesis, SQS, SNS, EventBridge, RabbitMQ, Apache Pulsar, Google Pub/Sub, Azure Service Bus. |
 
 ## D09 — Networking and hybrid connectivity
 
@@ -176,14 +176,14 @@ Section: [security-architecture](../security-architecture/index.md) · 8/8 topic
 
 ## D13 — High availability, reliability, resilience, and DR
 
-Section: [reliability-and-disaster-recovery](../reliability-and-disaster-recovery/index.md) · 1/4 topic entries have a page
+Section: [reliability-and-disaster-recovery](../reliability-and-disaster-recovery/index.md) · 4/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D13-T01 | High availability design | :material-circle-slice-5: Draft | [high-availability-design](../reliability-and-disaster-recovery/high-availability-design.md) | Single points of failure, redundancy, fault domains, availability zones, Multi-AZ, multi-region, active-active/passive, load balancing, health checks, failover, database failover, DNS failover, global routing, regional isolation, cell-based architecture, availability calculations. |
-| D13-T02 | Reliability engineering | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/reliability-engineering.md` | Reliability engineering: FMEA/FMECA, fault tree analysis, reliability block diagrams, redundancy models, fault isolation/containment, graceful degradation, self-healing, recovery orchestration, retries, circuit breakers, bulkheads, chaos engineering, fault injection, game days, reliability testing, SRE, error budgets, SLO management. |
-| D13-T03 | Disaster recovery strategies | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/disaster-recovery-strategies.md` | DR: backup/restore, pilot light, warm standby, hot standby, active-active, cold recovery, full/incremental/differential backups, immutable/air-gapped/cross-region backups, PITR, storage/application/infrastructure recovery, DNS failover, orchestration, recovery tests, BCP, DRP. |
-| D13-T04 | Advanced resilience and failure containment | :material-circle-outline: Planned | planned: `reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md` | Advanced resilience: dependency failures, blast radius, cascading failure, partitions, consistency during failover, split-brain prevention, quorum recovery, recovery sequencing/priorities, degraded operating modes. |
+| D13-T02 | Reliability engineering | :material-circle-slice-5: Draft | [reliability-engineering](../reliability-and-disaster-recovery/reliability-engineering.md) | Reliability engineering: FMEA/FMECA, fault tree analysis, reliability block diagrams, redundancy models, fault isolation/containment, graceful degradation, self-healing, recovery orchestration, retries, circuit breakers, bulkheads, chaos engineering, fault injection, game days, reliability testing, SRE, error budgets, SLO management. |
+| D13-T03 | Disaster recovery strategies | :material-circle-slice-5: Draft | [disaster-recovery-strategies](../reliability-and-disaster-recovery/disaster-recovery-strategies.md) | DR: backup/restore, pilot light, warm standby, hot standby, active-active, cold recovery, full/incremental/differential backups, immutable/air-gapped/cross-region backups, PITR, storage/application/infrastructure recovery, DNS failover, orchestration, recovery tests, BCP, DRP. |
+| D13-T04 | Advanced resilience and failure containment | :material-circle-slice-5: Draft | [advanced-resilience-and-failure-containment](../reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md) | Advanced resilience: dependency failures, blast radius, cascading failure, partitions, consistency during failover, split-brain prevention, quorum recovery, recovery sequencing/priorities, degraded operating modes. |
 
 ## D14 — Performance engineering and scalability
 
@@ -197,45 +197,45 @@ Section: [performance-and-scalability](../performance-and-scalability/index.md) 
 
 ## D15 — Observability, monitoring, SRE, and production operations
 
-Section: [observability-and-sre](../observability-and-sre/index.md) · 0/3 topic entries have a page
+Section: [observability-and-sre](../observability-and-sre/index.md) · 3/3 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D15-T01 | Observability fundamentals: logs, metrics, and traces | :material-circle-outline: Planned | planned: `observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md` | Monitoring vs observability, logs, metrics, traces, events, profiles, correlation/trace IDs, context propagation, structured/centralized logs, retention, aggregation, sampling, OpenTelemetry, telemetry pipelines, application/infrastructure/network/database observability. |
-| D15-T02 | Monitoring, alerting, and on-call | :material-circle-outline: Planned | planned: `observability-and-sre/monitoring-alerting-and-on-call.md` | Infrastructure monitoring, APM, RUM, synthetic monitoring, uptime, health checks, golden signals, RED/USE, dashboards, static/dynamic thresholds, anomaly detection, alert correlation/noise reduction, on-call and escalation. |
-| D15-T03 | Incident management and SRE practices | :material-circle-outline: Planned | planned: `observability-and-sre/incident-management-and-sre-practices.md` | Incident/problem/change/release/deployment management, runbooks, playbooks, postmortems, blameless RCA, capacity/configuration management, operational and production readiness, service ownership, SRE, service catalogs, operational maturity. |
+| D15-T01 | Observability fundamentals: logs, metrics, and traces | :material-circle-slice-5: Draft | [observability-fundamentals-logs-metrics-and-traces](../observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md) | Monitoring vs observability, logs, metrics, traces, events, profiles, correlation/trace IDs, context propagation, structured/centralized logs, retention, aggregation, sampling, OpenTelemetry, telemetry pipelines, application/infrastructure/network/database observability. |
+| D15-T02 | Monitoring, alerting, and on-call | :material-circle-slice-5: Draft | [monitoring-alerting-and-on-call](../observability-and-sre/monitoring-alerting-and-on-call.md) | Infrastructure monitoring, APM, RUM, synthetic monitoring, uptime, health checks, golden signals, RED/USE, dashboards, static/dynamic thresholds, anomaly detection, alert correlation/noise reduction, on-call and escalation. |
+| D15-T03 | Incident management and SRE practices | :material-circle-slice-5: Draft | [incident-management-and-sre-practices](../observability-and-sre/incident-management-and-sre-practices.md) | Incident/problem/change/release/deployment management, runbooks, playbooks, postmortems, blameless RCA, capacity/configuration management, operational and production readiness, service ownership, SRE, service catalogs, operational maturity. |
 
 ## D16 — DevOps, DevSecOps, CI/CD, IaC, and platform engineering
 
-Section: [devops-and-platform-engineering](../devops-and-platform-engineering/index.md) · 0/5 topic entries have a page
+Section: [devops-and-platform-engineering](../devops-and-platform-engineering/index.md) · 5/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D16-T01 | DevOps lifecycle and source control | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/devops-lifecycle-and-source-control.md` | DevOps lifecycle, source control, Git, branching, GitFlow, trunk-based development, pull requests, reviews, build/test automation, CI/CD, artifacts, releases, environments, configuration, deployment, infrastructure automation, GitOps, rollback, feature flags. |
-| D16-T02 | CI/CD pipeline design and deployment strategies | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md` | CI/CD design: CI, continuous delivery/deployment, pipeline stages, security/tests, artifact repositories/promotion, environment promotion, approvals, deployment strategies, rolling, blue-green, canary, progressive delivery, shadow/A/B, rollback, pipeline security/scalability, multi-account pipelines. |
-| D16-T03 | Infrastructure as Code | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/infrastructure-as-code.md` | IaC: declarative/imperative, Terraform, CloudFormation, Pulumi, CDK, state, remote state/locking, modules/versioning, lifecycle, import, drift, plan/apply, secrets, environment separation, reusable modules, policy as code, testing, security scans, FinOps. |
-| D16-T04 | DevSecOps and secure delivery | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/devsecops-and-secure-delivery.md` | DevSecOps: shift left, secure CI/CD, SAST/DAST/SCA, container/IaC/secret scanning, SBOM, signing, provenance, supply-chain security, policy enforcement, compliance gates, runtime security, admission policies. |
-| D16-T05 | Platform engineering | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/platform-engineering.md` | Platform engineering: IDPs, developer portals, golden paths, self-service, platform as product, DevEx, platform APIs, catalogs, templates, environment provisioning, multi-tenancy, productivity metrics, governance/security, Kubernetes platforms. |
+| D16-T01 | DevOps lifecycle and source control | :material-circle-slice-5: Draft | [devops-lifecycle-and-source-control](../devops-and-platform-engineering/devops-lifecycle-and-source-control.md) | DevOps lifecycle, source control, Git, branching, GitFlow, trunk-based development, pull requests, reviews, build/test automation, CI/CD, artifacts, releases, environments, configuration, deployment, infrastructure automation, GitOps, rollback, feature flags. |
+| D16-T02 | CI/CD pipeline design and deployment strategies | :material-circle-slice-5: Draft | [ci-cd-pipeline-design-and-deployment-strategies](../devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md) | CI/CD design: CI, continuous delivery/deployment, pipeline stages, security/tests, artifact repositories/promotion, environment promotion, approvals, deployment strategies, rolling, blue-green, canary, progressive delivery, shadow/A/B, rollback, pipeline security/scalability, multi-account pipelines. |
+| D16-T03 | Infrastructure as Code | :material-circle-slice-5: Draft | [infrastructure-as-code](../devops-and-platform-engineering/infrastructure-as-code.md) | IaC: declarative/imperative, Terraform, CloudFormation, Pulumi, CDK, state, remote state/locking, modules/versioning, lifecycle, import, drift, plan/apply, secrets, environment separation, reusable modules, policy as code, testing, security scans, FinOps. |
+| D16-T04 | DevSecOps and secure delivery | :material-circle-slice-5: Draft | [devsecops-and-secure-delivery](../devops-and-platform-engineering/devsecops-and-secure-delivery.md) | DevSecOps: shift left, secure CI/CD, SAST/DAST/SCA, container/IaC/secret scanning, SBOM, signing, provenance, supply-chain security, policy enforcement, compliance gates, runtime security, admission policies. |
+| D16-T05 | Platform engineering | :material-circle-slice-5: Draft | [platform-engineering](../devops-and-platform-engineering/platform-engineering.md) | Platform engineering: IDPs, developer portals, golden paths, self-service, platform as product, DevEx, platform APIs, catalogs, templates, environment provisioning, multi-tenancy, productivity metrics, governance/security, Kubernetes platforms. |
 
 ## D17 — FinOps, cost architecture, and sustainability
 
-Section: [finops-and-sustainability](../finops-and-sustainability/index.md) · 0/2 topic entries have a page
+Section: [finops-and-sustainability](../finops-and-sustainability/index.md) · 2/2 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D17-T01 | Cloud cost models and FinOps | :material-circle-outline: Planned | planned: `finops-and-sustainability/cloud-cost-models-and-finops.md` | Cloud cost models, pay-as-you-go, reserved capacity, savings plans, spot, compute/storage/database/network optimization, transfer/egress cost, idle detection, tagging, allocation, attribution, showback, chargeback, budgets, forecasts, anomaly detection, unit economics, cost per transaction/customer/API/AI inference, TCO, ROI, break-even, governance. |
-| D17-T02 | Sustainable and carbon-aware architecture | :material-circle-outline: Planned | planned: `finops-and-sustainability/sustainable-and-carbon-aware-architecture.md` | Energy-efficient computing, carbon-aware computing, compute/storage efficiency, data lifecycle, utilization, right-sizing, region selection, scheduling, green software engineering, carbon reporting, sustainable cloud architecture. |
+| D17-T01 | Cloud cost models and FinOps | :material-circle-slice-5: Draft | [cloud-cost-models-and-finops](../finops-and-sustainability/cloud-cost-models-and-finops.md) | Cloud cost models, pay-as-you-go, reserved capacity, savings plans, spot, compute/storage/database/network optimization, transfer/egress cost, idle detection, tagging, allocation, attribution, showback, chargeback, budgets, forecasts, anomaly detection, unit economics, cost per transaction/customer/API/AI inference, TCO, ROI, break-even, governance. |
+| D17-T02 | Sustainable and carbon-aware architecture | :material-circle-slice-5: Draft | [sustainable-and-carbon-aware-architecture](../finops-and-sustainability/sustainable-and-carbon-aware-architecture.md) | Energy-efficient computing, carbon-aware computing, compute/storage efficiency, data lifecycle, utilization, right-sizing, region selection, scheduling, green software engineering, carbon reporting, sustainable cloud architecture. |
 
 ## D18 — Enterprise architecture, governance, hybrid cloud, and modernization
 
-Section: [enterprise-architecture](../enterprise-architecture/index.md) · 0/4 topic entries have a page
+Section: [enterprise-architecture](../enterprise-architecture/index.md) · 4/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D18-T01 | Enterprise architecture practice | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-practice.md` | Enterprise Architecture; business/application/data/technology/security/integration architecture; capability maps, process maps, application portfolios, dependency mapping, standards, principles, governance, review boards, roadmaps, operating models, domain ownership, repositories. |
-| D18-T02 | Enterprise architecture frameworks | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` | Frameworks: TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, Gartner EA concepts, DDD, capability-based planning, reference architectures. |
-| D18-T03 | Legacy modernization and migration | :material-circle-outline: Planned | planned: `enterprise-architecture/legacy-modernization-and-migration.md` | Legacy modernization: assessment, dependency discovery, portfolio assessment, mainframe, monolith decomposition, database/middleware modernization, data-center migration, 7 Rs (rehost, replatform, refactor/re-architect, repurchase, retain, retire, relocate where applicable), Strangler, replacement, incremental modernization, wave planning, cutover, rollback, validation, parallel run, debt reduction. |
-| D18-T04 | Hybrid and multi-cloud architecture | :material-circle-outline: Planned | planned: `enterprise-architecture/hybrid-and-multi-cloud-architecture.md` | Hybrid/multi-cloud: on-prem integration, hybrid identity/network/storage/database/monitoring/DR, cloud bursting, portability, multi-cloud network/identity/governance/security, cross-cloud data movement, exit strategy, lock-in, residency, sovereign cloud. |
+| D18-T01 | Enterprise architecture practice | :material-circle-slice-5: Draft | [enterprise-architecture-practice](../enterprise-architecture/enterprise-architecture-practice.md) | Enterprise Architecture; business/application/data/technology/security/integration architecture; capability maps, process maps, application portfolios, dependency mapping, standards, principles, governance, review boards, roadmaps, operating models, domain ownership, repositories. |
+| D18-T02 | Enterprise architecture frameworks | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) | Frameworks: TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, Gartner EA concepts, DDD, capability-based planning, reference architectures. |
+| D18-T03 | Legacy modernization and migration | :material-circle-slice-5: Draft | [legacy-modernization-and-migration](../enterprise-architecture/legacy-modernization-and-migration.md) | Legacy modernization: assessment, dependency discovery, portfolio assessment, mainframe, monolith decomposition, database/middleware modernization, data-center migration, 7 Rs (rehost, replatform, refactor/re-architect, repurchase, retain, retire, relocate where applicable), Strangler, replacement, incremental modernization, wave planning, cutover, rollback, validation, parallel run, debt reduction. |
+| D18-T04 | Hybrid and multi-cloud architecture | :material-circle-slice-5: Draft | [hybrid-and-multi-cloud-architecture](../enterprise-architecture/hybrid-and-multi-cloud-architecture.md) | Hybrid/multi-cloud: on-prem integration, hybrid identity/network/storage/database/monitoring/DR, cloud bursting, portability, multi-cloud network/identity/governance/security, cross-cloud data movement, exit strategy, lock-in, residency, sovereign cloud. |
 
 ## D19 — AI and machine learning foundations
 
@@ -349,24 +349,24 @@ Section: [emerging-architectures](../emerging-architectures/index.md) · 0/7 top
 
 ## D28 — Architecture frameworks and reference models
 
-Section: [reference-architectures](../reference-architectures/index.md) · 0/4 topic entries have a page
+Section: [reference-architectures](../reference-architectures/index.md) · 4/4 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
-| D28-T01 | Well-Architected frameworks (AWS, Azure, Google Cloud) | :material-circle-outline: Planned | planned: `cloud-architecture/well-architected-frameworks.md` | AWS Well-Architected Framework; Azure Well-Architected Framework; Google Cloud Well-Architected Framework. |
-| D28-T02 | Cloud adoption frameworks | :material-circle-outline: Planned | planned: `cloud-architecture/cloud-adoption-frameworks.md` | AWS Cloud Adoption Framework; Azure Cloud Adoption Framework. |
-| D28-T03 | Architecture frameworks and reference models | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` | TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, C4, DDD, Twelve-Factor App, NIST Cybersecurity Framework, NIST AI RMF, OWASP, FinOps Framework, SRE, CNCF landscape. |
-| D28-T04 | Applying architecture frameworks in practice | :material-circle-outline: Planned | planned: `enterprise-architecture/enterprise-architecture-frameworks.md` | Teach the purpose, scope, strengths, limitations, and practical application of each. For AWS Well-Architected, cover Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. |
+| D28-T01 | Well-Architected frameworks (AWS, Azure, Google Cloud) | :material-circle-slice-5: Draft | [well-architected-frameworks](../cloud-architecture/well-architected-frameworks.md) | AWS Well-Architected Framework; Azure Well-Architected Framework; Google Cloud Well-Architected Framework. |
+| D28-T02 | Cloud adoption frameworks | :material-circle-slice-5: Draft | [cloud-adoption-frameworks](../cloud-architecture/cloud-adoption-frameworks.md) | AWS Cloud Adoption Framework; Azure Cloud Adoption Framework. |
+| D28-T03 | Architecture frameworks and reference models | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) | TOGAF, Zachman, ArchiMate, ITIL, COBIT, FEAF, C4, DDD, Twelve-Factor App, NIST Cybersecurity Framework, NIST AI RMF, OWASP, FinOps Framework, SRE, CNCF landscape. |
+| D28-T04 | Applying architecture frameworks in practice | :material-circle-slice-5: Draft | [enterprise-architecture-frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) | Teach the purpose, scope, strengths, limitations, and practical application of each. For AWS Well-Architected, cover Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. |
 
 ## D29 — Architecture problem-solving exercises
 
-Section: [system-design-exercises](../system-design-exercises/index.md) · 3/5 topic entries have a page
+Section: [system-design-exercises](../system-design-exercises/index.md) · 4/5 topic entries have a page
 
 | ID | Topic | Status | Page | Inventory (from the master curriculum) |
 |---|---|---|---|---|
 | D29-T01 | Application design exercises | :material-circle-slice-2: Outline | [application-design-exercises](../system-design-exercises/application-design-exercises.md) | URL shortener, file sharing, notification service, chat, email, social feed, search engine, image hosting, video streaming, real-time messaging. |
 | D29-T02 | Infrastructure component exercises | :material-circle-slice-2: Outline | [infrastructure-component-exercises](../system-design-exercises/infrastructure-component-exercises.md) | Distributed cache, distributed lock service, rate limiter, configuration service, service discovery, job scheduler, event bus, task queue, API gateway, multi-region application. |
-| D29-T03 | Data platform exercises | :material-circle-outline: Planned | planned: `system-design-exercises/data-platform-exercises.md` | Data lake, data warehouse, real-time analytics, log aggregation, ingestion pipeline, CDC pipeline, fraud detection, recommendation engine, search platform, big-data processing. |
+| D29-T03 | Data platform exercises | :material-circle-slice-2: Outline | [data-platform-exercises](../system-design-exercises/data-platform-exercises.md) | Data lake, data warehouse, real-time analytics, log aggregation, ingestion pipeline, CDC pipeline, fraud detection, recommendation engine, search platform, big-data processing. |
 | D29-T04 | Cloud and enterprise platform exercises | :material-circle-slice-2: Outline | [cloud-and-enterprise-platform-exercises](../system-design-exercises/cloud-and-enterprise-platform-exercises.md) | AWS multi-account landing zone, centralized cross-account logging, multi-region DR, hybrid cloud network, secure enterprise Kubernetes, multi-tenant SaaS, enterprise identity, secrets platform, cloud migration, monitoring platform, payment platform, secure CI/CD, zero-trust enterprise. |
 | D29-T05 | AI platform exercises | :material-circle-outline: Planned | planned: `system-design-exercises/ai-platform-exercises.md` | Enterprise RAG, ChatGPT-like app, document intelligence, knowledge assistant, multimodal RAG, multi-agent research, customer support agent, coding assistant, AI DevOps engineer, autonomous cloud operations agent, MCP server platform, AI gateway, LLM evaluation platform, model hosting, distributed GPU inference, multi-model AI, secure enterprise agent platform, AI observability. |
 

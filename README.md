@@ -26,10 +26,10 @@ Primarily engineers with working cloud and DevOps experience who want to grow in
 architecture roles. Written to stay readable for motivated beginners, with advanced (Level 3) sections
 marked for experienced engineers.
 
-## Status (2026-11-21)
+## Status (2026-11-28)
 
-Foundation, core learning path (Phase 2), software and distributed architecture (Phase 3), and the
-first half of cloud and enterprise architecture (Phase 4A) written:
+Foundation, core learning path (Phase 2), software and distributed architecture (Phase 3), and cloud
+and enterprise architecture (Phase 4, batches 4A and 4B), and data architecture (Phase 5) written:
 
 - Repository structure, MkDocs Material site, CI (build, validation, link check, Pages deploy).
 - Complete 30-domain curriculum index and a machine-readable coverage matrix with 140 topic entries,
@@ -50,6 +50,17 @@ first half of cloud and enterprise architecture (Phase 4A) written:
   threat modeling, IAM, network, application, data, supply chain, security operations, compliance),
   case studies 01, 08, and 15, two platform exercises (multi-account landing zone, zero-trust
   enterprise), and Labs 10, 12, 14, and 15 with CI smoke tests.
+- Phase 4B, all **Draft**: reliability engineering, disaster recovery, and advanced resilience (D13),
+  observability, monitoring and on-call, and incident management (D15), the DevOps lifecycle, CI/CD,
+  Infrastructure as Code, DevSecOps, and platform engineering (D16), FinOps and sustainable
+  architecture (D17), enterprise architecture practice, frameworks, modernization, and hybrid and
+  multi-cloud (D18), Well-Architected and cloud adoption frameworks (D28), case studies 09, 10, and 11,
+  the multi-region disaster recovery exercise, and Labs 11 and 13 with CI smoke tests.
+- Phase 5, all **Draft**: NoSQL, advanced database architecture, and storage (D06), data modeling and
+  governance, pipelines, warehouses/lakes/lakehouses and data mesh, processing engines and table
+  formats, OLTP vs OLAP and BI (D07), event-driven architecture, event streaming, and messaging
+  technologies compared (D08), case studies 12 (lakehouse) and 13 (real-time fraud detection), the
+  data lake, CDC pipeline, and real-time analytics exercises, and Labs 02, 06, 07, and 16.
 - Six Architecture Decision Records for the repository itself.
 
 Everything else is `Planned`. See [`ROADMAP.md`](ROADMAP.md) and the

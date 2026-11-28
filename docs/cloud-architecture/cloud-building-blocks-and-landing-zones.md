@@ -324,12 +324,13 @@ vocabulary more than in substance:
 | Preventive policy | Service control policies and resource control policies | Azure Policy with the deny effect | Organization Policy Service constraints |
 | Detective checks | AWS Config rules, Control Tower detective controls | Azure Policy audit effects, Microsoft Defender for Cloud | Security Command Center |
 | Workforce sign-in | IAM Identity Center | Microsoft Entra ID | Cloud Identity or Workforce Identity Federation |
-| Landing-zone tooling | AWS Control Tower; Landing Zone Accelerator on AWS | Azure landing zones (platform and application landing zones) with Microsoft accelerators | Landing zone design guidance; enterprise foundations blueprint |
+| Landing-zone tooling | AWS Control Tower; Landing Zone Accelerator on AWS | Azure landing zones (platform and workload landing zones) with Microsoft accelerators | Landing zone design guidance; enterprise foundations blueprint |
 | Quota visibility | Service Quotas | Subscription and service limits documentation, quota pages | Cloud Quotas |
 
 AWS Control Tower builds the landing zone on AWS Organizations, with an Account Factory, and AWS
 suggests Landing Zone Accelerator on AWS on top for configuration-driven additions. Azure landing
-zones split a central platform landing zone from per-workload application landing zones. Google
+zones split a central platform landing zone from per-workload landing zones (called application
+landing zones until Microsoft renamed them in October 2026). Google
 Cloud's guidance walks through each decision, and its blueprint is a Terraform implementation.
 Accelerators save months but encode default decisions: read what they create before adopting them.
 

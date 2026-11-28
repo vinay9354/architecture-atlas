@@ -1,7 +1,7 @@
 ---
 title: High availability design
 description: "How to find single points of failure, place redundancy across fault domains, fail over safely, and prove with arithmetic that a design can meet its availability target."
-domain: "Reliability, resilience, and disaster recovery"
+domain: "High availability, reliability, resilience, and DR"
 level: Mixed
 status: Draft
 estimated_time: "60-75 minutes"

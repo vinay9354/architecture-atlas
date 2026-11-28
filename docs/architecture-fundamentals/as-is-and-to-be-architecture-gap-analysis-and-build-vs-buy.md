@@ -601,7 +601,7 @@ webhook PoC first.
 
 | Source | Type | Checked |
 |---|---|---|
-| The Open Group, [The TOGAF Standard, 10th Edition](https://pubs.opengroup.org/togaf-standard/) — ADM Techniques on gap analysis and capability-based planning; Architecture Content on baseline and target architectures | Standard (free to read online; chapter pages are rendered by JavaScript) | 2026-11-15 |
+| The Open Group, [The TOGAF Standard, 10th Edition](https://www.opengroup.org/togaf) — ADM Techniques on gap analysis and capability-based planning; Architecture Content on baseline and target architectures | Standard (overview page; the full text on pubs.opengroup.org now requires a free sign-in) | 2026-11-27 |
 | Amazon Web Services, [About the migration strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html) — AWS Prescriptive Guidance | Official documentation (the "7 Rs" as gap types per application) | 2026-11-15 |
 | Martin Fowler, [Strangler Fig Application](https://martinfowler.com/bliki/StranglerFigApplication.html) | Article (incremental replacement and transition states) | 2026-11-15 |
 | Eric Ries, [The Lean Startup: Principles](https://theleanstartup.com/principles) | Website (minimum viable product and validated learning) | 2026-11-15 |

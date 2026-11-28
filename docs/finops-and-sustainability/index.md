@@ -29,8 +29,8 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D17** | **FinOps, cost architecture, and sustainability** | | |
-| D17-T01 | Cloud cost models and FinOps | :material-circle-outline: Planned | planned: `finops-and-sustainability/cloud-cost-models-and-finops.md` |
-| D17-T02 | Sustainable and carbon-aware architecture | :material-circle-outline: Planned | planned: `finops-and-sustainability/sustainable-and-carbon-aware-architecture.md` |
+| D17-T01 | Cloud cost models and FinOps | :material-circle-slice-5: Draft | [cloud-cost-models-and-finops](cloud-cost-models-and-finops.md) |
+| D17-T02 | Sustainable and carbon-aware architecture | :material-circle-slice-5: Draft | [sustainable-and-carbon-aware-architecture](sustainable-and-carbon-aware-architecture.md) |
 <!-- coverage:end -->
 
 ## How to continue

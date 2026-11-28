@@ -410,7 +410,8 @@ Every number is in the tens or hundreds: hundreds of writes per second at most, 
 gigabytes per copy. That is comfortably inside what a single relational primary on modest hardware
 handles (the exact ceiling depends on hardware and configuration and should be measured, not quoted).
 Read growth has cheaper answers than partitioning: the cache and a read replica, which the support
-reports already use. Retention is handled by monthly range partitions *inside* the one server.
+reports already use. Retention is handled by time-range partitions *inside* the one server (monthly in
+this example; AtlasMart later chose weekly partitions, see [Advanced database architecture](../databases-and-storage/advanced-database-architecture.md)).
 
 How far away is the limit? At 30% growth a year, a 10× increase takes ln 10 ÷ ln 1.3 ≈ 8.8 years,
 and a 50× increase ln 50 ÷ ln 1.3 ≈ 14.9 years. **Decision: do not partition across servers.** Write

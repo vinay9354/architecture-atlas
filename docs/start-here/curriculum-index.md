@@ -27,9 +27,9 @@ topic is listed with its status. Counts come from the
 
 | Domain | Covers | Section | Written |
 |---|---|---|---|
-| D06 Database, storage, and caching architecture | Relational internals, NoSQL, advanced databases, storage, caching | [Databases, storage, and caching](../databases-and-storage/index.md) | 2 of 5 (2 Draft) |
-| D07 Data engineering, analytics, and big data | Modeling, pipelines, warehouse/lake/lakehouse/mesh, engines and table formats, OLAP and BI | [Data engineering and analytics](../data-engineering-and-analytics/index.md) | 0 of 5 |
-| D08 Messaging, event-driven systems, and streaming | Queues, events, streaming, broker technologies | [Messaging and streaming](../messaging-and-streaming/index.md) | 1 of 4 (1 Draft) |
+| D06 Database, storage, and caching architecture | Relational internals, NoSQL, advanced databases, storage, caching | [Databases, storage, and caching](../databases-and-storage/index.md) | 5 of 5 (5 Draft) |
+| D07 Data engineering, analytics, and big data | Modeling, pipelines, warehouse/lake/lakehouse/mesh, engines and table formats, OLAP and BI | [Data engineering and analytics](../data-engineering-and-analytics/index.md) | 5 of 5 (5 Draft) |
+| D08 Messaging, event-driven systems, and streaming | Queues, events, streaming, broker technologies | [Messaging and streaming](../messaging-and-streaming/index.md) | 4 of 4 (4 Draft) |
 
 ## Part III — Cloud, platform, and operations
 
@@ -39,12 +39,12 @@ topic is listed with its status. Counts come from the
 | D10 Cloud and infrastructure architecture | Service models, building blocks, compute, multi-account, providers | [Cloud architecture](../cloud-architecture/index.md) | 5 of 5 (5 Draft) |
 | D11 Containers, Kubernetes, and cloud-native | Containers, Kubernetes, networking/storage/mesh, ecosystem | [Containers and Kubernetes](../containers-and-kubernetes/index.md) | 4 of 4 (4 Draft) |
 | D12 Security architecture and cybersecurity | Principles, IAM, network, application, data, supply chain, SecOps, compliance | [Security architecture](../security-architecture/index.md) | 8 of 8 (8 Draft) |
-| D13 High availability, reliability, resilience, and DR | HA design, reliability engineering, DR, advanced resilience | [Reliability and disaster recovery](../reliability-and-disaster-recovery/index.md) | 1 of 4 (1 Draft) |
+| D13 High availability, reliability, resilience, and DR | HA design, reliability engineering, DR, advanced resilience | [Reliability and disaster recovery](../reliability-and-disaster-recovery/index.md) | 4 of 4 (4 Draft) |
 | D14 Performance engineering and scalability | Latency/throughput, scaling techniques, capacity planning | [Performance and scalability](../performance-and-scalability/index.md) | 2 of 3 (2 Draft) |
-| D15 Observability, monitoring, SRE, and operations | Telemetry, monitoring and alerting, incident management | [Observability and SRE](../observability-and-sre/index.md) | 0 of 3 |
-| D16 DevOps, DevSecOps, CI/CD, IaC, platform engineering | Delivery lifecycle, pipelines, IaC, DevSecOps, platforms | [DevOps and platform engineering](../devops-and-platform-engineering/index.md) | 0 of 5 |
-| D17 FinOps, cost architecture, and sustainability | Cost models, unit economics, carbon-aware design | [FinOps and sustainability](../finops-and-sustainability/index.md) | 0 of 2 |
-| D18 Enterprise architecture, governance, hybrid, modernization | EA practice, frameworks, modernization, hybrid/multi-cloud | [Enterprise architecture](../enterprise-architecture/index.md) | 0 of 4 |
+| D15 Observability, monitoring, SRE, and operations | Telemetry, monitoring and alerting, incident management | [Observability and SRE](../observability-and-sre/index.md) | 3 of 3 (3 Draft) |
+| D16 DevOps, DevSecOps, CI/CD, IaC, platform engineering | Delivery lifecycle, pipelines, IaC, DevSecOps, platforms | [DevOps and platform engineering](../devops-and-platform-engineering/index.md) | 5 of 5 (5 Draft) |
+| D17 FinOps, cost architecture, and sustainability | Cost models, unit economics, carbon-aware design | [FinOps and sustainability](../finops-and-sustainability/index.md) | 2 of 2 (2 Draft) |
+| D18 Enterprise architecture, governance, hybrid, modernization | EA practice, frameworks, modernization, hybrid/multi-cloud | [Enterprise architecture](../enterprise-architecture/index.md) | 4 of 4 (4 Draft) |
 
 ## Part IV — AI
 
@@ -64,8 +64,8 @@ topic is listed with its status. Counts come from the
 |---|---|---|---|
 | D26 Industry-specific solution architecture | E-commerce, finance, healthcare, media, IoT, logistics, enterprise, others | [Industry architectures](../industry-architectures/index.md) | 0 of 8 |
 | D27 Advanced and emerging architecture | Edge, real-time, search, blockchain, privacy-preserving, cyber resilience, advanced AI | [Emerging architectures](../emerging-architectures/index.md) | 0 of 7 |
-| D28 Architecture frameworks and reference models | Well-Architected, adoption frameworks, TOGAF/Zachman/C4/DDD/NIST/OWASP/FinOps/SRE/CNCF | [Reference architectures and frameworks](../reference-architectures/index.md) | 0 of 4 |
-| D29 Architecture problem-solving exercises | Graded design exercises from URL shortener to AI platforms | [System design exercises](../system-design-exercises/index.md) | 3 of 5 (3 Outline) |
+| D28 Architecture frameworks and reference models | Well-Architected, adoption frameworks, TOGAF/Zachman/C4/DDD/NIST/OWASP/FinOps/SRE/CNCF | [Reference architectures and frameworks](../reference-architectures/index.md) | 4 of 4 (4 Draft) |
+| D29 Architecture problem-solving exercises | Graded design exercises from URL shortener to AI platforms | [System design exercises](../system-design-exercises/index.md) | 4 of 5 (4 Outline) |
 | D30 Architecture design method | The twelve-step method and AI-specific decisions | [System design exercises](../system-design-exercises/index.md) | 2 of 2 (1 Draft, 1 Outline) |
 
 Beyond the thirty domains, the repository also plans twenty-five
@@ -74,8 +74,8 @@ Beyond the thirty domains, the repository also plans twenty-five
 
 ## Reading the status honestly
 
-As of 2026-11-21, 52 topic entries are written in `Draft` status and 4 in `Outline`, across D01-D06,
-D08-D14, D29, and D30. Alongside them are the Solutions Architect role page, ten labs, six full design
-exercises, three end-to-end case studies, and one domain quiz. The other 84 topic entries are `Planned`
-with a destination path each. Nothing is `Reviewed` yet; the
+As of 2026-11-28, 84 topic entries are written in `Draft` status and 5 in `Outline`, across D01-D18,
+D28, D29, and D30. Alongside them are the Solutions Architect role page, sixteen labs, ten full design
+exercises, eight end-to-end case studies, and one domain quiz. The other 51 topic entries are
+`Planned` with a destination path each. Nothing is `Reviewed` yet; the
 [roadmap](https://github.com/vinay9354/architecture-atlas/blob/main/ROADMAP.md) lists what comes next.

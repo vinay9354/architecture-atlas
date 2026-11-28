@@ -423,7 +423,7 @@ teams with counsel; the arithmetic shows their consequences.
 
 | Data | Retention | Mechanism | Reason |
 |---|---|---|---|
-| Shipments, scan events, notification history | 180 days after delivery (assumption) | Monthly partitions dropped by a scheduled job | Customer "past orders" view and carrier disputes |
+| Shipments, scan events, notification history | 180 days after delivery (assumption) | Time partitions dropped by a scheduled job (weekly for scan events, see [Advanced database architecture](../databases-and-storage/advanced-database-architecture.md)) | Customer "past orders" view and carrier disputes |
 | Status Cache entries | 30 s TTL | Cache expiry | Freshness (NFR-1) |
 | Event Queue messages | Until processed; dead-letter queue 7 days (assumption) | Queue retention setting; check the provider's maximum | Replay of failed events |
 | Application logs | 30 days (assumption) | Log store retention | Debugging; ids only, no bodies |

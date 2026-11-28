@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhook-ingestor
+  namespace: order-tracking
+  labels:
+    app.kubernetes.io/name: webhook-ingestor
+    app.kubernetes.io/part-of: order-tracking
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: webhook-ingestor
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: webhook-ingestor
+    spec:
+      containers:
+        - name: webhook-ingestor
+          image: registry.atlasmart.example/order-tracking/webhook-ingestor:2.1.0

@@ -92,11 +92,23 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
   [Scaling, partitioning, and replication](../distributed-systems/scaling-partitioning-and-replication.md),
   with Labs [03](../labs/lab-03-queue-retries-and-dead-letter.md), [04](../labs/lab-04-idempotency-and-duplicates.md),
   [08](../labs/lab-08-sharding-and-consistent-hashing.md), and [09](../labs/lab-09-replication-lag.md)
-- [Relational internals](../databases-and-storage/relational-databases-and-sql-internals.md) →
-  NoSQL by access pattern → Advanced database architecture →
-  [Caching](../databases-and-storage/caching-architecture.md)
+- [Relational internals](../databases-and-storage/relational-databases-and-sql-internals.md)
+  (with [Lab 06](../labs/lab-06-indexing-and-query-plans.md)) →
+  [NoSQL databases](../databases-and-storage/nosql-databases.md)
+  (with [Lab 07](../labs/lab-07-sql-vs-nosql-access-patterns.md)) →
+  [Advanced database architecture](../databases-and-storage/advanced-database-architecture.md) →
+  [Storage architecture](../databases-and-storage/storage-architecture.md) →
+  [Caching](../databases-and-storage/caching-architecture.md) (with [Lab 02](../labs/lab-02-cache-hit-and-miss.md))
 - [Message queues and brokers](../messaging-and-streaming/message-queues-and-brokers.md) →
-  Event-driven architecture → Event streaming → Messaging technologies compared
+  [Event-driven architecture](../messaging-and-streaming/event-driven-architecture.md)
+  (with [Lab 16](../labs/lab-16-event-driven-workflow.md)) →
+  [Event streaming](../messaging-and-streaming/event-streaming-and-log-based-architecture.md) →
+  [Messaging technologies compared](../messaging-and-streaming/messaging-technologies-compared.md)
+- [Data modeling and governance](../data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md) →
+  [Pipelines](../data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md) →
+  [Warehouses, lakes, lakehouses, and data mesh](../data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md) →
+  [Processing engines and table formats](../data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md) →
+  [OLTP vs OLAP and BI](../data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md)
 
 **Stage 3 — Application and enterprise** (partly available)
 
@@ -108,7 +120,10 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
 - [Networking fundamentals](../networking/networking-fundamentals-ip-cidr-routing-and-dns.md) and
   [transport and application protocols](../networking/transport-and-application-protocols.md) as a
   refresher before hybrid connectivity
-- Enterprise architecture practice → Legacy modernization → Hybrid and multi-cloud (planned)
+- [Enterprise architecture practice](../enterprise-architecture/enterprise-architecture-practice.md) →
+  [Enterprise architecture frameworks](../enterprise-architecture/enterprise-architecture-frameworks.md) →
+  [Legacy modernization and migration](../enterprise-architecture/legacy-modernization-and-migration.md) →
+  [Hybrid and multi-cloud architecture](../enterprise-architecture/hybrid-and-multi-cloud-architecture.md)
 
 **Stage 3b — Cloud, platform, and security** (available)
 
@@ -125,13 +140,27 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
 - The [security architecture](../security-architecture/index.md) section in order: principles and threat
   modeling, IAM, network, application, data, supply chain, operations, compliance
 
-**Stage 4 — Operate at scale** (partly available)
+**Stage 4 — Operate at scale** (available)
 
 - [Performance fundamentals](../performance-and-scalability/performance-fundamentals-and-littles-law.md)
   (with [Lab 01](../labs/lab-01-latency-and-throughput.md)) →
   [High availability design](../reliability-and-disaster-recovery/high-availability-design.md) →
-  Observability → Incident management and SRE → Disaster recovery strategies
-- FinOps → Platform engineering (planned)
+  [Reliability engineering](../reliability-and-disaster-recovery/reliability-engineering.md) →
+  [Disaster recovery strategies](../reliability-and-disaster-recovery/disaster-recovery-strategies.md) →
+  [Advanced resilience and failure containment](../reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md)
+- [Observability fundamentals](../observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md)
+  (with [Lab 11](../labs/lab-11-tracing-and-structured-logging.md)) →
+  [Monitoring, alerting, and on-call](../observability-and-sre/monitoring-alerting-and-on-call.md) →
+  [Incident management and SRE practices](../observability-and-sre/incident-management-and-sre-practices.md)
+- [DevOps lifecycle](../devops-and-platform-engineering/devops-lifecycle-and-source-control.md) →
+  [CI/CD and deployment strategies](../devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md) →
+  [Infrastructure as Code](../devops-and-platform-engineering/infrastructure-as-code.md) →
+  [DevSecOps](../devops-and-platform-engineering/devsecops-and-secure-delivery.md) →
+  [Platform engineering](../devops-and-platform-engineering/platform-engineering.md)
+  (with [Lab 13](../labs/lab-13-gitops-reconciliation.md))
+- [Cloud cost models and FinOps](../finops-and-sustainability/cloud-cost-models-and-finops.md) and
+  [sustainable architecture](../finops-and-sustainability/sustainable-and-carbon-aware-architecture.md);
+  then review a system with the [Well-Architected frameworks](../cloud-architecture/well-architected-frameworks.md)
 
 **Stage 5 — Practice**
 
@@ -142,8 +171,17 @@ and [ADRs and architecture governance](../architecture-fundamentals/trade-offs-p
   [zero-trust enterprise](../system-design-exercises/zero-trust-enterprise.md) exercises; the other
   [cloud and enterprise platform exercises](../system-design-exercises/cloud-and-enterprise-platform-exercises.md)
   are briefs
-- Case studies [08](../end-to-end-case-studies/cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md)
-  and [15](../end-to-end-case-studies/cs-15-zero-trust-application-architecture.md); 02, 03, 10, and 11 are planned
+- Case studies [08](../end-to-end-case-studies/cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md),
+  [09](../end-to-end-case-studies/cs-09-hybrid-migration-with-private-connectivity.md),
+  [10](../end-to-end-case-studies/cs-10-multi-region-disaster-recovery.md),
+  [11](../end-to-end-case-studies/cs-11-enterprise-kubernetes-platform-with-gitops.md), and
+  [15](../end-to-end-case-studies/cs-15-zero-trust-application-architecture.md), and the
+  [multi-region disaster recovery](../system-design-exercises/multi-region-disaster-recovery.md) exercise;
+  02 and 03 are planned
+- Data: case studies [12](../end-to-end-case-studies/cs-12-data-lakehouse-with-batch-and-streaming-ingestion.md)
+  and [13](../end-to-end-case-studies/cs-13-real-time-fraud-detection-pipeline.md), and the
+  [data lake](../system-design-exercises/data-lake.md), [CDC pipeline](../system-design-exercises/cdc-pipeline.md),
+  and [real-time analytics](../system-design-exercises/real-time-analytics.md) exercises
 
 ## AI architecture path
 

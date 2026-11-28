@@ -29,11 +29,11 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D16** | **DevOps, DevSecOps, CI/CD, IaC, and platform engineering** | | |
-| D16-T01 | DevOps lifecycle and source control | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/devops-lifecycle-and-source-control.md` |
-| D16-T02 | CI/CD pipeline design and deployment strategies | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md` |
-| D16-T03 | Infrastructure as Code | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/infrastructure-as-code.md` |
-| D16-T04 | DevSecOps and secure delivery | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/devsecops-and-secure-delivery.md` |
-| D16-T05 | Platform engineering | :material-circle-outline: Planned | planned: `devops-and-platform-engineering/platform-engineering.md` |
+| D16-T01 | DevOps lifecycle and source control | :material-circle-slice-5: Draft | [devops-lifecycle-and-source-control](devops-lifecycle-and-source-control.md) |
+| D16-T02 | CI/CD pipeline design and deployment strategies | :material-circle-slice-5: Draft | [ci-cd-pipeline-design-and-deployment-strategies](ci-cd-pipeline-design-and-deployment-strategies.md) |
+| D16-T03 | Infrastructure as Code | :material-circle-slice-5: Draft | [infrastructure-as-code](infrastructure-as-code.md) |
+| D16-T04 | DevSecOps and secure delivery | :material-circle-slice-5: Draft | [devsecops-and-secure-delivery](devsecops-and-secure-delivery.md) |
+| D16-T05 | Platform engineering | :material-circle-slice-5: Draft | [platform-engineering](platform-engineering.md) |
 <!-- coverage:end -->
 
 ## How to continue

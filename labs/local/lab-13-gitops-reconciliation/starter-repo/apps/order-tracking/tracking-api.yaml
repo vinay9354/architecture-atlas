@@ -1,0 +1,31 @@
+# Desired state for the Tracking API. The image tag is what experiment a changes.
+# Replica count and resource requests follow the AtlasMart platform assumptions (min 3 replicas,
+# request 1 vCPU / 1 GiB); the reconciler in this lab only simulates them.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tracking-api
+  namespace: order-tracking
+  labels:
+    app.kubernetes.io/name: tracking-api
+    app.kubernetes.io/part-of: order-tracking
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: tracking-api
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: tracking-api
+    spec:
+      containers:
+        - name: tracking-api
+          image: registry.atlasmart.example/order-tracking/tracking-api:1.4.0
+          envFrom:
+            - configMapRef:
+                name: tracking-api-config
+          resources:
+            requests:
+              cpu: "1"
+              memory: 1Gi

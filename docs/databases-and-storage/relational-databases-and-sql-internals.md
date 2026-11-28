@@ -529,6 +529,14 @@ logs is separate) becomes "detach and drop the oldest partition" once a month, a
 takes milliseconds instead of a `DELETE` of 14 million rows that would bloat the table and flood the
 replicas with WAL.
 
+!!! note "Later decisions: retention period and partition key"
+    AtlasMart later set tracking retention to 180 days after delivery (see
+    [Data security and privacy](../security-architecture/data-security-and-privacy.md)) and moved
+    `scan_events` to weekly partitions on `occurred_at`, so the idempotency constraint can include the
+    partition key and expired data overstays by at most 21 days instead of 45. The reasoning is on
+    [Advanced database architecture](advanced-database-architecture.md). The monthly scheme above still
+    illustrates the mechanism.
+
 ## Real-world architecture example
 
 The pattern above (one primary with a synchronous standby in a second zone, asynchronous replicas for

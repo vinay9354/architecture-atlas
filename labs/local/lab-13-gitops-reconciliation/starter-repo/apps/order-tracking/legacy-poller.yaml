@@ -1,0 +1,23 @@
+# A carrier-polling worker from before carriers sent webhooks. Experiment d retires it by
+# deleting this file from Git.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: legacy-poller
+  namespace: order-tracking
+  labels:
+    app.kubernetes.io/name: legacy-poller
+    app.kubernetes.io/part-of: order-tracking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: legacy-poller
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: legacy-poller
+    spec:
+      containers:
+        - name: legacy-poller
+          image: registry.atlasmart.example/order-tracking/legacy-poller:0.9.3

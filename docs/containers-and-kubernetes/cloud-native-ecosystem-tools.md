@@ -421,6 +421,12 @@ upgrade. Adopting the 8 tools left out above would add 8 × 3 = 24 more, giving 
 webhooks, and credentials each brings. The team's rule: a tool joins only when a named problem
 appears in the "revisit when" column.
 
+!!! note "Later decision: a sixth add-on"
+    The rule was later applied once: weighted canary steps on 3-replica services needed traffic
+    splitting the plain Deployment cannot give, so AtlasMart added Argo Rollouts, making 6 × 3 = 18
+    installations. The reasoning is on
+    [CI/CD pipeline design and deployment strategies](../devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md).
+
 **Figure 4 — AtlasMart's prod cluster with the adopted add-ons.** What runs in the cluster and what
 stays outside it.
 

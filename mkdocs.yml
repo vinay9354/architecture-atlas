@@ -146,16 +146,33 @@ nav:
           - application-and-api-architecture/index.md
           - API design (REST, GraphQL, gRPC, async): application-and-api-architecture/api-design-rest-graphql-grpc-and-async-apis.md
           - Integration architecture: application-and-api-architecture/integration-architecture.md
-      - Enterprise architecture and modernization: enterprise-architecture/index.md
+      - Enterprise architecture and modernization:
+          - enterprise-architecture/index.md
+          - Enterprise architecture practice: enterprise-architecture/enterprise-architecture-practice.md
+          - Enterprise architecture frameworks: enterprise-architecture/enterprise-architecture-frameworks.md
+          - Legacy modernization and migration: enterprise-architecture/legacy-modernization-and-migration.md
+          - Hybrid and multi-cloud architecture: enterprise-architecture/hybrid-and-multi-cloud-architecture.md
   - Data:
       - Databases, storage, and caching:
           - databases-and-storage/index.md
           - Relational databases and SQL internals: databases-and-storage/relational-databases-and-sql-internals.md
+          - NoSQL databases: databases-and-storage/nosql-databases.md
+          - Advanced database architecture: databases-and-storage/advanced-database-architecture.md
+          - Storage architecture: databases-and-storage/storage-architecture.md
           - Caching architecture: databases-and-storage/caching-architecture.md
-      - Data engineering and analytics: data-engineering-and-analytics/index.md
+      - Data engineering and analytics:
+          - data-engineering-and-analytics/index.md
+          - Data modeling, metadata, and data governance: data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md
+          - Batch, streaming, ETL/ELT, and pipelines: data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md
+          - Warehouses, lakes, lakehouses, and data mesh: data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md
+          - Big data processing engines and table formats: data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md
+          - OLTP vs OLAP, dimensional modeling, and BI: data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md
       - Messaging and streaming:
           - messaging-and-streaming/index.md
           - Message queues and brokers: messaging-and-streaming/message-queues-and-brokers.md
+          - Event-driven architecture: messaging-and-streaming/event-driven-architecture.md
+          - Event streaming and log-based architecture: messaging-and-streaming/event-streaming-and-log-based-architecture.md
+          - Messaging technologies compared: messaging-and-streaming/messaging-technologies-compared.md
   - Cloud and Platform:
       - Networking and hybrid connectivity:
           - networking/index.md
@@ -170,14 +187,25 @@ nav:
           - Compute options and sizing: cloud-architecture/compute-options-and-sizing.md
           - Multi-account strategy and infrastructure automation: cloud-architecture/multi-account-strategy-and-infrastructure-automation.md
           - "Cloud providers: principles before catalogs": cloud-architecture/cloud-providers-principles-before-catalogs.md
+          - Well-Architected frameworks: cloud-architecture/well-architected-frameworks.md
+          - Cloud adoption frameworks: cloud-architecture/cloud-adoption-frameworks.md
       - Containers and Kubernetes:
           - containers-and-kubernetes/index.md
           - Containers and images: containers-and-kubernetes/containers-and-images.md
           - Kubernetes architecture and workloads: containers-and-kubernetes/kubernetes-architecture-and-workloads.md
           - Kubernetes networking, storage, and service mesh: containers-and-kubernetes/kubernetes-networking-storage-and-service-mesh.md
           - Cloud-native ecosystem tools: containers-and-kubernetes/cloud-native-ecosystem-tools.md
-      - DevOps and platform engineering: devops-and-platform-engineering/index.md
-      - FinOps and sustainability: finops-and-sustainability/index.md
+      - DevOps and platform engineering:
+          - devops-and-platform-engineering/index.md
+          - DevOps lifecycle and source control: devops-and-platform-engineering/devops-lifecycle-and-source-control.md
+          - CI/CD pipeline design and deployment strategies: devops-and-platform-engineering/ci-cd-pipeline-design-and-deployment-strategies.md
+          - Infrastructure as Code: devops-and-platform-engineering/infrastructure-as-code.md
+          - DevSecOps and secure delivery: devops-and-platform-engineering/devsecops-and-secure-delivery.md
+          - Platform engineering: devops-and-platform-engineering/platform-engineering.md
+      - FinOps and sustainability:
+          - finops-and-sustainability/index.md
+          - Cloud cost models and FinOps: finops-and-sustainability/cloud-cost-models-and-finops.md
+          - Sustainable and carbon-aware architecture: finops-and-sustainability/sustainable-and-carbon-aware-architecture.md
   - Security and Operations:
       - Security architecture:
           - security-architecture/index.md
@@ -192,11 +220,18 @@ nav:
       - Reliability and disaster recovery:
           - reliability-and-disaster-recovery/index.md
           - High availability design: reliability-and-disaster-recovery/high-availability-design.md
+          - Reliability engineering: reliability-and-disaster-recovery/reliability-engineering.md
+          - Disaster recovery strategies: reliability-and-disaster-recovery/disaster-recovery-strategies.md
+          - Advanced resilience and failure containment: reliability-and-disaster-recovery/advanced-resilience-and-failure-containment.md
       - Performance and scalability:
           - performance-and-scalability/index.md
           - Performance fundamentals and Little's Law: performance-and-scalability/performance-fundamentals-and-littles-law.md
           - Estimating load, throughput, storage, and capacity: performance-and-scalability/capacity-estimation.md
-      - Observability and SRE: observability-and-sre/index.md
+      - Observability and SRE:
+          - observability-and-sre/index.md
+          - "Observability fundamentals: logs, metrics, and traces": observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md
+          - Monitoring, alerting, and on-call: observability-and-sre/monitoring-alerting-and-on-call.md
+          - Incident management and SRE practices: observability-and-sre/incident-management-and-sre-practices.md
   - AI:
       - AI and ML foundations: ai-ml-foundations/index.md
       - Generative AI and LLMs: generative-ai-and-llms/index.md
@@ -212,6 +247,7 @@ nav:
           - The architecture design method: system-design-exercises/design-method.md
           - Application design exercises: system-design-exercises/application-design-exercises.md
           - Infrastructure component exercises: system-design-exercises/infrastructure-component-exercises.md
+          - Data platform exercises: system-design-exercises/data-platform-exercises.md
           - Cloud and enterprise platform exercises: system-design-exercises/cloud-and-enterprise-platform-exercises.md
           - "Exercise: URL shortener": system-design-exercises/url-shortener.md
           - "Exercise: Rate limiter": system-design-exercises/rate-limiter.md
@@ -219,23 +255,38 @@ nav:
           - "Exercise: Job scheduler": system-design-exercises/job-scheduler.md
           - "Exercise: Multi-account landing zone": system-design-exercises/multi-account-landing-zone.md
           - "Exercise: Zero-trust enterprise": system-design-exercises/zero-trust-enterprise.md
+          - "Exercise: Multi-region disaster recovery": system-design-exercises/multi-region-disaster-recovery.md
+          - "Exercise: Data lake": system-design-exercises/data-lake.md
+          - "Exercise: CDC pipeline": system-design-exercises/cdc-pipeline.md
+          - "Exercise: Real-time analytics": system-design-exercises/real-time-analytics.md
       - End-to-end case studies:
           - end-to-end-case-studies/index.md
           - "Case study 01: Highly available three-tier web application": end-to-end-case-studies/cs-01-highly-available-three-tier-web-application.md
           - "Case study 08: Multi-account landing zone and hub-and-spoke network": end-to-end-case-studies/cs-08-multi-account-landing-zone-and-hub-and-spoke-network.md
+          - "Case study 09: Hybrid migration with private connectivity": end-to-end-case-studies/cs-09-hybrid-migration-with-private-connectivity.md
+          - "Case study 10: Multi-region disaster recovery": end-to-end-case-studies/cs-10-multi-region-disaster-recovery.md
+          - "Case study 11: Enterprise Kubernetes platform with GitOps": end-to-end-case-studies/cs-11-enterprise-kubernetes-platform-with-gitops.md
+          - "Case study 12: Data lakehouse with batch and streaming ingestion": end-to-end-case-studies/cs-12-data-lakehouse-with-batch-and-streaming-ingestion.md
+          - "Case study 13: Real-time fraud detection pipeline": end-to-end-case-studies/cs-13-real-time-fraud-detection-pipeline.md
           - "Case study 15: Zero-trust application architecture": end-to-end-case-studies/cs-15-zero-trust-application-architecture.md
       - Labs:
           - labs/index.md
           - "Lab 01: Latency and throughput": labs/lab-01-latency-and-throughput.md
+          - "Lab 02: Cache hit and miss": labs/lab-02-cache-hit-and-miss.md
           - "Lab 03: Queue retries and dead-letter queue": labs/lab-03-queue-retries-and-dead-letter.md
           - "Lab 04: Idempotency and duplicates": labs/lab-04-idempotency-and-duplicates.md
           - "Lab 05: Race condition": labs/lab-05-race-condition.md
+          - "Lab 06: Indexing and query plans": labs/lab-06-indexing-and-query-plans.md
+          - "Lab 07: SQL vs NoSQL access patterns": labs/lab-07-sql-vs-nosql-access-patterns.md
           - "Lab 08: Sharding and consistent hashing": labs/lab-08-sharding-and-consistent-hashing.md
           - "Lab 09: Replication lag": labs/lab-09-replication-lag.md
           - "Lab 10: REST API authentication and validation": labs/lab-10-rest-api-auth-and-validation.md
+          - "Lab 11: Tracing and structured logging": labs/lab-11-tracing-and-structured-logging.md
           - "Lab 12: Local Kubernetes deployment": labs/lab-12-local-kubernetes-deployment.md
+          - "Lab 13: GitOps reconciliation": labs/lab-13-gitops-reconciliation.md
           - "Lab 14: Network segmentation": labs/lab-14-network-segmentation.md
           - "Lab 15: Infrastructure module and static checks": labs/lab-15-infrastructure-module-and-static-checks.md
+          - "Lab 16: Event-driven workflow": labs/lab-16-event-driven-workflow.md
       - Quizzes:
           - quizzes/index.md
           - "Quiz: Architecture fundamentals (D01)": quizzes/d01-architecture-fundamentals.md

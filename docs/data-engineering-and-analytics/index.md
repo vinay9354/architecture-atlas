@@ -30,11 +30,11 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D07** | **Data engineering, analytics, and big data** | | |
-| D07-T01 | Data modeling, metadata, and data governance | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/data-modeling-metadata-and-data-governance.md` |
-| D07-T02 | Batch, streaming, ETL/ELT, and pipelines | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/batch-streaming-etl-elt-and-pipelines.md` |
-| D07-T03 | Warehouses, lakes, lakehouses, and data mesh | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/warehouses-lakes-lakehouses-and-data-mesh.md` |
-| D07-T04 | Big data processing engines and table formats | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/big-data-processing-engines-and-table-formats.md` |
-| D07-T05 | OLTP vs OLAP, dimensional modeling, and BI | :material-circle-outline: Planned | planned: `data-engineering-and-analytics/oltp-vs-olap-dimensional-modeling-and-bi.md` |
+| D07-T01 | Data modeling, metadata, and data governance | :material-circle-slice-5: Draft | [data-modeling-metadata-and-data-governance](data-modeling-metadata-and-data-governance.md) |
+| D07-T02 | Batch, streaming, ETL/ELT, and pipelines | :material-circle-slice-5: Draft | [batch-streaming-etl-elt-and-pipelines](batch-streaming-etl-elt-and-pipelines.md) |
+| D07-T03 | Warehouses, lakes, lakehouses, and data mesh | :material-circle-slice-5: Draft | [warehouses-lakes-lakehouses-and-data-mesh](warehouses-lakes-lakehouses-and-data-mesh.md) |
+| D07-T04 | Big data processing engines and table formats | :material-circle-slice-5: Draft | [big-data-processing-engines-and-table-formats](big-data-processing-engines-and-table-formats.md) |
+| D07-T05 | OLTP vs OLAP, dimensional modeling, and BI | :material-circle-slice-5: Draft | [oltp-vs-olap-dimensional-modeling-and-bi](oltp-vs-olap-dimensional-modeling-and-bi.md) |
 <!-- coverage:end -->
 
 ## How to continue

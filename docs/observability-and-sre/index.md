@@ -29,9 +29,9 @@ are explained in the [coverage matrix](../appendices/coverage-matrix.md).
 | ID | Topic | Status | Page |
 |---|---|---|---|
 | **D15** | **Observability, monitoring, SRE, and production operations** | | |
-| D15-T01 | Observability fundamentals: logs, metrics, and traces | :material-circle-outline: Planned | planned: `observability-and-sre/observability-fundamentals-logs-metrics-and-traces.md` |
-| D15-T02 | Monitoring, alerting, and on-call | :material-circle-outline: Planned | planned: `observability-and-sre/monitoring-alerting-and-on-call.md` |
-| D15-T03 | Incident management and SRE practices | :material-circle-outline: Planned | planned: `observability-and-sre/incident-management-and-sre-practices.md` |
+| D15-T01 | Observability fundamentals: logs, metrics, and traces | :material-circle-slice-5: Draft | [observability-fundamentals-logs-metrics-and-traces](observability-fundamentals-logs-metrics-and-traces.md) |
+| D15-T02 | Monitoring, alerting, and on-call | :material-circle-slice-5: Draft | [monitoring-alerting-and-on-call](monitoring-alerting-and-on-call.md) |
+| D15-T03 | Incident management and SRE practices | :material-circle-slice-5: Draft | [incident-management-and-sre-practices](incident-management-and-sre-practices.md) |
 <!-- coverage:end -->
 
 ## How to continue

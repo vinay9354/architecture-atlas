@@ -1,0 +1,12 @@
+# Non-secret settings for the Tracking API. Secrets never go in Git: in AtlasMart they arrive
+# through External Secrets Operator, which this lab does not simulate.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tracking-api-config
+  namespace: order-tracking
+  labels:
+    app.kubernetes.io/part-of: order-tracking
+data:
+  STATUS_CACHE_TTL_SECONDS: "30"
+  LOG_LEVEL: info

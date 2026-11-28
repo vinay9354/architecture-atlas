@@ -379,6 +379,11 @@ The RPO alone forced the synchronous standby and the 5-minute log archiving. The
 automated failover and a rehearsed restore. Neither decision could have been justified from "the
 system must be reliable".
 
+!!! note "Later decision: region outages"
+    The region-outage row records the decision as this page's example first stood. AtlasMart later
+    extended NFR-7 to the loss of a whole region by adding a warm standby in a second EU region; the
+    design and its arithmetic are on [Disaster recovery strategies](../reliability-and-disaster-recovery/disaster-recovery-strategies.md).
+
 ### Dependencies cap the SLO
 
 The tracking read path depends on the Identity Provider (to validate the customer's session) and on

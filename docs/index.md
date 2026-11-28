@@ -10,9 +10,9 @@ hide:
 **A free, open-source, visual-first guide to thinking like a Solutions Architect.**
 Concepts first, vendors second; diagrams on every substantial page; trade-offs instead of dogma.
 
-!!! info "Project status: cloud, platform, and security architecture (November 2026)"
-    The structure, curriculum index, and tooling are complete. **Fifty-three topic pages, ten labs,
-    six design exercises, three end-to-end case studies, and one domain quiz are written (Draft).**
+!!! info "Project status: data architecture complete (November 2026)"
+    The structure, curriculum index, and tooling are complete. **Eighty-three topic pages, sixteen labs,
+    ten design exercises, eight end-to-end case studies, and one domain quiz are written (Draft).**
     The remaining topics are indexed with planned destinations in the
     [coverage matrix](appendices/coverage-matrix.md). Pages carry an honest status; nothing here is
     marked "Reviewed" until a second person has checked it.

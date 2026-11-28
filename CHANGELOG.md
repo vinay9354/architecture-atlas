@@ -7,6 +7,60 @@ Format follows the spirit of [Keep a Changelog](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+### Added — 2026-11-28, data architecture batch (Phase 5)
+
+- Eleven topic pages (Draft): NoSQL databases; advanced database architecture; storage architecture;
+  data modeling, metadata, and data governance; batch, streaming, ETL/ELT, and pipelines; warehouses,
+  lakes, lakehouses, and data mesh; big data processing engines and table formats; OLTP vs OLAP,
+  dimensional modeling, and BI; event-driven architecture; event streaming and log-based architecture;
+  messaging technologies compared.
+- Case studies (Draft): 12 data lakehouse with batch and streaming ingestion (Corvina Mobility), 13
+  real-time fraud detection pipeline (Halvane Pay).
+- Exercises (Draft): data lake, CDC pipeline, real-time analytics; the D29-T03 data platform exercise
+  collection (Outline) with briefs for all ten listed exercises.
+- Labs 02 (cache hit and miss), 06 (indexing and query plans in SQLite), 07 (SQL vs NoSQL access
+  patterns), and 16 (event-driven workflow with an outbox, idempotent consumers, and a saga), each with
+  results and a smoke test.
+- Glossary: 97 new terms in three sections, 638 terms in total.
+- Navigation, learning paths, quiz index, labs and case-study indexes, curriculum index, README, and
+  roadmap updated; `curriculum/coverage.yaml` marks 84 topic entries Draft and 5 Outline.
+
+### Changed — 2026-11-28
+
+- Event Store partitioning: later-decision notes on the relational, scaling, and data security pages
+  record the move to weekly partitions on `occurred_at` (advanced database architecture page).
+- Consistency fixes across new pages: scan events reach the lakehouse through an outbox and a
+  `scan-events` topic; the clickstream topic has 24 partitions, with 12 Bronze writer tasks; the
+  event-driven page is framed as the step after the CDC pipeline exercise.
+
+### Added — 2026-11-27, reliability, operations, delivery, cost, and enterprise batch (Phase 4B)
+
+- Nineteen topic pages (Draft) covering twenty-one curriculum entries: reliability engineering;
+  disaster recovery strategies; advanced resilience and failure containment; observability
+  fundamentals (logs, metrics, traces); monitoring, alerting, and on-call; incident management and SRE
+  practices; DevOps lifecycle and source control; CI/CD pipeline design and deployment strategies;
+  Infrastructure as Code; DevSecOps and secure delivery; platform engineering; cloud cost models and
+  FinOps; sustainable and carbon-aware architecture; enterprise architecture practice; enterprise
+  architecture frameworks (also D28-T03 and D28-T04); legacy modernization and migration; hybrid and
+  multi-cloud architecture; Well-Architected frameworks; cloud adoption frameworks.
+- Case studies (Draft): 09 hybrid migration with private connectivity (AtlasMart's warehouse system),
+  10 multi-region disaster recovery, 11 enterprise Kubernetes platform with GitOps.
+- Exercise (Draft): multi-region disaster recovery for AtlasMart's 40-service retail platform.
+- Labs 11 (distributed tracing and structured logging, W3C Trace Context in the standard library) and
+  13 (GitOps reconciliation against a local Git repository), each with results and a smoke test.
+- Glossary: 139 new terms in six sections, 541 terms in total.
+- Navigation, learning paths, quiz index, labs and case-study indexes, curriculum index, README, and
+  roadmap updated; `curriculum/coverage.yaml` marks 73 topic entries Draft and 4 Outline.
+
+### Changed — 2026-11-27
+
+- SLA page: a note records that NFR-7 was later extended to region loss (disaster recovery page).
+- Cloud-native ecosystem page: a note records the later addition of Argo Rollouts as a sixth add-on.
+- Landing-zone page: "application landing zones" renamed "workload landing zones", following
+  Microsoft's October 2026 rename.
+- Two TOGAF references now point to the public overview page; pubs.opengroup.org requires a sign-in.
+- High-availability page: `domain` front matter aligned with the curriculum's domain title.
+
 ### Added — 2026-11-21, cloud, platform, and security batch (Phase 4A)
 
 - Nineteen topic pages (Draft): network security, load balancing, and traffic flow; hybrid
